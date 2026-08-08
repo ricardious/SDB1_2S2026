@@ -1,0 +1,29 @@
+digraph EPS {
+    rankdir=TB;
+    bgcolor="white";
+    nodesep=0.6;
+    ranksep=0.7;
+
+    node [shape=box, style=rounded, fontname="Arial", fontsize=12];
+
+    EMPRESA; INSTITUTO;
+    CONTACTO_EMPRESARIAL; CATEDRATICO_SUPERVISOR; ESTUDIANTE;
+    PLAZA; COLOCACION; BITACORA; EVALUACION;
+    CRITERIO_EVALUACION; DETALLE_EVALUACION;
+
+    edge [fontname="Arial", fontsize=11, color="#555555", arrowsize=0];
+
+    EMPRESA -> CONTACTO_EMPRESARIAL [label="tiene"];
+    EMPRESA -> PLAZA [label="ofrece"];
+    CONTACTO_EMPRESARIAL -> PLAZA [label="gestiona"];
+    CONTACTO_EMPRESARIAL -> BITACORA [label="valida"];
+    INSTITUTO -> ESTUDIANTE [label="registra"];
+    INSTITUTO -> CATEDRATICO_SUPERVISOR [label="designa"];
+    PLAZA -> COLOCACION [label="asigna"];
+    CATEDRATICO_SUPERVISOR -> COLOCACION [label="supervisa"];
+    ESTUDIANTE -> COLOCACION [label="realiza"];
+    COLOCACION -> BITACORA [label="genera"];
+    COLOCACION -> EVALUACION [label="recibe"];
+    EVALUACION -> DETALLE_EVALUACION [label="compone"];
+    CRITERIO_EVALUACION -> DETALLE_EVALUACION [label="califica"];
+}
