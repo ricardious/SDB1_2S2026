@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D34E857B-EBBA-418B-B7E2-F92713AF07AD" name="CATEDRATICO_SUPERVISOR">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Catedrático asignado por un instituto para supervisar estudiantes en práctica.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>CATEDRATICO_SUPERVISOR</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="id_catedratico" id="0C1591C3-54FD-4C93-8D04-13DCAB487112">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Identificador interno del catedrático supervisor.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>id_catedratico</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="nombre" id="7813992C-34B8-46A9-8EB3-B021DC520B3C">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Nombre del catedrático supervisor.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>150,,</ownDataTypeParameters>
+      <preferredAbbreviation>nombre</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="identificacion" id="61A463AD-BA25-4851-B112-445CC7CF9E49">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Identificación del catedrático.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>40,,</ownDataTypeParameters>
+      <preferredAbbreviation>identificacion</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="telefono" id="042AA8A5-B3FB-4533-8CEF-CF01CCEE7E2F">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Teléfono del catedrático.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>25,,</ownDataTypeParameters>
+      <preferredAbbreviation>telefono</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="especialidad_supervisa" id="A6A0736A-A493-4DED-8CB8-77D6974339C6">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Especialidad técnica que supervisa.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>120,,</ownDataTypeParameters>
+      <preferredAbbreviation>especialidad_supervisa</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="BCF2A229-8575-4C72-844D-7BF9ECC7AE25" name="CATEDRATICO_SUPERVISOR_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>0C1591C3-54FD-4C93-8D04-13DCAB487112</attributeRef>
+      </usedAttributes>
+    </identifier>
+    <identifier id="27FE2E37-1BEE-4FDE-8188-0243B197C87E" name="CATEDRATICO_UK_IDENTIFICACION">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>false</pk>
+      <usedAttributes>
+        <attributeRef>61A463AD-BA25-4851-B112-445CC7CF9E49</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

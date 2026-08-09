@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="17302BC6-601C-4C92-B22C-3C8FD816F46A" name="BITACORA">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Entrada diaria de bitácora asociada a una colocación.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>BITACORA</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="id_bitacora" id="F195A71F-495D-442A-B7C9-950F5F0DA15B">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Identificador de la entrada de bitácora.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>id_bitacora</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="correlativo" id="363B8D10-4B9F-45FA-B9FE-F2E8A84F8BA6">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Correlativo que reinicia en 1 al comenzar cada mes de práctica.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,5,</ownDataTypeParameters>
+      <preferredAbbreviation>correlativo</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="fecha" id="1704C6A3-BE0F-4801-90D3-6AE6867A478A">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Fecha de la entrada.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>fecha</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="horas_trabajadas" id="C5372598-C5F3-46BF-89A9-E4800E6DFE26">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Cantidad de horas trabajadas en el día.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,6,2</ownDataTypeParameters>
+      <preferredAbbreviation>horas_trabajadas</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="actividades_realizadas" id="15F4727C-7261-4A2C-981A-6FF315C4594D">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Descripción de actividades realizadas.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>1000,,</ownDataTypeParameters>
+      <preferredAbbreviation>actividades_realizadas</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="observaciones" id="A149B008-9280-48D2-947E-EFA6BB32AEF8">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Observaciones de la entrada.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>1000,,</ownDataTypeParameters>
+      <preferredAbbreviation>observaciones</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="fecha_validacion" id="08C1369D-AA97-4822-B444-7CB77C4E2F27">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Fecha en que el contacto empresarial valida la entrada.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>fecha_validacion</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="EBE980E9-7197-48BE-ADDD-875A88085B67" name="BITACORA_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>F195A71F-495D-442A-B7C9-950F5F0DA15B</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

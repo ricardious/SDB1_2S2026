@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5F5DD61C-C22E-4F05-9AE4-2DA32F894C6D" name="EVALUACION">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Evaluación parcial (100 horas) o final (200 horas) de una colocación.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>EVALUACION</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="id_evaluacion" id="532300AA-EAA0-4D9D-92FB-5329FFD837A7">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Identificador de la evaluación.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>id_evaluacion</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="tipo_evaluacion" id="240BBEF7-9A56-4A52-AD2E-B924C11C83D0">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Tipo de evaluación: PARCIAL o FINAL.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>10,,</ownDataTypeParameters>
+      <preferredAbbreviation>tipo_evaluacion</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="fecha_evaluacion" id="64A41999-1184-450D-84D7-947FD8E262ED">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Fecha en que se realiza la evaluación.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>fecha_evaluacion</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="A2A34EFB-C155-4F45-B245-352B735C8A0A" name="EVALUACION_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>532300AA-EAA0-4D9D-92FB-5329FFD837A7</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

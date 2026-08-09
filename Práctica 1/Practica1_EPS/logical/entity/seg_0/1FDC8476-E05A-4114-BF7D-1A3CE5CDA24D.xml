@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1FDC8476-E05A-4114-BF7D-1A3CE5CDA24D" name="EMPRESA">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Empresa afiliada al programa EPS.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>EMPRESA</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="id_empresa" id="A935C517-5E6A-4582-A41A-BC7D858191F1">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Identificador interno de la empresa.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>id_empresa</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="nombre" id="698DC2E0-848D-4865-94BD-695C543D0825">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Nombre de la empresa afiliada.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>150,,</ownDataTypeParameters>
+      <preferredAbbreviation>nombre</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="direccion" id="B0F90EE9-01EC-46CF-9740-1C2766B8E037">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Dirección de la empresa.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>250,,</ownDataTypeParameters>
+      <preferredAbbreviation>direccion</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="sector_economico" id="95196CCE-7343-40CA-93E0-A8D04DE77202">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Sector económico: Industria, Servicios, Comercio o Tecnología.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>20,,</ownDataTypeParameters>
+      <preferredAbbreviation>sector_economico</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="BC340669-E0F1-4103-91D6-7A2BE529A0BD" name="EMPRESA_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>A935C517-5E6A-4582-A41A-BC7D858191F1</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

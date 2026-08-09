@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="15B3B277-2F0B-4727-8317-B977F1465D0B" mainViewID="1F9E51A5-EE84-450B-ACFF-2F3AC9C7D946">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <shouldBeOpen>true</shouldBeOpen>
+</LogicalDesign>

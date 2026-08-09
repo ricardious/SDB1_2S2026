@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="89857EAC-8C42-464E-9387-997EEAA417E5" name="CRITERIO_EVALUACION">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Criterio utilizado para calificar una evaluación, por ejemplo puntualidad, calidad, actitud o dominio técnico.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>CRITERIO_EVALUACION</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="id_criterio" id="2B08DA73-316B-44A4-AB7A-8B6B54E4DF9A">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Identificador del criterio.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>id_criterio</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="nombre" id="651D0CD9-40B8-4346-83FE-F26AE01C9E45">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Nombre del criterio de evaluación.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>120,,</ownDataTypeParameters>
+      <preferredAbbreviation>nombre</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="descripcion" id="5530EFD6-BD34-47F7-A54C-57906630D01F">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <comment>Descripción del criterio.</comment>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>500,,</ownDataTypeParameters>
+      <preferredAbbreviation>descripcion</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="7A7C144E-6191-4436-A97F-8C526C306892" name="CRITERIO_EVALUACION_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>2B08DA73-316B-44A4-AB7A-8B6B54E4DF9A</attributeRef>
+      </usedAttributes>
+    </identifier>
+    <identifier id="D52F6C9F-7145-4AD3-8A58-9FF2AD71EBDA" name="CRITERIO_UK_NOMBRE">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>false</pk>
+      <usedAttributes>
+        <attributeRef>651D0CD9-40B8-4346-83FE-F26AE01C9E45</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>
