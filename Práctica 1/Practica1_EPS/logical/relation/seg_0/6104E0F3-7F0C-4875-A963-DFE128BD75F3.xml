@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CONTACTO_PLAZAS" directorySegmentName="seg_0" id="6104E0F3-7F0C-4875-A963-DFE128BD75F3">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Cada plaza está asociada a un único contacto empresarial responsable.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>5CC8B28D-850A-4796-BFA9-DDBE046D4461</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>A16FAF8A-D6AB-4418-900B-E36C8593F40E</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>41FBD82C-3DB1-443D-8976-C21D531CF499</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

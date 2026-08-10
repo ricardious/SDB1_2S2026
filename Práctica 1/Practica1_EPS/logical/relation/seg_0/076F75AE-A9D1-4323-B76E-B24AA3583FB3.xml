@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CONTACTO_VALIDA_BITACORA" directorySegmentName="seg_0" id="076F75AE-A9D1-4323-B76E-B24AA3583FB3">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Cada bitácora debe ser validada por el contacto empresarial correspondiente.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>5CC8B28D-850A-4796-BFA9-DDBE046D4461</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>A16FAF8A-D6AB-4418-900B-E36C8593F40E</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>17302BC6-601C-4C92-B22C-3C8FD816F46A</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

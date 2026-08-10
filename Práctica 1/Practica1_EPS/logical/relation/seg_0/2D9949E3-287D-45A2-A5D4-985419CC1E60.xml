@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EVALUACION_DETALLES" directorySegmentName="seg_0" id="2D9949E3-287D-45A2-A5D4-985419CC1E60">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Una evaluación contiene puntuaciones para varios criterios.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>A2A34EFB-C155-4F45-B245-352B735C8A0A</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>5F5DD61C-C22E-4F05-9AE4-2DA32F894C6D</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>872880DF-F98D-4DE0-9F2A-75A035911926</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EMPRESA_PLAZAS" directorySegmentName="seg_0" id="941F96A3-3483-4340-B99E-BD150A3C4246">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Una empresa puede ofrecer varias plazas; cada plaza pertenece a una empresa.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>BC340669-E0F1-4103-91D6-7A2BE529A0BD</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>1FDC8476-E05A-4114-BF7D-1A3CE5CDA24D</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>41FBD82C-3DB1-443D-8976-C21D531CF499</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

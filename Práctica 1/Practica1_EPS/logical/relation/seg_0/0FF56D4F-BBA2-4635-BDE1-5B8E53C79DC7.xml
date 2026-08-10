@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INSTITUTO_ESTUDIANTES" directorySegmentName="seg_0" id="0FF56D4F-BBA2-4635-BDE1-5B8E53C79DC7">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Supuesto documentado: cada estudiante pertenece al instituto que lo envía al programa.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>657518F6-3ADD-4267-AEC2-6635F031B7DC</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>31537252-9C08-49D1-8305-51E255D7DF48</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>68F37C69-232B-44C0-9D22-01D14CFAA778</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

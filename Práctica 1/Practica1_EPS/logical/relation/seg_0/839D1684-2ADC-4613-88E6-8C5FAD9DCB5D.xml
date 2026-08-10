@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CATEDRATICO_COLOCACIONES" directorySegmentName="seg_0" id="839D1684-2ADC-4613-88E6-8C5FAD9DCB5D">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Cada colocación registra el catedrático supervisor asignado.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>BCF2A229-8575-4C72-844D-7BF9ECC7AE25</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>D34E857B-EBBA-418B-B7E2-F92713AF07AD</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>6F738A72-EEF6-45A5-A4CB-41B3584CA1F1</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

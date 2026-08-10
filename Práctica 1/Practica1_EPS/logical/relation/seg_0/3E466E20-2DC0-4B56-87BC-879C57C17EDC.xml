@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CRITERIO_DETALLES" directorySegmentName="seg_0" id="3E466E20-2DC0-4B56-87BC-879C57C17EDC">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Un criterio puede aparecer en múltiples evaluaciones.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>7A7C144E-6191-4436-A97F-8C526C306892</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>89857EAC-8C42-464E-9387-997EEAA417E5</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>872880DF-F98D-4DE0-9F2A-75A035911926</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

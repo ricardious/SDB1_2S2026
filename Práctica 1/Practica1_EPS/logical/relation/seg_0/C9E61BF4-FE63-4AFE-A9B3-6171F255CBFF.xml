@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ESTUDIANTE_COLOCACIONES" directorySegmentName="seg_0" id="C9E61BF4-FE63-4AFE-A9B3-6171F255CBFF">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Un estudiante puede acumular varias colocaciones históricas.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>3A6CC228-7C63-49A8-B5FE-C9178367281D</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>68F37C69-232B-44C0-9D22-01D14CFAA778</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>6F738A72-EEF6-45A5-A4CB-41B3584CA1F1</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

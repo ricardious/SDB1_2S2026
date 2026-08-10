@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CATEDRATICO_EVALUACIONES" directorySegmentName="seg_0" id="08565195-DED2-41BD-A9ED-157370DE9CA4">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Cada evaluación es realizada por el catedrático supervisor.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>BCF2A229-8575-4C72-844D-7BF9ECC7AE25</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>D34E857B-EBBA-418B-B7E2-F92713AF07AD</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>5F5DD61C-C22E-4F05-9AE4-2DA32F894C6D</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

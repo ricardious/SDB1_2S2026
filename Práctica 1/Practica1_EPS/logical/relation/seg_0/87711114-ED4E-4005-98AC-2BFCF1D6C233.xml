@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COLOCACION_EVALUACIONES" directorySegmentName="seg_0" id="87711114-ED4E-4005-98AC-2BFCF1D6C233">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Una colocación tiene evaluación parcial y final.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>7C788FB1-FE77-4F13-8FD7-458418CF3863</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>6F738A72-EEF6-45A5-A4CB-41B3584CA1F1</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>5F5DD61C-C22E-4F05-9AE4-2DA32F894C6D</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

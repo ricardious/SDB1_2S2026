@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INSTITUTO_CATEDRATICOS" directorySegmentName="seg_0" id="619A3DC2-C7F2-4735-8B60-8E7A185B58EE">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <commentInRDBMS>Cada instituto asigna catedráticos supervisores.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>657518F6-3ADD-4267-AEC2-6635F031B7DC</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>31537252-9C08-49D1-8305-51E255D7DF48</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>D34E857B-EBBA-418B-B7E2-F92713AF07AD</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>
