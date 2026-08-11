@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B36B91E5-A7CB-31C9-3537-5FBA1416A2F8" name="DETALLE_EVALUACION">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Puntuación de un criterio particular dentro de una evaluación específica.]]></commentInRDBMS>
+<generatorID>872880DF-F98D-4DE0-9F2A-75A035911926</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_detalle" id="54BEE6B8-87ED-AF25-40A0-145D1F5F732D">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador del detalle de evaluación.]]></comment>
+<generatorID>88A01D9E-A71A-4667-BD19-153541A5CB41</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="puntuacion" id="0A2939D0-174C-D4AC-1D23-87656EF4FE47">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Puntuación del criterio, de 1 a 5.]]></comment>
+<generatorID>B96B758E-0EC9-446C-B73F-8D2B47F1E714</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_criterio" id="3380C0E3-76FB-AF78-9A0F-09F7D54D6E74">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador del criterio.]]></comment>
+<generatorID>B17204B0-FF8F-F318-2AAF-213A4F8359B2</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0ECA0DB3-9D04-4F3F-E2AD-AAA8EF3255EE" referredColumn="7C940231-FFFC-58A6-B96C-EE0CBE2EC0B1"/>
+</associations>
+</Column>
+<Column name="id_evaluacion" id="E4CF1EB9-AC14-1F25-2AE8-89D4DA6848E3">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador de la evaluación.]]></comment>
+<generatorID>9FE77547-9CAB-D745-B5C3-1C7819217C88</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCD835A0-2761-458D-2DAD-2A33F0105EBE" referredColumn="1E043A2F-6694-9967-BE83-D3C7B9630E23"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B420AFEF-6350-1425-B7F0-77CF01FFCB01" name="pk_detalle_evaluacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>ED577E04-616C-4548-88CF-BCBEB68D6848</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54BEE6B8-87ED-AF25-40A0-145D1F5F732D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F1495AA-9C08-AB80-FF82-3F8328A0CBB1" name="fk_detalle_criterio">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>3E466E20-2DC0-4B56-87BC-879C57C17EDC</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3380C0E3-76FB-AF78-9A0F-09F7D54D6E74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43D0BEE5-6594-B95F-0CC7-6D4DD36211C8" name="fk_detalle_evaluacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>2D9949E3-287D-45A2-A5D4-985419CC1E60</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4CF1EB9-AC14-1F25-2AE8-89D4DA6848E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5348981C-7FFD-97D4-98E2-129C225F8C5F" name="CRITERIO_EVALUACION">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Criterio utilizado para calificar una evaluación, por ejemplo puntualidad, calidad, actitud o dominio técnico.]]></commentInRDBMS>
+<generatorID>89857EAC-8C42-464E-9387-997EEAA417E5</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_criterio" id="7C940231-FFFC-58A6-B96C-EE0CBE2EC0B1">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador del criterio.]]></comment>
+<generatorID>2B08DA73-316B-44A4-AB7A-8B6B54E4DF9A</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="F4F3D18A-2E11-E45B-7B95-CDF034430334">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Nombre del criterio de evaluación.]]></comment>
+<generatorID>651D0CD9-40B8-4346-83FE-F26AE01C9E45</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="1ED43EA0-51DC-979C-1E9D-2FCEFE76B49A">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Descripción del criterio.]]></comment>
+<generatorID>5530EFD6-BD34-47F7-A54C-57906630D01F</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD5C94AB-CBED-6FDD-A87F-997F4250BB37" name="pk_criterio_evaluacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>7A7C144E-6191-4436-A97F-8C526C306892</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C940231-FFFC-58A6-B96C-EE0CBE2EC0B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A8553AC-4862-1A28-5C10-B482990E256E" name="uk_criterio_nombre">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>D52F6C9F-7145-4AD3-8A58-9FF2AD71EBDA</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4F3D18A-2E11-E45B-7B95-CDF034430334"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

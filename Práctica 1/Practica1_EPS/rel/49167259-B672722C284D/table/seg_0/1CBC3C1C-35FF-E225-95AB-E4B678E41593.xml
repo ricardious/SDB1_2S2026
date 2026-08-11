@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1CBC3C1C-35FF-E225-95AB-E4B678E41593" name="CATEDRATICO_SUPERVISOR">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catedrático asignado por un instituto para supervisar estudiantes en práctica.]]></commentInRDBMS>
+<generatorID>D34E857B-EBBA-418B-B7E2-F92713AF07AD</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_catedratico" id="27761AC2-8563-672D-19BF-138054289878">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador interno del catedrático supervisor.]]></comment>
+<generatorID>0C1591C3-54FD-4C93-8D04-13DCAB487112</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="07FFF6F3-97BF-3841-A232-BA90B930F5E4">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Nombre del catedrático supervisor.]]></comment>
+<generatorID>7813992C-34B8-46A9-8EB3-B021DC520B3C</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="identificacion" id="AA66294E-C0B7-4BF5-A5DF-C2E3F83B6BCE">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificación del catedrático.]]></comment>
+<generatorID>61A463AD-BA25-4851-B112-445CC7CF9E49</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="8A73FF38-CEBB-286E-EA42-F56C9FF45907">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Teléfono del catedrático.]]></comment>
+<generatorID>042AA8A5-B3FB-4533-8CEF-CF01CCEE7E2F</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="especialidad_supervisa" id="AF579C7E-2A2E-924A-17CD-37D5949342E1">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Especialidad técnica que supervisa.]]></comment>
+<generatorID>A6A0736A-A493-4DED-8CB8-77D6974339C6</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_instituto" id="58E6966C-CBD8-7D2B-BE66-7B53A855AE80">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador interno del instituto.]]></comment>
+<generatorID>4AA71F42-EF13-422C-1EF2-FB6F3FA51F3D</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E58ABDB-21C3-F7C2-B721-7A005D622CFE" referredColumn="1569F494-0613-40D8-4DF3-38641B744E68"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F34ADD8-D2DE-7C5B-37A1-4E455C818F00" name="pk_catedratico">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>BCF2A229-8575-4C72-844D-7BF9ECC7AE25</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27761AC2-8563-672D-19BF-138054289878"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC7DB8CC-87F5-C542-1385-65C2180C1A12" name="uk_catedratico_ident">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>27FE2E37-1BEE-4FDE-8188-0243B197C87E</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA66294E-C0B7-4BF5-A5DF-C2E3F83B6BCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B09EE544-EDC2-A8DC-00ED-2A30A79898DE" name="fk_catedratico_instituto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>619A3DC2-C7F2-4735-8B60-8E7A185B58EE</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58E6966C-CBD8-7D2B-BE66-7B53A855AE80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

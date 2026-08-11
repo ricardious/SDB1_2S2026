@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="816706A0-26FB-6767-BB72-A744DAFD2EC6" name="BITACORA">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entrada diaria de bitácora asociada a una colocación.]]></commentInRDBMS>
+<generatorID>17302BC6-601C-4C92-B22C-3C8FD816F46A</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_bitacora" id="A251767C-5D10-DF92-5385-70D6B8E64442">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador de la entrada de bitácora.]]></comment>
+<generatorID>F195A71F-495D-442A-B7C9-950F5F0DA15B</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correlativo" id="C4C9272D-D185-F66C-C6A4-8C241A2C1E71">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Correlativo que reinicia en 1 al comenzar cada mes de práctica.]]></comment>
+<generatorID>363B8D10-4B9F-45FA-B9FE-F2E8A84F8BA6</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="BC38360E-6B41-8FC7-8F30-C937C20A0378">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Fecha de la entrada.]]></comment>
+<generatorID>1704C6A3-BE0F-4801-90D3-6AE6867A478A</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horas_trabajadas" id="5D7BB426-CF30-EBD6-B31A-E2BABAF2F1C3">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Cantidad de horas trabajadas en el día.]]></comment>
+<generatorID>C5372598-C5F3-46BF-89A9-E4800E6DFE26</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="actividades_realizadas" id="AE6FC48F-5E92-6687-D5E4-C89C84CD746F">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Descripción de actividades realizadas.]]></comment>
+<generatorID>15F4727C-7261-4A2C-981A-6FF315C4594D</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones" id="AAA4B0E4-2873-2C60-51FF-339D5E65491E">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Observaciones de la entrada.]]></comment>
+<generatorID>A149B008-9280-48D2-947E-EFA6BB32AEF8</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_validacion" id="F5590CD8-4E20-D6E1-9513-3DD04057A7B5">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Fecha en que el contacto empresarial valida la entrada.]]></comment>
+<generatorID>08C1369D-AA97-4822-B444-7CB77C4E2F27</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_contacto_validador" id="0B69046B-EC39-0524-47AA-5AD0FC548792">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador interno del contacto empresarial.]]></comment>
+<generatorID>F5162ABB-ED6F-CAEA-337D-20E9D00D7A32</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E93BF1E-1170-4B58-F359-58FAF51AD309" referredColumn="1600971C-C974-542D-20C4-B6CE9D56FAD1"/>
+</associations>
+</Column>
+<Column name="id_colocacion" id="D3CB01C7-F57A-7D1D-43C3-8AE12AD4E235">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador de la colocación.]]></comment>
+<generatorID>6CF75CF7-AEC9-F585-1BCD-5369DDFA4DA0</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADAD322E-66D0-5143-731C-05392F92CC04" referredColumn="F43F4FFB-207A-6C37-16A0-4909D69A9570"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A042BFC-B660-C14B-CA34-DE54A2C3FC1F" name="pk_bitacora">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>EBE980E9-7197-48BE-ADDD-875A88085B67</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A251767C-5D10-DF92-5385-70D6B8E64442"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CE6B158-013E-FE77-CA05-D659C4D7DA20" name="fk_bitacora_colocacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>E5921E8A-336E-4D1D-AF23-D71B0344EB36</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3CB01C7-F57A-7D1D-43C3-8AE12AD4E235"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C9A597A-E393-F0CE-8E4E-9503BDB69E8A" name="fk_bitacora_contacto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>076F75AE-A9D1-4323-B76E-B24AA3583FB3</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B69046B-EC39-0524-47AA-5AD0FC548792"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

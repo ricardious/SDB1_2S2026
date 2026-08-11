@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6877B64A-4AAA-6C9C-12EF-3FA57F75371E" name="INSTITUTO">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Instituto técnico que envía estudiantes al programa EPS.]]></commentInRDBMS>
+<generatorID>31537252-9C08-49D1-8305-51E255D7DF48</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_instituto" id="1569F494-0613-40D8-4DF3-38641B744E68">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador interno del instituto.]]></comment>
+<generatorID>36AC6A5F-01BE-4E27-ADF4-5B8534D8EA0D</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="2E9E33B0-0903-B62F-C609-FA15681F1B49">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Nombre del instituto técnico.]]></comment>
+<generatorID>9E398249-EEB3-4C2D-A3BD-0E6C61C6DEAD</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>180</dataTypeSize>
+<ownDataTypeParameters>180,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="4A344871-A6FB-FCC1-007C-F79017130E84">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Dirección del instituto.]]></comment>
+<generatorID>4B07D392-12EF-4DA8-9632-7715CBE7EB53</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_autorizacion_mineduc" id="CBFEA7FC-7B99-B399-AD9F-66CCCC1D3C47">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Código de autorización del Ministerio de Educación.]]></comment>
+<generatorID>CC43C17E-D01F-49CA-9BED-E849007B99AB</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC1B4F39-CA50-B1B5-C9B8-B99063EBB756" name="pk_instituto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>657518F6-3ADD-4267-AEC2-6635F031B7DC</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1569F494-0613-40D8-4DF3-38641B744E68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8716E8B2-FEC8-51E3-75C4-97D402FAC30A" name="uk_instituto_mineduc">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>1C7163C2-6E68-402B-B2D0-1143CF232348</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBFEA7FC-7B99-B399-AD9F-66CCCC1D3C47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

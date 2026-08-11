@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="394AFA95-87A0-612C-C989-A43F36A76ED2" name="PLAZA">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Plaza de práctica ofrecida por una empresa para una especialidad técnica.]]></commentInRDBMS>
+<generatorID>41FBD82C-3DB1-443D-8976-C21D531CF499</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_plaza" id="D0809A83-3ED7-D285-BA66-83C75032519A">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador interno de la plaza.]]></comment>
+<generatorID>989052CF-8118-4FBE-86AD-5FCD73DF3871</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="especialidad_tecnica" id="821E6E3E-6F9A-C7B4-8BD9-9FA26CDCAFFB">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Especialidad técnica para la cual se ofrece la plaza.]]></comment>
+<generatorID>BB829287-562A-4C90-B47B-635C2CF6610D</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_contacto" id="97EB4136-939B-B1BF-A79B-1784FA17DC94">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador interno del contacto empresarial.]]></comment>
+<generatorID>943E6AB4-8B52-2E9E-BAC7-1AA1AF16CA46</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9F58236-95CE-1B9E-96D9-CA45D3BFE66E" referredColumn="1600971C-C974-542D-20C4-B6CE9D56FAD1"/>
+</associations>
+</Column>
+<Column name="id_empresa" id="DCA583F2-A587-C568-629A-C9B55611F19B">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador interno de la empresa.]]></comment>
+<generatorID>18BE8BB7-670B-FEA9-1E95-337DAD82D814</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB274213-15EB-CD4B-9468-E202729F5937" referredColumn="1B31B6F0-B706-952B-A742-49D507B8572B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8BC5F04-019E-40DF-DDFE-41BA78649C37" name="pk_plaza">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>040A22D5-2082-4807-BBCF-9D45E815A9C2</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0809A83-3ED7-D285-BA66-83C75032519A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98CB0EBF-1BCC-6657-D905-4A1920655986" name="fk_plaza_contacto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>6104E0F3-7F0C-4875-A963-DFE128BD75F3</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97EB4136-939B-B1BF-A79B-1784FA17DC94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9001B514-941C-1F10-265B-F1E41534AEBB" name="fk_plaza_empresa">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>941F96A3-3483-4340-B99E-BD150A3C4246</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCA583F2-A587-C568-629A-C9B55611F19B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

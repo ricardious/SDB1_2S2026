@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F0ED8E9-F6D0-DEEA-8EB0-93962262CD42" name="EVALUACION">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Evaluación parcial (100 horas) o final (200 horas) de una colocación.]]></commentInRDBMS>
+<generatorID>5F5DD61C-C22E-4F05-9AE4-2DA32F894C6D</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_evaluacion" id="1E043A2F-6694-9967-BE83-D3C7B9630E23">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador de la evaluación.]]></comment>
+<generatorID>532300AA-EAA0-4D9D-92FB-5329FFD837A7</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_evaluacion" id="C517CBBB-6B78-A572-6751-EF70D7F3A3A4">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Tipo de evaluación: PARCIAL o FINAL.]]></comment>
+<generatorID>240BBEF7-9A56-4A52-AD2E-B924C11C83D0</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_evaluacion" id="583FFB38-8DD1-0FE4-7F23-4429A70BC078">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Fecha en que se realiza la evaluación.]]></comment>
+<generatorID>64A41999-1184-450D-84D7-947FD8E262ED</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_catedratico" id="457505D9-CD4D-12E6-035C-EDECF29787CC">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador interno del catedrático supervisor.]]></comment>
+<generatorID>E73EA6D3-CADF-1CAC-E49D-0670AB5D2E97</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E247184-88F1-280E-3A24-7E5AB41F7EBF" referredColumn="27761AC2-8563-672D-19BF-138054289878"/>
+</associations>
+</Column>
+<Column name="id_colocacion" id="F48F2FBE-7C9C-3E31-46A2-450B1DD48589">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<comment><![CDATA[Identificador de la colocación.]]></comment>
+<generatorID>44B8D4B1-C004-F8C2-7342-0A9B73303007</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="434ED4CC-741C-B443-7FEE-BC3BFD6445E9" referredColumn="F43F4FFB-207A-6C37-16A0-4909D69A9570"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3CC3C989-C648-6B4D-9F20-D9F361AEC036" name="pk_evaluacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>A2A34EFB-C155-4F45-B245-352B735C8A0A</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E043A2F-6694-9967-BE83-D3C7B9630E23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C183D77-9444-2C28-FD4B-46942DA4EDCB" name="fk_evaluacion_catedratico">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>08565195-DED2-41BD-A9ED-157370DE9CA4</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="457505D9-CD4D-12E6-035C-EDECF29787CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97EB7F8B-DC80-AB13-7D04-566617EC6136" name="fk_evaluacion_colocacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<generatorID>87711114-ED4E-4005-98AC-2BFCF1D6C233</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F48F2FBE-7C9C-3E31-46A2-450B1DD48589"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
