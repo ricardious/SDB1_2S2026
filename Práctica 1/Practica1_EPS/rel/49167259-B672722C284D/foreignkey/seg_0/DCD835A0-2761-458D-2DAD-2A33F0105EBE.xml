@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DCD835A0-2761-458D-2DAD-2A33F0105EBE" containerWithKeyObject="B36B91E5-A7CB-31C9-3537-5FBA1416A2F8" localFKIndex="43D0BEE5-6594-B95F-0CC7-6D4DD36211C8" name="fk_detalle_evaluacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Una evaluación contiene puntuaciones para varios criterios.]]></commentInRDBMS>
+<generatorID>2D9949E3-287D-45A2-A5D4-985419CC1E60</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>EVALUACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6F0ED8E9-F6D0-DEEA-8EB0-93962262CD42</referredTableID>
+<keyObject>3CC3C989-C648-6B4D-9F20-D9F361AEC036</keyObject>
+<referredKeyID>3CC3C989-C648-6B4D-9F20-D9F361AEC036</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_evaluacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ADAD322E-66D0-5143-731C-05392F92CC04" containerWithKeyObject="816706A0-26FB-6767-BB72-A744DAFD2EC6" localFKIndex="8CE6B158-013E-FE77-CA05-D659C4D7DA20" name="fk_bitacora_colocacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cada entrada de bitácora está asociada a una colocación.]]></commentInRDBMS>
+<generatorID>E5921E8A-336E-4D1D-AF23-D71B0344EB36</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>COLOCACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE3FB878-B1CD-CDF1-3C9E-424E8177704E</referredTableID>
+<keyObject>A9DB6F28-F5A8-25E7-0B39-8F1CFBC9582B</keyObject>
+<referredKeyID>A9DB6F28-F5A8-25E7-0B39-8F1CFBC9582B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_colocacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

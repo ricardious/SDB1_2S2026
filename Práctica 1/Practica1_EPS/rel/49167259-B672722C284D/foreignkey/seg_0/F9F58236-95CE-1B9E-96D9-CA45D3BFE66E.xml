@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F9F58236-95CE-1B9E-96D9-CA45D3BFE66E" containerWithKeyObject="394AFA95-87A0-612C-C989-A43F36A76ED2" localFKIndex="98CB0EBF-1BCC-6657-D905-4A1920655986" name="fk_plaza_contacto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cada plaza está asociada a un único contacto empresarial responsable.]]></commentInRDBMS>
+<generatorID>6104E0F3-7F0C-4875-A963-DFE128BD75F3</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>CONTACTO_EMPRESARIAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EEA8E794-5A28-927E-B938-4036EEA50DC9</referredTableID>
+<keyObject>D5D8957F-0B7C-CFF5-A7C6-9E5A1861C4C9</keyObject>
+<referredKeyID>D5D8957F-0B7C-CFF5-A7C6-9E5A1861C4C9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_contacto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

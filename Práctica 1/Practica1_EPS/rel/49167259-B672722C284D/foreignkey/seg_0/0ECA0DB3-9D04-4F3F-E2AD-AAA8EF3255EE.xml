@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0ECA0DB3-9D04-4F3F-E2AD-AAA8EF3255EE" containerWithKeyObject="B36B91E5-A7CB-31C9-3537-5FBA1416A2F8" localFKIndex="4F1495AA-9C08-AB80-FF82-3F8328A0CBB1" name="fk_detalle_criterio">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Un criterio puede aparecer en múltiples evaluaciones.]]></commentInRDBMS>
+<generatorID>3E466E20-2DC0-4B56-87BC-879C57C17EDC</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>CRITERIO_EVALUACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5348981C-7FFD-97D4-98E2-129C225F8C5F</referredTableID>
+<keyObject>BD5C94AB-CBED-6FDD-A87F-997F4250BB37</keyObject>
+<referredKeyID>BD5C94AB-CBED-6FDD-A87F-997F4250BB37</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_criterio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

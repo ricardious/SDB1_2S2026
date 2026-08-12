@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9E58ABDB-21C3-F7C2-B721-7A005D622CFE" containerWithKeyObject="1CBC3C1C-35FF-E225-95AB-E4B678E41593" localFKIndex="B09EE544-EDC2-A8DC-00ED-2A30A79898DE" name="fk_catedratico_instituto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cada instituto asigna catedráticos supervisores.]]></commentInRDBMS>
+<generatorID>619A3DC2-C7F2-4735-8B60-8E7A185B58EE</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>INSTITUTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6877B64A-4AAA-6C9C-12EF-3FA57F75371E</referredTableID>
+<keyObject>EC1B4F39-CA50-B1B5-C9B8-B99063EBB756</keyObject>
+<referredKeyID>EC1B4F39-CA50-B1B5-C9B8-B99063EBB756</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_instituto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

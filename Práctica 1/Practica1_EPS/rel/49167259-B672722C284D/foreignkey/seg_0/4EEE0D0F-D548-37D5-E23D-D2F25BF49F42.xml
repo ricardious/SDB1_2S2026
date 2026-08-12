@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4EEE0D0F-D548-37D5-E23D-D2F25BF49F42" containerWithKeyObject="1E8638B1-15FE-422B-32EE-CD75C50874BA" localFKIndex="D5E4B1FE-0683-BAED-0D9E-7EE754ED3DA0" name="fk_estudiante_instituto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Supuesto documentado: cada estudiante pertenece al instituto que lo envía al programa.]]></commentInRDBMS>
+<generatorID>0FF56D4F-BBA2-4635-BDE1-5B8E53C79DC7</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>INSTITUTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6877B64A-4AAA-6C9C-12EF-3FA57F75371E</referredTableID>
+<keyObject>EC1B4F39-CA50-B1B5-C9B8-B99063EBB756</keyObject>
+<referredKeyID>EC1B4F39-CA50-B1B5-C9B8-B99063EBB756</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_instituto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="434ED4CC-741C-B443-7FEE-BC3BFD6445E9" containerWithKeyObject="6F0ED8E9-F6D0-DEEA-8EB0-93962262CD42" localFKIndex="97EB7F8B-DC80-AB13-7D04-566617EC6136" name="fk_evaluacion_colocacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Una colocación tiene evaluación parcial y final.]]></commentInRDBMS>
+<generatorID>87711114-ED4E-4005-98AC-2BFCF1D6C233</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>COLOCACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE3FB878-B1CD-CDF1-3C9E-424E8177704E</referredTableID>
+<keyObject>A9DB6F28-F5A8-25E7-0B39-8F1CFBC9582B</keyObject>
+<referredKeyID>A9DB6F28-F5A8-25E7-0B39-8F1CFBC9582B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_colocacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

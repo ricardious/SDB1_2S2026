@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB274213-15EB-CD4B-9468-E202729F5937" containerWithKeyObject="394AFA95-87A0-612C-C989-A43F36A76ED2" localFKIndex="9001B514-941C-1F10-265B-F1E41534AEBB" name="fk_plaza_empresa">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Una empresa puede ofrecer varias plazas; cada plaza pertenece a una empresa.]]></commentInRDBMS>
+<generatorID>941F96A3-3483-4340-B99E-BD150A3C4246</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>EMPRESA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8DE00F37-9CF8-7616-C4A5-DFD53E85EFE1</referredTableID>
+<keyObject>03E759BC-B57B-B4BD-7C1F-BF9FD46EC6CC</keyObject>
+<referredKeyID>03E759BC-B57B-B4BD-7C1F-BF9FD46EC6CC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_empresa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

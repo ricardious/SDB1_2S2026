@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F9EAF7BB-5669-564F-8427-4B4ABD3DFDD1" containerWithKeyObject="FE3FB878-B1CD-CDF1-3C9E-424E8177704E" localFKIndex="353A19D6-6352-A153-B0E6-DBC4AAD72147" name="fk_colocacion_plaza">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cada colocación corresponde a una plaza.]]></commentInRDBMS>
+<generatorID>CF02E55E-B5C9-4B1C-8FB0-DEEA33E8B44B</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>PLAZA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>394AFA95-87A0-612C-C989-A43F36A76ED2</referredTableID>
+<keyObject>C8BC5F04-019E-40DF-DDFE-41BA78649C37</keyObject>
+<referredKeyID>C8BC5F04-019E-40DF-DDFE-41BA78649C37</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_plaza</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

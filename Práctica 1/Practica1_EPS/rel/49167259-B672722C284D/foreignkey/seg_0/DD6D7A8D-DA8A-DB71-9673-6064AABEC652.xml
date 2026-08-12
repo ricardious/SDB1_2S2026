@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD6D7A8D-DA8A-DB71-9673-6064AABEC652" containerWithKeyObject="FE3FB878-B1CD-CDF1-3C9E-424E8177704E" localFKIndex="1C5A4011-7AF0-9D12-B746-DBE8CD66D9E5" name="fk_colocacion_estudiante">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Un estudiante puede acumular varias colocaciones históricas.]]></commentInRDBMS>
+<generatorID>C9E61BF4-FE63-4AFE-A9B3-6171F255CBFF</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>ESTUDIANTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1E8638B1-15FE-422B-32EE-CD75C50874BA</referredTableID>
+<keyObject>969FD817-B747-72D1-4F8B-279E7A5925B0</keyObject>
+<referredKeyID>969FD817-B747-72D1-4F8B-279E7A5925B0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estudiante</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

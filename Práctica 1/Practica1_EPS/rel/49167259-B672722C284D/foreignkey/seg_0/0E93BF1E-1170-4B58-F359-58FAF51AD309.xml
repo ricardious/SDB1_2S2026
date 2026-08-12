@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0E93BF1E-1170-4B58-F359-58FAF51AD309" containerWithKeyObject="816706A0-26FB-6767-BB72-A744DAFD2EC6" localFKIndex="7C9A597A-E393-F0CE-8E4E-9503BDB69E8A" name="fk_bitacora_contacto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cada bitácora debe ser validada por el contacto empresarial correspondiente.]]></commentInRDBMS>
+<generatorID>076F75AE-A9D1-4323-B76E-B24AA3583FB3</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>CONTACTO_EMPRESARIAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EEA8E794-5A28-927E-B938-4036EEA50DC9</referredTableID>
+<keyObject>D5D8957F-0B7C-CFF5-A7C6-9E5A1861C4C9</keyObject>
+<referredKeyID>D5D8957F-0B7C-CFF5-A7C6-9E5A1861C4C9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_contacto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
