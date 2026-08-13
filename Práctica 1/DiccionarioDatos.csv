@@ -1,0 +1,64 @@
+﻿Entidad,Atributo,Descripcion,Tipo/Dominio Oracle,Clave,Permite Nulo
+EMPRESA,id_empresa,Identificador interno de la empresa.,NUMBER,PK,NO
+EMPRESA,nombre,Nombre de la empresa afiliada.,VARCHAR2(150),,NO
+EMPRESA,direccion,Dirección de la empresa.,VARCHAR2(250),,NO
+EMPRESA,sector_economico,"Sector económico: Industria, Servicios, Comercio o Tecnología.",VARCHAR2(20),,NO
+CONTACTO_EMPRESARIAL,id_contacto,Identificador interno del contacto empresarial.,NUMBER,PK,NO
+CONTACTO_EMPRESARIAL,nombre,Nombre del contacto empresarial.,VARCHAR2(150),,NO
+CONTACTO_EMPRESARIAL,telefono,Teléfono del contacto.,VARCHAR2(25),,NO
+CONTACTO_EMPRESARIAL,correo,Correo electrónico del contacto.,VARCHAR2(150),,NO
+PLAZA,id_plaza,Identificador interno de la plaza.,NUMBER,PK,NO
+PLAZA,especialidad_tecnica,Especialidad técnica para la cual se ofrece la plaza.,VARCHAR2(120),,NO
+INSTITUTO,id_instituto,Identificador interno del instituto.,NUMBER,PK,NO
+INSTITUTO,nombre,Nombre del instituto técnico.,VARCHAR2(180),,NO
+INSTITUTO,direccion,Dirección del instituto.,VARCHAR2(250),,NO
+INSTITUTO,codigo_autorizacion_mineduc,Código de autorización del Ministerio de Educación.,VARCHAR2(80),UK,NO
+CATEDRATICO_SUPERVISOR,id_catedratico,Identificador interno del catedrático supervisor.,NUMBER,PK,NO
+CATEDRATICO_SUPERVISOR,nombre,Nombre del catedrático supervisor.,VARCHAR2(150),,NO
+CATEDRATICO_SUPERVISOR,identificacion,Identificación del catedrático.,VARCHAR2(40),UK,NO
+CATEDRATICO_SUPERVISOR,telefono,Teléfono del catedrático.,VARCHAR2(25),,NO
+CATEDRATICO_SUPERVISOR,especialidad_supervisa,Especialidad técnica que supervisa.,VARCHAR2(120),,NO
+ESTUDIANTE,id_estudiante,Identificador interno del estudiante.,NUMBER,PK,NO
+ESTUDIANTE,nombre_completo,Nombre completo del estudiante.,VARCHAR2(180),,NO
+ESTUDIANTE,carne,Carné del estudiante.,VARCHAR2(40),UK,NO
+ESTUDIANTE,carrera_tecnica,Carrera técnica del estudiante.,VARCHAR2(120),,NO
+ESTUDIANTE,direccion,Dirección de residencia.,VARCHAR2(250),,NO
+ESTUDIANTE,telefono,Teléfono del estudiante.,VARCHAR2(25),,NO
+ESTUDIANTE,fecha_nacimiento,Fecha de nacimiento.,DATE,,NO
+ESTUDIANTE,genero,Género registrado del estudiante.,VARCHAR2(40),,NO
+ESTUDIANTE,departamento_residencia,Departamento de residencia.,VARCHAR2(100),,NO
+ESTUDIANTE,municipio_residencia,Municipio de residencia.,VARCHAR2(100),,NO
+ESTUDIANTE,tipo_practica,Indica si corresponde a primera práctica o repitencia.,VARCHAR2(12),,NO
+COLOCACION,id_colocacion,Identificador de la colocación.,NUMBER,PK,NO
+COLOCACION,fecha_inicio,Fecha de inicio de la práctica.,DATE,,NO
+COLOCACION,fecha_finalizacion,Fecha de finalización de la práctica.,DATE,,SI
+COLOCACION,estado,"Estado: activa, finalizada o cancelada.",VARCHAR2(12),,NO
+BITACORA,id_bitacora,Identificador de la entrada de bitácora.,NUMBER,PK,NO
+BITACORA,correlativo,Correlativo que reinicia en 1 al comenzar cada mes de práctica.,NUMBER(5),,NO
+BITACORA,fecha,Fecha de la entrada.,DATE,,NO
+BITACORA,horas_trabajadas,Cantidad de horas trabajadas en el día.,"NUMBER(6,2)",,NO
+BITACORA,actividades_realizadas,Descripción de actividades realizadas.,VARCHAR2(1000),,NO
+BITACORA,observaciones,Observaciones de la entrada.,VARCHAR2(1000),,SI
+BITACORA,fecha_validacion,Fecha en que el contacto empresarial valida la entrada.,DATE,,SI
+EVALUACION,id_evaluacion,Identificador de la evaluación.,NUMBER,PK,NO
+EVALUACION,tipo_evaluacion,Tipo de evaluación: PARCIAL o FINAL.,VARCHAR2(10),,NO
+EVALUACION,fecha_evaluacion,Fecha en que se realiza la evaluación.,DATE,,NO
+CRITERIO_EVALUACION,id_criterio,Identificador del criterio.,NUMBER,PK,NO
+CRITERIO_EVALUACION,nombre,Nombre del criterio de evaluación.,VARCHAR2(120),UK,NO
+CRITERIO_EVALUACION,descripcion,Descripción del criterio.,VARCHAR2(500),,SI
+DETALLE_EVALUACION,id_detalle,Identificador del detalle de evaluación.,NUMBER,PK,NO
+DETALLE_EVALUACION,puntuacion,"Puntuación del criterio, de 1 a 5.",NUMBER(1),,NO
+CONTACTO_EMPRESARIAL,id_empresa,Empresa a la que pertenece el contacto.,NUMBER,FK,NO
+PLAZA,id_empresa,Empresa que ofrece la plaza.,NUMBER,FK,NO
+PLAZA,id_contacto,Contacto empresarial responsable.,NUMBER,FK,NO
+CATEDRATICO_SUPERVISOR,id_instituto,Instituto que asigna al catedrático.,NUMBER,FK,NO
+ESTUDIANTE,id_instituto,Instituto que envía al estudiante (supuesto documentado).,NUMBER,FK,NO
+COLOCACION,id_estudiante,Estudiante colocado.,NUMBER,FK,NO
+COLOCACION,id_plaza,Plaza asignada.,NUMBER,FK,NO
+COLOCACION,id_catedratico,Catedrático supervisor asignado.,NUMBER,FK,NO
+BITACORA,id_colocacion,Colocación a la que pertenece la entrada.,NUMBER,FK,NO
+BITACORA,id_contacto_validador,Contacto empresarial que valida la entrada.,NUMBER,FK,NO
+EVALUACION,id_colocacion,Colocación evaluada.,NUMBER,FK,NO
+EVALUACION,id_catedratico,Catedrático que realiza la evaluación.,NUMBER,FK,NO
+DETALLE_EVALUACION,id_evaluacion,Evaluación a la que pertenece el detalle.,NUMBER,FK,NO
+DETALLE_EVALUACION,id_criterio,Criterio calificado.,NUMBER,FK,NO
