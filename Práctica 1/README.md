@@ -1,75 +1,58 @@
-# Práctica 1 - Base de Datos 1
+# Práctica 1 — Sistema de Gestión de EPS
 
-## Descripción
+## Descripción del proyecto
 
-Este proyecto contiene el diseño de una base de datos para administrar las prácticas estudiantiles de EPS. El sistema permite registrar institutos, estudiantes, empresas, plazas, colocaciones, bitácoras y evaluaciones.
+En esta práctica se diseñó una base de datos relacional para administrar las Prácticas Profesionales Supervisadas (EPS) de estudiantes de institutos técnicos. El modelo representa el proceso completo: registro de instituciones y empresas, publicación de plazas, colocación de estudiantes, control de horas mediante bitácoras y evaluaciones parciales y finales.
 
-El modelo fue diseñado para Oracle Database 11g.
+La solución se preparó para **Oracle Database 11g** y fue modelada con **Oracle SQL Developer Data Modeler**.
 
-## Entidades
+## Cómo se desarrolló
 
-| Entidad | Descripción |
+El trabajo se realizó en cuatro etapas:
+
+1. **Análisis del enunciado:** se identificaron visualmente las entidades, sus atributos y las relaciones descritas en el problema.
+2. **Modelo conceptual:** se representaron las entidades y cardinalidades principales mediante notación Chen.
+3. **Modelos lógico y relacional:** el diseño se trasladó a Oracle SQL Developer Data Modeler, se normalizó hasta Tercera Forma Normal y se definieron claves primarias, foráneas y únicas.
+4. **Implementación y documentación:** se generó el script DDL para Oracle y se documentaron los 63 atributos del modelo en el diccionario de datos.
+
+## Decisiones de diseño
+
+- `COLOCACION` conserva el historial de las asignaciones de cada estudiante a una plaza y enlaza al catedrático responsable.
+- `BITACORA` registra las horas y actividades de una colocación, además del contacto empresarial que validó cada entrada.
+- `EVALUACION` representa los momentos parcial y final de la práctica.
+- `DETALLE_EVALUACION` resuelve la relación entre evaluaciones y criterios, permitiendo asignar una puntuación diferente a cada criterio.
+- Las empresas, contactos, plazas, institutos y catedráticos se separaron en entidades independientes para evitar duplicidad de información.
+
+## Resultado
+
+El modelo final contiene:
+
+- 11 entidades convertidas en tablas.
+- 63 atributos documentados.
+- 14 relaciones implementadas mediante claves foráneas.
+- Restricciones únicas para carné, identificación del catedrático, código MINEDUC y nombre del criterio.
+- Un script DDL compatible con Oracle Database 11g.
+
+## Modelo conceptual
+
+![Modelo conceptual del sistema EPS](./ModeloConceptual.png)
+
+## Archivos entregados
+
+| Archivo | Descripción |
 | --- | --- |
-| `EMPRESA` | Almacena las empresas afiliadas al programa. |
-| `CONTACTO_EMPRESARIAL` | Registra a los supervisores externos de cada empresa. |
-| `PLAZA` | Contiene las plazas de práctica ofrecidas por las empresas. |
-| `INSTITUTO` | Almacena los institutos técnicos participantes. |
-| `CATEDRATICO_SUPERVISOR` | Registra a los catedráticos encargados de supervisar estudiantes. |
-| `ESTUDIANTE` | Contiene los datos de los estudiantes que realizan la práctica. |
-| `COLOCACION` | Representa la asignación de un estudiante a una plaza. |
-| `BITACORA` | Guarda las actividades y horas trabajadas durante la práctica. |
-| `EVALUACION` | Registra las evaluaciones parciales y finales. |
-| `CRITERIO_EVALUACION` | Define los criterios utilizados para evaluar. |
-| `DETALLE_EVALUACION` | Almacena la puntuación obtenida en cada criterio. |
+| `Diccionario.pdf` | Diccionario de datos con el análisis visual del enunciado. |
+| `DiccionarioDatos.csv` | Fuente tabular de los 63 atributos documentados. |
+| `ModeloConceptual.png` | Imagen del modelo conceptual. |
+| `ModeloConceptual.svg` | Versión vectorial del modelo conceptual. |
+| `ModeloConceptual.dot` | Código fuente del diagrama conceptual en Graphviz. |
+| `Practica1_EPS.dmd` | Proyecto de Oracle SQL Developer Data Modeler. |
+| `Practica1_EPS/` | Archivos internos de los modelos lógico y relacional. |
+| `MODELO_RELACIONAL_EPS.ddl` | Script de creación de las 11 tablas y sus relaciones. |
+| `Practica1.pdf` | Enunciado original de la práctica. |
 
-## Relaciones principales
+## Herramientas utilizadas
 
-- Una empresa puede tener varios contactos empresariales y ofrecer varias plazas.
-- Un instituto puede registrar varios estudiantes y catedráticos supervisores.
-- Una colocación relaciona a un estudiante, una plaza y un catedrático supervisor.
-- Una colocación puede tener varias entradas de bitácora y varias evaluaciones.
-- Una evaluación se divide en criterios mediante el detalle de evaluación.
-
-## Claves
-
-- `PK`: clave primaria que identifica de forma única cada registro.
-- `FK`: clave foránea que relaciona una tabla con otra.
-- `UK`: clave única que evita valores duplicados.
-
-Las claves únicas del modelo son:
-
-- Carné del estudiante.
-- Identificación del catedrático.
-- Código de autorización del instituto.
-- Nombre del criterio de evaluación.
-
-## Archivos del proyecto
-
-| Archivo | Contenido |
-| --- | --- |
-| `MODELO_RELACIONAL_EPS.ddl` | Instrucciones SQL para crear las tablas y sus relaciones en Oracle. |
-| `Practica1_EPS.dmd` | Modelo creado con Oracle SQL Developer Data Modeler. |
-| `ModeloConceptual.dot` | Código fuente Graphviz del modelo conceptual (notación Chen). |
-| `ModeloConceptual.svg` | Diagrama conceptual en formato vectorial. |
-| `ModeloConceptual.png` | Diagrama conceptual en formato de imagen. |
-| `DiccionarioDatos.csv` | Diccionario de datos en formato CSV. |
-| `Diccionario.pdf` | Diccionario de datos y análisis visual del enunciado. |
-| `Practica1.pdf` | Documento con las instrucciones de la práctica. |
-
-## Creación de la base de datos
-
-Para crear la estructura de la base de datos:
-
-1. Abrir Oracle SQL Developer.
-2. Conectarse a una base de datos Oracle.
-3. Abrir el archivo `MODELO_RELACIONAL_EPS.ddl`.
-4. Ejecutar el script completo.
-5. Verificar que se hayan creado las 11 tablas y sus restricciones.
-
-## Consideraciones
-
-- Los campos marcados como `NOT NULL` son obligatorios.
-- Las fechas se almacenan con el tipo `DATE` de Oracle.
-- Las puntuaciones de evaluación utilizan valores de 1 a 5.
-- Una evaluación puede ser parcial o final.
-- La fecha de finalización de una colocación puede quedar vacía mientras la práctica esté activa.
+- Oracle SQL Developer Data Modeler 24.3.
+- Oracle Database 11g.
+- Graphviz para el modelo conceptual.
