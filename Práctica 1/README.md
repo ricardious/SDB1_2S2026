@@ -53,7 +53,7 @@ Las claves únicas del modelo son:
 | `ModeloConceptual.svg` | Diagrama conceptual en formato vectorial. |
 | `ModeloConceptual.png` | Diagrama conceptual en formato de imagen. |
 | `DiccionarioDatos.csv` | Diccionario de datos en formato CSV. |
-| `DiccionarioDatos.pdf` | Diccionario de datos listo para consultar o imprimir. |
+| `Diccionario.pdf` | Diccionario de datos y análisis visual del enunciado. |
 | `Practica1.pdf` | Documento con las instrucciones de la práctica. |
 
 ## Creación de la base de datos
