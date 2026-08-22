@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6B6E6EDA-FD6F-4696-B630-A1C07EAFF2FF" name="CONTACTO_EMPRESARIAL">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <commentInRDBMS>Contacto designado por una empresa como supervisor externo.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>CONTACTO_EMPRESARIAL</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="ID_CONTACTO" id="534103D3-BDB3-406B-99C2-ABFFCE3F5807">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>ID_CONTACTO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="NOMBRE" id="E8686FB7-5CB2-4170-AE9B-8D23041227B9">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>150,,</ownDataTypeParameters>
+      <preferredAbbreviation>NOMBRE</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="TELEFONO" id="7469F37A-74DF-40A3-B5F2-1F130EA9E570">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>25,,</ownDataTypeParameters>
+      <preferredAbbreviation>TELEFONO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="CORREO" id="A093DC0B-B988-4459-8B9A-1C28DCA35244">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>150,,</ownDataTypeParameters>
+      <preferredAbbreviation>CORREO</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="7B460777-6F08-422A-8E1C-FD07098B02A3" name="CONTACTO_EMPRESARIAL_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>534103D3-BDB3-406B-99C2-ABFFCE3F5807</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

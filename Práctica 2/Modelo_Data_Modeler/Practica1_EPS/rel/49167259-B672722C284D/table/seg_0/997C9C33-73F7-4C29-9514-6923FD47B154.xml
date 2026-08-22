@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="997C9C33-73F7-4C29-9514-6923FD47B154" name="CONTACTO_EMPRESARIAL">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contacto designado por una empresa como supervisor externo.]]></commentInRDBMS>
+<generatorID>6B6E6EDA-FD6F-4696-B630-A1C07EAFF2FF</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CONTACTO" id="62BB8116-AF0E-4319-9C39-16159FBE59F8">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>534103D3-BDB3-406B-99C2-ABFFCE3F5807</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="FEE11D9F-F1D7-4A42-A6EF-DCB30792BA14">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>E8686FB7-5CB2-4170-AE9B-8D23041227B9</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>150</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="28B216F2-E671-49F5-8227-62840050912A">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>7469F37A-74DF-40A3-B5F2-1F130EA9E570</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>25</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO" id="36C1761F-37B3-4C5D-B0B7-6CA6886FDD64">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>A093DC0B-B988-4459-8B9A-1C28DCA35244</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>150</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA" id="D81E4C59-AFD4-4AB7-851B-410478058940">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>6D79D3CD-CD94-4C98-85B6-1580F7FF5AB7</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1BEC5A4A-335F-43EA-B77B-44B5CB76733E" referredColumn="924B6D24-D9FA-4F0E-9457-3CB0689A0A1E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57AB31C1-30A5-4D50-9FA8-E6E018078C5C" name="pk_contacto_empresarial">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>7B460777-6F08-422A-8E1C-FD07098B02A3</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62BB8116-AF0E-4319-9C39-16159FBE59F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F167DBC5-1825-4E81-BFB5-9691C80336E8" name="fk_contacto_empresa">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>2E4F3D69-9951-4803-8E19-8B387D37A6DC</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D81E4C59-AFD4-4AB7-851B-410478058940"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

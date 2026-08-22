@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51A68A74-05EA-4363-BB52-61C6576694F3" name="MUNICIPIO">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catálogo de municipios agrupados por departamento.]]></commentInRDBMS>
+<generatorID>ED391E52-8FFB-44F2-BAD4-F4DA32C5B2E1</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MUNICIPIO" id="F069B9B1-95CA-4C5B-983F-9B8216E1C665">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>A09DCC5E-A522-4B79-A74C-E7A5D5B25FC4</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="0E5BEC4A-0CA4-4089-A483-D7629857D31D">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>190CD23F-5FFB-41E5-9CDD-05AF90144C74</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>100</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_DEPARTAMENTO" id="361AEEA7-7534-465C-B767-835212390AB5">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>5D8ACAE9-58FD-422E-AAA5-93A5C19F3A96</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E87FA951-BD20-47C9-98F8-81B5B6A6FDD2" referredColumn="D17326F2-8B83-40CE-A575-0E61A933E1B3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B937C49B-6089-4732-94E9-84B58F595A45" name="pk_municipio">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>7B2912DB-21B2-4AD9-BE1E-E9E21DD2AC9E</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F069B9B1-95CA-4C5B-983F-9B8216E1C665"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E0569F8-5A80-493A-9EC3-678373F4B342" name="fk_municipio_departamento">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>925B8E4D-2896-428F-87F2-40B61143C55E</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="361AEEA7-7534-465C-B767-835212390AB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB66D472-D74B-4C9A-8D63-094A2BF3A55F" name="COLOCACION">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Asignación histórica de un estudiante a una plaza de práctica.]]></commentInRDBMS>
+<generatorID>1B1E6A34-63E0-49F1-83D9-6506C6DF871D</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_COLOCACION" id="FBF38A36-1B89-49B8-884D-578B434790B7">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>50DA4B47-7582-4D9E-9C6A-90DCEDE367EF</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="8243523E-5614-4AA5-83AB-49FC545A4B3A">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>4EA58F72-7FFD-42CD-AE2A-03DE8BD70628</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FINALIZACION" id="10DF2250-FFC0-4DF9-8D7E-F818974D5366">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>0A02D303-43BE-466C-80FC-1E85D63677B9</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<nullsAllowed>true</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESTUDIANTE" id="AD9A943B-5D94-4D25-AF4A-9B3F049EB530">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>82AF1CF5-5595-42DA-AC38-BDCE1AC43CAF</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAB57E88-151B-41EB-9460-39B28908329B" referredColumn="500C0A66-F046-41C6-ABB0-63315B78329B"/>
+</associations>
+</Column>
+<Column name="ID_PLAZA" id="B53420D9-FACB-483A-B1E6-3122CF6BE9BB">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>E9B0F731-6073-4D1A-A16F-696D639F14E0</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC71ADC5-68F4-4649-AD9C-B6DB7F09751C" referredColumn="EFD13166-692F-4A6A-926D-B72AA2A7FBE8"/>
+</associations>
+</Column>
+<Column name="ID_CATEDRATICO" id="18DCAD1B-5427-487E-8BAE-E3060A47D1D4">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>A53888B0-AF4D-40D2-916D-4A36138A7D04</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17A40C9B-0BFB-4E9E-84F0-3FD74B3DF0E1" referredColumn="750CAA20-87B4-4E8D-A67E-6B7EE7AD77B9"/>
+</associations>
+</Column>
+<Column name="ID_ESTADO" id="BFDBD7E5-ECB9-4C64-8EAA-ADE86F3412D0">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>E8C2C1E8-488C-4C02-90E2-300B5C9D3D0A</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38A4B9DC-AFAB-47FC-8E29-198B4A56A95A" referredColumn="CFCE32A9-C48F-423E-AF23-345B3D46907E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E141F81D-8BCA-4BE7-885A-4DDDF355EC2B" name="pk_colocacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>F9B3944C-EE99-4530-B91F-CA9CC46D5CE4</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBF38A36-1B89-49B8-884D-578B434790B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="429EED4D-3A17-40AB-8BE4-ED98258B7BA4" name="fk_colocacion_estudiante">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>1EEA8682-5AC7-4D19-B68A-E118DAA53FBF</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD9A943B-5D94-4D25-AF4A-9B3F049EB530"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F2DFF37-33AE-470A-BC9B-7FC8D50B7069" name="fk_colocacion_plaza">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>B3A08F42-91A3-4278-AE32-B632FB737F94</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B53420D9-FACB-483A-B1E6-3122CF6BE9BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC689EEA-B3A0-4CC5-9B49-33D5D61DB314" name="fk_colocacion_catedratico">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>67890866-7E1A-47AF-A2C5-DEF5C067F5E3</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18DCAD1B-5427-487E-8BAE-E3060A47D1D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C18EB279-C46B-4340-831B-9C039868BB4B" name="fk_colocacion_estado">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>17649C7A-5BB4-4837-B133-7604DCF04E20</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFDBD7E5-ECB9-4C64-8EAA-ADE86F3412D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

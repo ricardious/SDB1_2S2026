@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B5C47DD0-CD10-4B1C-BEA9-DCF74AD3F9C5" name="DEPARTAMENTO">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <commentInRDBMS>Catálogo de departamentos de Guatemala.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>DEPARTAMENTO</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="ID_DEPARTAMENTO" id="0524B6CE-39B4-4C29-9DE4-91955088BEED">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>ID_DEPARTAMENTO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="NOMBRE" id="74748656-E78E-4F96-95D6-486CC770E00D">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>100,,</ownDataTypeParameters>
+      <preferredAbbreviation>NOMBRE</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="41161729-25C1-4E9A-87FD-7C6C2D41AEB0" name="DEPARTAMENTO_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>0524B6CE-39B4-4C29-9DE4-91955088BEED</attributeRef>
+      </usedAttributes>
+    </identifier>
+    <identifier id="ECD28740-4BE7-476C-A058-6E7A33E40A6C" name="DEPARTAMENTO_UK1">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <usedAttributes>
+        <attributeRef>74748656-E78E-4F96-95D6-486CC770E00D</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

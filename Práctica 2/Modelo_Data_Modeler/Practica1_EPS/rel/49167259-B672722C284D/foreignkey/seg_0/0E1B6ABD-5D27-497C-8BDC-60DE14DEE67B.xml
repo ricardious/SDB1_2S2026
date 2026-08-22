@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0E1B6ABD-5D27-497C-8BDC-60DE14DEE67B" containerWithKeyObject="572E990E-A934-4E09-9D2D-11E4B6EDD1C0" localFKIndex="A97D2305-B8BD-4EA3-9DB8-A07B8FA6B73C" name="fk_catedratico_instituto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>46DE23CD-094A-4DB8-AF2F-F3CAEAB02E13</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>INSTITUTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C42EB75E-9654-4742-978C-D648142A1130</referredTableID>
+<keyObject>A52E5A53-1C83-4E83-A677-3FE8E49880F2</keyObject>
+<referredKeyID>A52E5A53-1C83-4E83-A677-3FE8E49880F2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_INSTITUTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

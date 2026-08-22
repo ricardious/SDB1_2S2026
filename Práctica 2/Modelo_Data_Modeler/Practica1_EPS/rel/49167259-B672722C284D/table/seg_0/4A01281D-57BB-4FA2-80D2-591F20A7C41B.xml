@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A01281D-57BB-4FA2-80D2-591F20A7C41B" name="DETALLE_EVALUACION">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Puntuación obtenida en cada criterio de una evaluación.]]></commentInRDBMS>
+<generatorID>EF466F5A-E69B-4ED8-98DA-ED8888A38E5F</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EVALUACION" id="608135FB-FDAD-4BBE-B474-9F069385E811">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>6BF61AE7-2FB4-4463-843A-6165F0CF45CB</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="67505553-7AE0-45A0-8181-04E59C1D4FAA" referredColumn="82C58E01-7599-4EE6-995C-4EAACC608788"/>
+</associations>
+</Column>
+<Column name="ID_CRITERIO" id="C3A95A7B-0128-4F09-B5D5-36FB1F625706">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>10C1795C-DF0E-4D2D-8AFA-D53290E4A1B0</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC90FF37-0E52-4563-A2ED-9822E3B1628A" referredColumn="A8CC5063-9C6A-4533-819A-37C1DC7A8A68"/>
+</associations>
+</Column>
+<Column name="PUNTUACION" id="06AACE6E-964D-49E0-849F-EF0664E4F9D4">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>F11B86A9-C4EB-4279-8E91-5BCB3F4BD9E8</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89B48E2C-12CC-4A6B-8E39-16F0CDEB0E96" name="pk_detalle_evaluacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>C59C2CFC-6377-491C-9F75-9E581662B75C</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="608135FB-FDAD-4BBE-B474-9F069385E811"/>
+<colUsage columnID="C3A95A7B-0128-4F09-B5D5-36FB1F625706"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED1F4CDD-B938-4926-9CD9-5EEC66C32256" name="fk_detalle_evaluacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>551F5A77-88D7-437E-9C84-B2C965E21469</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="608135FB-FDAD-4BBE-B474-9F069385E811"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3AEC1590-9D2B-4145-9529-D10C457108EC" name="fk_detalle_criterio">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>53FB93B2-9D89-43B6-922A-F66D4D6410EC</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3A95A7B-0128-4F09-B5D5-36FB1F625706"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Practica1_EPS" id="FF062794-7559-4CCB-8117-BA0B514B6AA3" version="3.5">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <capitalNames>true</capitalNames>
+  <designId>5B186FA4-846A-4588-B57C-885CE7AC6BB9</designId>
+</OSDM_Design>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8E19C00B-DF3B-4D80-B27B-3290C5D44BA8" containerWithKeyObject="C057DEE2-E6F1-4145-A7B9-6F83147DCEE0" localFKIndex="7324F256-6A90-42EE-95DA-8C034C21AC12" name="fk_evaluacion_tipo">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>58C1FAAC-0322-4893-B4C3-7C8571A3AD5D</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>TIPO_EVALUACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>97541D16-E8EF-4CF8-8A01-D04DB6C9DB27</referredTableID>
+<keyObject>74ABFE4A-CDBA-4018-8727-5BA0D8C678E3</keyObject>
+<referredKeyID>74ABFE4A-CDBA-4018-8727-5BA0D8C678E3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TIPO_EVALUACION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

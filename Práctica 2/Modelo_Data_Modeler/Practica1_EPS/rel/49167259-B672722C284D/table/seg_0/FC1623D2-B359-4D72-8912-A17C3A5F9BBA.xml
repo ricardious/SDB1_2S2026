@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC1623D2-B359-4D72-8912-A17C3A5F9BBA" name="ESTADO_COLOCACION">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catálogo de estados posibles de una colocación.]]></commentInRDBMS>
+<generatorID>75A4FF4A-9C76-427B-B188-0C25EF191486</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESTADO" id="CFCE32A9-C48F-423E-AF23-345B3D46907E">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>0A6E9139-5D5B-4D4A-8257-B8F81A637D92</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="0C9D0791-33BF-40A7-A22D-D956A4848D61">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>980E11BE-2A53-4F04-989B-21BEADA4675C</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>30</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9238698B-89CE-40A5-9A0F-246555CDAE21" name="pk_estado_colocacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>D9FD109E-A264-46C2-8D91-B0325DFAF369</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFCE32A9-C48F-423E-AF23-345B3D46907E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAEB739F-56FC-4D12-8A50-0CBDF62CA31A" name="uk_estado_colocacion_nombre">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>F92F68F7-E34F-491D-8662-517BEEC092BC</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C9D0791-33BF-40A7-A22D-D956A4848D61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

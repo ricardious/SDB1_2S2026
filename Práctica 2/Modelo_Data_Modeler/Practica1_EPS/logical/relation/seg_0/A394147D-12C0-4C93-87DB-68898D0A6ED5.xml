@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COLOCACION_BITACORAS" directorySegmentName="seg_0" id="A394147D-12C0-4C93-87DB-68898D0A6ED5">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>F9B3944C-EE99-4530-B91F-CA9CC46D5CE4</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>1B1E6A34-63E0-49F1-83D9-6506C6DF871D</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>7424D071-D794-47DE-A4A5-C1EF5E37F90F</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

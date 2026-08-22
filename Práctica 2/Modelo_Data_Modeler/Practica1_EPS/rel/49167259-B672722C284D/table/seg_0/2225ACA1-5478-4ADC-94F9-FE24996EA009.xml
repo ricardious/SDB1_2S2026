@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2225ACA1-5478-4ADC-94F9-FE24996EA009" name="PLAZA">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Plaza de práctica ofrecida por una empresa.]]></commentInRDBMS>
+<generatorID>6B1F1B17-9ACD-46C2-8522-9E23DBA1244C</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PLAZA" id="EFD13166-692F-4A6A-926D-B72AA2A7FBE8">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>1408B923-3230-4618-BE15-58553A6D341D</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIALIDAD_TECNICA" id="BC6C3CA8-90F3-4239-9A60-4AE2D07C0993">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>CCA7F640-75AC-4CA3-AF1A-FBA0B0319E2C</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>120</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA" id="CE720BCA-0A65-4C72-B818-5791FA99DC1A">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>F4F13367-D83A-49A8-ADB1-5DCB01610389</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E05510A4-E66A-4188-BF6E-EF646EB3293E" referredColumn="924B6D24-D9FA-4F0E-9457-3CB0689A0A1E"/>
+</associations>
+</Column>
+<Column name="ID_CONTACTO" id="4CD51214-7D63-46E5-81CA-AA83BB2315AD">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>2B6292BE-C7F2-4740-90F6-C0B30ABC2E6C</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18B492D3-BCE5-4518-8A7C-0BCB5865A4D5" referredColumn="62BB8116-AF0E-4319-9C39-16159FBE59F8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AAAE85A9-3824-40AD-B547-B3E35C5E672A" name="pk_plaza">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>0214B48D-7F30-49CE-A107-6AB3C364B41D</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFD13166-692F-4A6A-926D-B72AA2A7FBE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39447898-D241-43D3-8AFB-1E5F68290868" name="fk_plaza_empresa">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>13748135-532F-4D84-B7F2-22E073BE5253</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE720BCA-0A65-4C72-B818-5791FA99DC1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DEEAE76-373E-4299-9677-F1EA9D3E903C" name="fk_plaza_contacto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>2609219D-38FC-4A3C-9B84-DC2B2391A494</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CD51214-7D63-46E5-81CA-AA83BB2315AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

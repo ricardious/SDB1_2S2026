@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DEPARTAMENTO_MUNICIPIOS" directorySegmentName="seg_0" id="925B8E4D-2896-428F-87F2-40B61143C55E">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>41161729-25C1-4E9A-87FD-7C6C2D41AEB0</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>B5C47DD0-CD10-4B1C-BEA9-DCF74AD3F9C5</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>ED391E52-8FFB-44F2-BAD4-F4DA32C5B2E1</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

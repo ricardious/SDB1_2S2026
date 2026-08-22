@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="588D5DE0-0D6D-4A71-A830-34B257D05DC9" containerWithKeyObject="BF593445-8B43-4342-8BFD-72024E3A9155" localFKIndex="DE2169A8-3C50-4D95-A9DE-E0008A40ECB0" name="fk_empresa_sector">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>280FEC55-01AE-43B6-89AF-F47D68D634EE</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>SECTOR_ECONOMICO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A411113E-7925-4022-AB50-E0B19FB2D309</referredTableID>
+<keyObject>DE4F9DED-CB78-497D-8B65-FB215BC44B1E</keyObject>
+<referredKeyID>DE4F9DED-CB78-497D-8B65-FB215BC44B1E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_SECTOR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

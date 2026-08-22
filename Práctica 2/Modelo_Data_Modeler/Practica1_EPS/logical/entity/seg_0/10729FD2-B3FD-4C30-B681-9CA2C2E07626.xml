@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="10729FD2-B3FD-4C30-B681-9CA2C2E07626" name="EVALUACION">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <commentInRDBMS>Evaluación parcial o final de una colocación.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>EVALUACION</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="ID_EVALUACION" id="18C26CFF-64BE-4AEF-89D4-F7B7C920A271">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>ID_EVALUACION</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="FECHA_EVALUACION" id="18C57A28-2AFA-47DC-A156-C88D87A89154">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>FECHA_EVALUACION</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="12C1EAD3-A465-4AE6-86F5-CBF767511589" name="EVALUACION_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>18C26CFF-64BE-4AEF-89D4-F7B7C920A271</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

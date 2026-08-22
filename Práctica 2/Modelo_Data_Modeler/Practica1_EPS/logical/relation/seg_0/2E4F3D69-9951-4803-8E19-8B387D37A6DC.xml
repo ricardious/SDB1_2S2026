@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EMPRESA_CONTACTOS" directorySegmentName="seg_0" id="2E4F3D69-9951-4803-8E19-8B387D37A6DC">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>FDF5D48F-718A-4F3F-A731-96203BD7460B</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>86F94548-7CD1-410C-A14D-2F727B13256B</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>6B6E6EDA-FD6F-4696-B630-A1C07EAFF2FF</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

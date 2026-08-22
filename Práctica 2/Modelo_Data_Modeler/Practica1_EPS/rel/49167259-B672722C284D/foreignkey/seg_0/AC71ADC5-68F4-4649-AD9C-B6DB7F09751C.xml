@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AC71ADC5-68F4-4649-AD9C-B6DB7F09751C" containerWithKeyObject="CB66D472-D74B-4C9A-8D63-094A2BF3A55F" localFKIndex="6F2DFF37-33AE-470A-BC9B-7FC8D50B7069" name="fk_colocacion_plaza">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>B3A08F42-91A3-4278-AE32-B632FB737F94</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>PLAZA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2225ACA1-5478-4ADC-94F9-FE24996EA009</referredTableID>
+<keyObject>AAAE85A9-3824-40AD-B547-B3E35C5E672A</keyObject>
+<referredKeyID>AAAE85A9-3824-40AD-B547-B3E35C5E672A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PLAZA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

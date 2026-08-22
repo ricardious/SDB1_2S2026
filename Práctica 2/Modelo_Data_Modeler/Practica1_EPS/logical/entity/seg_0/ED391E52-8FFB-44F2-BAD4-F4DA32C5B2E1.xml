@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ED391E52-8FFB-44F2-BAD4-F4DA32C5B2E1" name="MUNICIPIO">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <commentInRDBMS>Catálogo de municipios agrupados por departamento.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>MUNICIPIO</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="ID_MUNICIPIO" id="A09DCC5E-A522-4B79-A74C-E7A5D5B25FC4">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>ID_MUNICIPIO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="NOMBRE" id="190CD23F-5FFB-41E5-9CDD-05AF90144C74">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>100,,</ownDataTypeParameters>
+      <preferredAbbreviation>NOMBRE</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="7B2912DB-21B2-4AD9-BE1E-E9E21DD2AC9E" name="MUNICIPIO_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>A09DCC5E-A522-4B79-A74C-E7A5D5B25FC4</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

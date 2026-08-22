@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1D6B35A-C5BE-4B14-84CD-14689D24019B" name="CATEDRATICO">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <commentInRDBMS>Catedrático asignado por un instituto para supervisar estudiantes.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>CATEDRATICO</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="ID_CATEDRATICO" id="5580AF77-4ADB-45AB-9F1C-D62D0481DB9C">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>ID_CATEDRATICO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="IDENTIFICACION" id="F78D1BE0-9F8C-4681-B944-1F7C17B92A95">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>40,,</ownDataTypeParameters>
+      <preferredAbbreviation>IDENTIFICACION</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="NOMBRE" id="560849B5-58F2-48D7-AFBB-A7C5C68AB44F">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>150,,</ownDataTypeParameters>
+      <preferredAbbreviation>NOMBRE</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="TELEFONO" id="B8F064EB-7A53-4037-A17A-0BCB474F9E81">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>25,,</ownDataTypeParameters>
+      <preferredAbbreviation>TELEFONO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="ESPECIALIDAD" id="45A14E81-DAAE-44A4-8C3C-CADC69BB88A1">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>120,,</ownDataTypeParameters>
+      <preferredAbbreviation>ESPECIALIDAD</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="AC2E99B8-732C-4756-9FEB-54AB4A2CF908" name="CATEDRATICO_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>5580AF77-4ADB-45AB-9F1C-D62D0481DB9C</attributeRef>
+      </usedAttributes>
+    </identifier>
+    <identifier id="E282998E-7551-4C33-B8C3-DAB75E68FB1F" name="CATEDRATICO_UK1">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <usedAttributes>
+        <attributeRef>F78D1BE0-9F8C-4681-B944-1F7C17B92A95</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

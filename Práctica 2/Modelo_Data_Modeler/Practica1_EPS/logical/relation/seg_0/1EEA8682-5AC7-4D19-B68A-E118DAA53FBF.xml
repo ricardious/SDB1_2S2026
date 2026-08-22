@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ESTUDIANTE_COLOCACIONES" directorySegmentName="seg_0" id="1EEA8682-5AC7-4D19-B68A-E118DAA53FBF">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>4F592D67-C391-4317-BE01-0AFE0FBD9545</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>EACB3C2A-F178-434B-938F-6B47C92321C1</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>1B1E6A34-63E0-49F1-83D9-6506C6DF871D</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

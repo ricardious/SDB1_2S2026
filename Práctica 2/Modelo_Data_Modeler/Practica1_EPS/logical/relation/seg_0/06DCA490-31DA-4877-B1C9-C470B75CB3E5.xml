@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CONTACTO_VALIDA_BITACORA" directorySegmentName="seg_0" id="06DCA490-31DA-4877-B1C9-C470B75CB3E5">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>7B460777-6F08-422A-8E1C-FD07098B02A3</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>6B6E6EDA-FD6F-4696-B630-A1C07EAFF2FF</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>7424D071-D794-47DE-A4A5-C1EF5E37F90F</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

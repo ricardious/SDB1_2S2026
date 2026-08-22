@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="18B492D3-BCE5-4518-8A7C-0BCB5865A4D5" containerWithKeyObject="2225ACA1-5478-4ADC-94F9-FE24996EA009" localFKIndex="2DEEAE76-373E-4299-9677-F1EA9D3E903C" name="fk_plaza_contacto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>2609219D-38FC-4A3C-9B84-DC2B2391A494</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>CONTACTO_EMPRESARIAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>997C9C33-73F7-4C29-9514-6923FD47B154</referredTableID>
+<keyObject>57AB31C1-30A5-4D50-9FA8-E6E018078C5C</keyObject>
+<referredKeyID>57AB31C1-30A5-4D50-9FA8-E6E018078C5C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CONTACTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

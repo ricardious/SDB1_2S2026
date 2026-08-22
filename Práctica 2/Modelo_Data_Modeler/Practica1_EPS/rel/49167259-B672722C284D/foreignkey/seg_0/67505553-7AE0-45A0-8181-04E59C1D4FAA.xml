@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="67505553-7AE0-45A0-8181-04E59C1D4FAA" containerWithKeyObject="4A01281D-57BB-4FA2-80D2-591F20A7C41B" localFKIndex="ED1F4CDD-B938-4926-9CD9-5EEC66C32256" name="fk_detalle_evaluacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>551F5A77-88D7-437E-9C84-B2C965E21469</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>EVALUACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C057DEE2-E6F1-4145-A7B9-6F83147DCEE0</referredTableID>
+<keyObject>CE338A62-C3CA-493A-AFFD-053C90BB786B</keyObject>
+<referredKeyID>CE338A62-C3CA-493A-AFFD-053C90BB786B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_EVALUACION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

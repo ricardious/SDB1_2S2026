@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CATEDRATICO_EVALUACIONES" directorySegmentName="seg_0" id="B3FE11D2-F2E5-4629-8149-75B65B0FB0A8">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>AC2E99B8-732C-4756-9FEB-54AB4A2CF908</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>B1D6B35A-C5BE-4B14-84CD-14689D24019B</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>10729FD2-B3FD-4C30-B681-9CA2C2E07626</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

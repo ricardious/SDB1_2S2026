@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CRITERIO_DETALLES" directorySegmentName="seg_0" id="53FB93B2-9D89-43B6-922A-F66D4D6410EC">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>2BDD874B-E5BB-4CEA-B2A9-75F956ADCB29</sourcePk>
+  <identifying>true</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>8D13E63B-89F7-4675-9461-004A30689F4E</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>EF466F5A-E69B-4ED8-98DA-ED8888A38E5F</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

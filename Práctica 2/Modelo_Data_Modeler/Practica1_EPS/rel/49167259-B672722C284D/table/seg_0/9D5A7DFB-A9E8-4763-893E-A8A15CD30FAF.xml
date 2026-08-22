@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D5A7DFB-A9E8-4763-893E-A8A15CD30FAF" name="BITACORA">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entrada de bitácora asociada a una colocación.]]></commentInRDBMS>
+<generatorID>7424D071-D794-47DE-A4A5-C1EF5E37F90F</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+<adequatelyNormalized>YES</adequatelyNormalized>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BITACORA" id="B3E10E60-EA78-46E5-9B8C-DFACC220F87A">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>8852CFF2-E860-4A9A-8F99-B0CBFC095CF2</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORRELATIVO_MENSUAL" id="D28B2C9B-E988-4787-A07F-9E91C26BB8E3">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>405AFF15-5754-4576-BD57-279ECCC5E238</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA" id="40E2EA09-2965-4AFE-A07D-E8B1BFE5FDA8">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>F4155E6B-1B5F-4EBF-A9A3-DC9351E7B7CD</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORAS_TRABAJADAS" id="C1CD3701-D75E-4DA4-B0A5-3994503E4C2D">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>F3304555-1794-44A3-A084-85CC8EE32AE1</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVIDADES_REALIZADAS" id="D9F7057C-3583-467C-BBD9-7500AA18C628">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>5035FD70-8C7A-46D9-9A68-74594ABDA80B</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>1000</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACIONES" id="EC51BFAA-9C17-440D-A7FE-D7BFC48A1878">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>339D4298-F1A7-432A-8C12-C6681AFA4BD0</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<nullsAllowed>true</nullsAllowed>
+<use>1</use>
+<dataTypeSize>1000</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_COLOCACION" id="20E1EA85-5EDE-4695-88D2-5922654B27E2">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>21DB24E1-7788-491B-BA97-47E874C8F076</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B896B552-4D69-40C9-9C59-42B3DB397D1D" referredColumn="FBF38A36-1B89-49B8-884D-578B434790B7"/>
+</associations>
+</Column>
+<Column name="ID_CONTACTO_VALIDADOR" id="F5682C23-3A52-4D14-B4B6-4190228A2D2F">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>21B69C67-42CE-41C3-B542-2E8AB6F64E0E</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1200FC25-B4CF-443B-A046-4E975028E52B" referredColumn="62BB8116-AF0E-4319-9C39-16159FBE59F8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="629BED9C-D253-40D9-B812-1701D1DA4C61" name="pk_bitacora">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>CBE602B4-E8DA-469B-809E-C49A0327A192</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3E10E60-EA78-46E5-9B8C-DFACC220F87A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2AD8802-C493-4D11-88A7-AF1DE0FC6C69" name="fk_bitacora_colocacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>A394147D-12C0-4C93-87DB-68898D0A6ED5</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20E1EA85-5EDE-4695-88D2-5922654B27E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBAB274B-9076-4F0F-AD71-593291766091" name="fk_bitacora_contacto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>06DCA490-31DA-4877-B1C9-C470B75CB3E5</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5682C23-3A52-4D14-B4B6-4190228A2D2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

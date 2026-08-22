@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FAB57E88-151B-41EB-9460-39B28908329B" containerWithKeyObject="CB66D472-D74B-4C9A-8D63-094A2BF3A55F" localFKIndex="429EED4D-3A17-40AB-8BE4-ED98258B7BA4" name="fk_colocacion_estudiante">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>1EEA8682-5AC7-4D19-B68A-E118DAA53FBF</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>ESTUDIANTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A82CED48-9798-42D9-BEF1-E12BA9FA0907</referredTableID>
+<keyObject>37B21205-4C88-4F8B-8F40-5F5FDB971F24</keyObject>
+<referredKeyID>37B21205-4C88-4F8B-8F40-5F5FDB971F24</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CARNE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

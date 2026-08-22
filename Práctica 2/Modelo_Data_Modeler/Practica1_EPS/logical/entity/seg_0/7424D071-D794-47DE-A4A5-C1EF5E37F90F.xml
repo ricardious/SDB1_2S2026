@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7424D071-D794-47DE-A4A5-C1EF5E37F90F" name="BITACORA">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <commentInRDBMS>Entrada de bitácora asociada a una colocación.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>BITACORA</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="ID_BITACORA" id="8852CFF2-E860-4A9A-8F99-B0CBFC095CF2">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>ID_BITACORA</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="CORRELATIVO_MENSUAL" id="405AFF15-5754-4576-BD57-279ECCC5E238">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,5,</ownDataTypeParameters>
+      <preferredAbbreviation>CORRELATIVO_MENSUAL</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="FECHA" id="F4155E6B-1B5F-4EBF-A9A3-DC9351E7B7CD">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>FECHA</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="HORAS_TRABAJADAS" id="F3304555-1794-44A3-A084-85CC8EE32AE1">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,6,2</ownDataTypeParameters>
+      <preferredAbbreviation>HORAS_TRABAJADAS</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="ACTIVIDADES_REALIZADAS" id="5035FD70-8C7A-46D9-9A68-74594ABDA80B">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>1000,,</ownDataTypeParameters>
+      <preferredAbbreviation>ACTIVIDADES_REALIZADAS</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="OBSERVACIONES" id="339D4298-F1A7-432A-8C12-C6681AFA4BD0">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <nullsAllowed>true</nullsAllowed>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>1000,,</ownDataTypeParameters>
+      <preferredAbbreviation>OBSERVACIONES</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="CBE602B4-E8DA-469B-809E-C49A0327A192" name="BITACORA_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>8852CFF2-E860-4A9A-8F99-B0CBFC095CF2</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

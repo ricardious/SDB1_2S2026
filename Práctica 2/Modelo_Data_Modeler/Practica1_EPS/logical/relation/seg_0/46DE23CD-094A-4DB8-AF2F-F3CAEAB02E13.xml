@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INSTITUTO_CATEDRATICOS" directorySegmentName="seg_0" id="46DE23CD-094A-4DB8-AF2F-F3CAEAB02E13">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>C940211A-C71E-4884-8EC3-8542E6EEAC95</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>C4862596-0483-41BF-86C3-76351B8CE04E</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>B1D6B35A-C5BE-4B14-84CD-14689D24019B</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

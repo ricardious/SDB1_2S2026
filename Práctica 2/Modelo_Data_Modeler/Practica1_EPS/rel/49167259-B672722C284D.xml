@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="MODELO_RELACIONAL_EPS" id="49167259-8AE4-0FD5-06E0-B672722C284D" mainViewID="6E7890E7-E2E0-3B1D-12D0-DDE63A34653B">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-15 06:15:55 UTC</createdTime>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

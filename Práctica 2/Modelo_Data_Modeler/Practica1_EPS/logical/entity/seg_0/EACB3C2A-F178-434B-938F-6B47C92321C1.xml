@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EACB3C2A-F178-434B-938F-6B47C92321C1" name="ESTUDIANTE">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <commentInRDBMS>Estudiante de instituto técnico que realiza una práctica EPS.</commentInRDBMS>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <typeID>B00C49F8-7AB8-0344-2390-66F8B305696A</typeID>
+  <adequatelyNormalized>YES</adequatelyNormalized>
+  <expectedVolumes>0</expectedVolumes>
+  <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+  <growthPercent>0</growthPercent>
+  <growthType>Year</growthType>
+  <maxVolumes>9999999</maxVolumes>
+  <minVolumes>0</minVolumes>
+  <normalForm>Third</normalForm>
+  <preferredAbbreviation>ESTUDIANTE</preferredAbbreviation>
+  <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+    <Attribute name="CARNE" id="9F9C5F19-F0A1-4AA4-A954-D310B987C0A4">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,10,</ownDataTypeParameters>
+      <preferredAbbreviation>CARNE</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="NOMBRE_COMPLETO" id="31C55274-B204-4D2D-9084-8A9425AAB8BF">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>180,,</ownDataTypeParameters>
+      <preferredAbbreviation>NOMBRE_COMPLETO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="CARRERA_TECNICA" id="4EEDDD36-3B3D-440C-A33B-266DFC0FCD0C">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>120,,</ownDataTypeParameters>
+      <preferredAbbreviation>CARRERA_TECNICA</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="DIRECCION" id="7C459253-2FD5-418A-9156-A62ACF043A9C">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>250,,</ownDataTypeParameters>
+      <preferredAbbreviation>DIRECCION</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="TELEFONO" id="3EB801E4-8534-4637-A969-F8FF02D5EFEF">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>25,,</ownDataTypeParameters>
+      <preferredAbbreviation>TELEFONO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="FECHA_NACIMIENTO" id="D4F650CE-AE5E-4E50-80E4-BF4F4585F471">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT007</logicalDatatype>
+      <ownDataTypeParameters>,,</ownDataTypeParameters>
+      <preferredAbbreviation>FECHA_NACIMIENTO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="GENERO" id="0F386197-3389-4C84-AC98-CAF729C88737">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT024</logicalDatatype>
+      <ownDataTypeParameters>20,,</ownDataTypeParameters>
+      <preferredAbbreviation>GENERO</preferredAbbreviation>
+    </Attribute>
+    <Attribute name="ES_REPITENCIA" id="D2F75501-426B-42A9-B8C1-D15692DDB608">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <use>1</use>
+      <logicalDatatype>LOGDT019</logicalDatatype>
+      <ownDataTypeParameters>,1,</ownDataTypeParameters>
+      <preferredAbbreviation>ES_REPITENCIA</preferredAbbreviation>
+    </Attribute>
+  </attributes>
+  <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+    <identifier id="4F592D67-C391-4317-BE01-0AFE0FBD9545" name="ESTUDIANTE_PK">
+      <createdBy>ricardious</createdBy>
+      <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+      <ownerDesignName>Practica1_EPS</ownerDesignName>
+      <pk>true</pk>
+      <usedAttributes>
+        <attributeRef>9F9C5F19-F0A1-4AA4-A954-D310B987C0A4</attributeRef>
+      </usedAttributes>
+    </identifier>
+  </identifiers>
+</Entity>

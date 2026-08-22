@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FC90FF37-0E52-4563-A2ED-9822E3B1628A" containerWithKeyObject="4A01281D-57BB-4FA2-80D2-591F20A7C41B" localFKIndex="3AEC1590-9D2B-4145-9529-D10C457108EC" name="fk_detalle_criterio">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>53FB93B2-9D89-43B6-922A-F66D4D6410EC</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>CRITERIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C7E6A028-BA45-44F3-8A76-4FD0F10647CF</referredTableID>
+<keyObject>D2F656B0-0AAF-46D7-876C-E7E4778E39DB</keyObject>
+<referredKeyID>D2F656B0-0AAF-46D7-876C-E7E4778E39DB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CRITERIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

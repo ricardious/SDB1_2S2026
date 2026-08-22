@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TIPO_EVALUACIONES" directorySegmentName="seg_0" id="58C1FAAC-0322-4893-B4C3-7C8571A3AD5D">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>A3CB8A03-3964-46E6-81E8-283FA4DE34FF</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>F2908E0D-30EE-4656-9602-D9039DB8E930</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>10729FD2-B3FD-4C30-B681-9CA2C2E07626</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="38A4B9DC-AFAB-47FC-8E29-198B4A56A95A" containerWithKeyObject="CB66D472-D74B-4C9A-8D63-094A2BF3A55F" localFKIndex="C18EB279-C46B-4340-831B-9C039868BB4B" name="fk_colocacion_estado">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-08-27 23:00:00 UTC</createdTime>
+<generatorID>17649C7A-5BB4-4837-B133-7604DCF04E20</generatorID>
+<ownerDesignName>Practica1_EPS</ownerDesignName>
+<referredTableLongName>ESTADO_COLOCACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FC1623D2-B359-4D72-8912-A17C3A5F9BBA</referredTableID>
+<keyObject>9238698B-89CE-40A5-9A0F-246555CDAE21</keyObject>
+<referredKeyID>9238698B-89CE-40A5-9A0F-246555CDAE21</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ESTADO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

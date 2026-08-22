@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ESTADO_COLOCACIONES" directorySegmentName="seg_0" id="17649C7A-5BB4-4837-B133-7604DCF04E20">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-27 23:00:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <sourcePk>D9FD109E-A264-46C2-8D91-B0325DFAF369</sourcePk>
+  <identifying>false</identifying>
+  <optionalSource>false</optionalSource>
+  <optionalTarget>true</optionalTarget>
+  <sourceCardinality>1</sourceCardinality>
+  <sourceEntity>75A4FF4A-9C76-427B-B188-0C25EF191486</sourceEntity>
+  <targetCardinalityString>*</targetCardinalityString>
+  <targetEntity>1B1E6A34-63E0-49F1-83D9-6506C6DF871D</targetEntity>
+  <transferable>true</transferable>
+  <deleteRule>NO ACTION</deleteRule>
+</Relation>
