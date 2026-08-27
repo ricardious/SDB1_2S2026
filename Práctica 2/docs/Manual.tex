@@ -1,0 +1,415 @@
+\documentclass[11pt,letterpaper]{article}
+
+% -----------------------------------------------------------------------------
+% Configuración general
+% -----------------------------------------------------------------------------
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[letterpaper,top=2.2cm,bottom=2.2cm,left=2.25cm,right=2.25cm]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{xurl}
+
+\definecolor{AccentRed}{HTML}{A6192E}
+\definecolor{AccentLight}{HTML}{F7EDEF}
+\definecolor{Ink}{HTML}{20242A}
+\definecolor{Muted}{HTML}{667085}
+\definecolor{CodeBg}{HTML}{F5F6F8}
+\definecolor{RuleGray}{HTML}{D7DADE}
+\definecolor{SqlBlue}{HTML}{174EA6}
+\definecolor{SqlGreen}{HTML}{357A38}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=AccentRed,
+  urlcolor=AccentRed,
+  citecolor=AccentRed,
+  hypertexnames=false,
+  pdftitle={Manual de carga de datos y consultas - Práctica 2},
+  pdfauthor={Alex Ricardo Castañeda Rodríguez},
+  pdfsubject={Base de Datos 1},
+  pdfkeywords={Oracle, SQL Developer, JOIN, GROUP BY, USAC}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{Muted}Base de Datos 1 · Práctica 2}
+\fancyhead[R]{\small\color{AccentRed}Manual de carga y consultas}
+\fancyfoot[L]{\small\color{Muted}Alex Ricardo Castañeda Rodríguez}
+\fancyfoot[R]{\small\color{Muted}Página \thepage\ de \pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{AccentRed}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+
+\titleformat{\section}
+  {\Large\bfseries\color{Ink}}
+  {\colorbox{AccentRed}{\color{white}\strut\thesection}}
+  {0.75em}{}
+\titleformat{\subsection}
+  {\large\bfseries\color{AccentRed}}
+  {\thesubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{2.2ex plus .5ex}{1.1ex}
+\titlespacing*{\subsection}{0pt}{1.8ex plus .4ex}{0.8ex}
+
+\captionsetup{
+  font=small,
+  labelfont={bf,color=AccentRed},
+  textfont={color=Ink},
+  justification=centering
+}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.25em,topsep=0.4em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.35em,topsep=0.4em}
+\renewcommand{\arraystretch}{1.18}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+
+\lstdefinestyle{oracleSQL}{
+  language=SQL,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\bfseries\color{SqlBlue},
+  commentstyle=\itshape\color{SqlGreen},
+  stringstyle=\color{AccentRed},
+  backgroundcolor=\color{CodeBg},
+  frame=single,
+  rulecolor=\color{RuleGray},
+  numbers=left,
+  numberstyle=\tiny\color{Muted},
+  numbersep=8pt,
+  breaklines=true,
+  breakatwhitespace=false,
+  showstringspaces=false,
+  tabsize=2,
+  columns=fullflexible,
+  keepspaces=true,
+  xleftmargin=1.4em,
+  framexleftmargin=1.1em,
+  aboveskip=0.8em,
+  belowskip=0.8em
+}
+\lstset{style=oracleSQL}
+
+\newcommand{\statusok}{\textcolor{SqlGreen}{\textbf{Completa}}}
+\newcommand{\evidenceimage}[2]{%
+  \begin{figure}[H]
+    \centering
+    \fcolorbox{RuleGray}{white}{%
+      \includegraphics[width=0.965\linewidth,height=0.34\textheight,keepaspectratio]{#1}%
+    }
+    \caption{#2}
+  \end{figure}
+}
+\newcommand{\evidencepair}[3]{%
+  \subsection{\texttt{#1}}
+  \evidenceimage{evidencias/02_importacion/#2/importacion.png}{Vista previa de importación de \texttt{#1}.}
+  \evidenceimage{evidencias/02_importacion/#2/resultado.png}{Registros almacenados en la tabla \texttt{#1}.}
+  \clearpage
+}
+
+\begin{document}
+
+% -----------------------------------------------------------------------------
+% Carátula
+% -----------------------------------------------------------------------------
+\begin{titlepage}
+  \thispagestyle{empty}
+  \color{Ink}
+
+  \noindent{\color{AccentRed}\rule{\textwidth}{0.35cm}}
+
+  \vspace{1.1cm}
+  \begin{center}
+    \includegraphics[width=0.30\textwidth]{evidencias/01_estructura/escudo_usac_oficial.png}
+
+    \vspace{1.0cm}
+    {\Large\bfseries FACULTAD DE INGENIERÍA\par}
+    \vspace{0.25cm}
+    {\large Escuela de Ciencias y Sistemas\par}
+
+    \vfill
+
+    {\color{AccentRed}\rule{0.22\textwidth}{1.5pt}\par}
+    \vspace{0.45cm}
+    {\fontsize{28}{33}\selectfont\bfseries MANUAL DE CARGA DE DATOS\par}
+    \vspace{0.18cm}
+    {\fontsize{22}{27}\selectfont\color{AccentRed}\bfseries Y CONSULTAS SQL\par}
+    \vspace{0.38cm}
+    {\Large Práctica 2 · Base de Datos 1\par}
+    \vspace{0.45cm}
+    {\color{AccentRed}\rule{0.22\textwidth}{1.5pt}\par}
+
+    \vfill
+
+    \renewcommand{\arraystretch}{1.35}
+    \begin{tabular}{>{\bfseries\color{AccentRed}}r l}
+      Estudiante: & Alex Ricardo Castañeda Rodríguez \\
+      Carné: & 202300476 \\
+      Sección: & B \\
+      Curso: & Base de Datos 1 \\
+      Fecha: & 27 de agosto de 2026 \\
+    \end{tabular}
+
+    \vfill
+    {\small\color{Muted}Universidad de San Carlos de Guatemala · Guatemala, 2026\par}
+  \end{center}
+
+  \vspace{0.5cm}
+  \noindent{\color{AccentRed}\rule{\textwidth}{0.18cm}}
+\end{titlepage}
+
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+% -----------------------------------------------------------------------------
+\section{Introducción y objetivo}
+
+La presente práctica implementa el modelo físico del Sistema de Gestión de
+Prácticas Profesionales Supervisadas (EPS) en Oracle Database. El trabajo comprende
+la creación de la estructura relacional, la carga jerárquica de datos desde un libro
+de Excel y la elaboración de cinco reportes mediante sentencias DQL compatibles con
+Oracle.
+
+El objetivo es poblar correctamente las 16 tablas del modelo respetando sus llaves
+primarias y foráneas, y transformar los datos almacenados en información útil mediante
+uniones explícitas, agrupaciones y funciones de agregación.
+
+\section{Ambiente de trabajo y conexión}
+
+\begin{table}[H]
+  \centering
+  \caption{Configuración utilizada para desarrollar la práctica.}
+  \begin{tabularx}{\textwidth}{>{\bfseries\color{AccentRed}}p{0.28\textwidth} X}
+    \toprule
+    Componente & Configuración \\
+    \midrule
+    Motor & Oracle Database XE \\
+    Cliente & Oracle SQL Developer \\
+    Conexión & \texttt{BD1 Práctica 2} \\
+    Usuario / esquema & \texttt{RICARDIOUS} \\
+    Servidor & \texttt{localhost:1521} \\
+    Servicio & \texttt{XEPDB1} \\
+    Script de estructura & \texttt{Practica2.ddl} \\
+    Fuente de datos & \texttt{data/Dataset\_Practica2.xlsx} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+La prueba realizada desde el cuadro de conexión devolvió el estado
+\textbf{Correcto}. La contraseña no se documenta por seguridad.
+
+\evidenceimage{evidencias/01_estructura/00_conexion_oracle.png}{Prueba satisfactoria de la conexión utilizada en Oracle SQL Developer.}
+
+\section{Creación y comprobación de la estructura}
+
+Se abrió el archivo \texttt{Practica2.ddl} en una hoja SQL asociada con la conexión
+personal y se ejecutó como script. El archivo crea las 16 tablas y posteriormente
+define sus restricciones de llave primaria, unicidad y llave foránea. La salida no
+presentó errores de Oracle.
+
+\evidenceimage{evidencias/01_estructura/01_ddl_ejecutado.png}{Ejecución del script DDL en el esquema personal.}
+
+La estructura se comprobó consultando el diccionario de datos del usuario:
+
+\begin{lstlisting}
+SELECT table_name
+FROM user_tables
+ORDER BY table_name;
+\end{lstlisting}
+
+\evidenceimage{evidencias/01_estructura/02_lista_16_tablas.png}{Listado de las 16 tablas creadas en Oracle.}
+
+\section{Orden jerárquico de importación}
+
+El orden de carga es necesario porque una fila hija no puede hacer referencia a una
+llave que todavía no exista en su tabla padre. Seguir la secuencia mostrada evita
+violaciones de integridad referencial como \texttt{ORA-02291}.
+
+\begin{longtable}{>{\centering\arraybackslash}p{0.08\textwidth} p{0.28\textwidth} p{0.42\textwidth} >{\centering\arraybackslash}p{0.10\textwidth}}
+  \caption{Secuencia de importación y dependencias.}\\
+  \toprule
+  \textbf{Orden} & \textbf{Tabla} & \textbf{Dependencia previa} & \textbf{Filas} \\
+  \midrule
+  \endfirsthead
+  \toprule
+  \textbf{Orden} & \textbf{Tabla} & \textbf{Dependencia previa} & \textbf{Filas} \\
+  \midrule
+  \endhead
+  1 & \texttt{SECTOR\_ECONOMICO} & Ninguna & 5 \\
+  2 & \texttt{DEPARTAMENTO} & Ninguna & 4 \\
+  3 & \texttt{ESTADO\_COLOCACION} & Ninguna & 3 \\
+  4 & \texttt{TIPO\_EVALUACION} & Ninguna & 2 \\
+  5 & \texttt{CRITERIO} & Ninguna & 5 \\
+  6 & \texttt{INSTITUTO} & Ninguna & 3 \\
+  7 & \texttt{MUNICIPIO} & \texttt{DEPARTAMENTO} & 8 \\
+  8 & \texttt{EMPRESA} & \texttt{SECTOR\_ECONOMICO} & 5 \\
+  9 & \texttt{CATEDRATICO} & \texttt{INSTITUTO} & 5 \\
+  10 & \texttt{CONTACTO\_EMPRESARIAL} & \texttt{EMPRESA} & 7 \\
+  11 & \texttt{ESTUDIANTE} & \texttt{MUNICIPIO}, \texttt{INSTITUTO} & 7 \\
+  12 & \texttt{PLAZA} & \texttt{EMPRESA}, \texttt{CONTACTO\_EMPRESARIAL} & 7 \\
+  13 & \texttt{COLOCACION} & \texttt{ESTUDIANTE}, \texttt{PLAZA}, \texttt{CATEDRATICO}, \texttt{ESTADO\_COLOCACION} & 7 \\
+  14 & \texttt{BITACORA} & \texttt{COLOCACION}, \texttt{CONTACTO\_EMPRESARIAL} & 9 \\
+  15 & \texttt{EVALUACION} & \texttt{COLOCACION}, \texttt{CATEDRATICO}, \texttt{TIPO\_EVALUACION} & 4 \\
+  16 & \texttt{DETALLE\_EVALUACION} & \texttt{EVALUACION}, \texttt{CRITERIO} & 17 \\
+  \bottomrule
+\end{longtable}
+
+\section{Procedimiento de importación}
+
+El siguiente procedimiento se aplicó a cada tabla, respetando estrictamente el orden
+anterior:
+
+\begin{enumerate}
+  \item Localizar la tabla en \textbf{Conexiones $>$ Tablas} dentro de
+        \texttt{BD1 Práctica 2}.
+  \item Abrir el menú contextual de la tabla y seleccionar \textbf{Import Data}.
+  \item Elegir el archivo \texttt{Dataset\_Practica2.xlsx}.
+  \item Seleccionar la hoja con el mismo nombre de la tabla y verificar la vista previa.
+  \item Indicar que la primera fila contiene los encabezados y usar el método
+        \textbf{Insertar}.
+  \item Comprobar que cada encabezado del Excel se encuentre asociado con la columna
+        Oracle del mismo nombre.
+  \item Revisar el resumen y finalizar la importación.
+  \item Abrir la pestaña \textbf{Datos}, actualizarla y comparar la cantidad de filas
+        con el valor esperado.
+  \item Confirmar la transacción cuando corresponda mediante \texttt{COMMIT}.
+\end{enumerate}
+
+Antes de continuar con la tabla siguiente se verificó que la importación actual
+hubiera terminado correctamente. Esto evita propagar errores y facilita identificar
+la tabla que origina una posible violación de integridad.
+
+\clearpage
+\section{Evidencias de importación por tabla}
+
+Para cada tabla se presenta una evidencia del asistente de importación y otra de los
+registros almacenados. En total se documentan 32 capturas.
+
+\evidencepair{SECTOR\_ECONOMICO}{01_sector_economico}{5}
+\evidencepair{DEPARTAMENTO}{02_departamento}{4}
+\evidencepair{ESTADO\_COLOCACION}{03_estado_colocacion}{3}
+\evidencepair{TIPO\_EVALUACION}{04_tipo_evaluacion}{2}
+\evidencepair{CRITERIO}{05_criterio}{5}
+\evidencepair{INSTITUTO}{06_instituto}{3}
+\evidencepair{MUNICIPIO}{07_municipio}{8}
+\evidencepair{EMPRESA}{08_empresa}{5}
+\evidencepair{CATEDRATICO}{09_catedratico}{5}
+\evidencepair{CONTACTO\_EMPRESARIAL}{10_contacto_empresarial}{7}
+\evidencepair{ESTUDIANTE}{11_estudiante}{7}
+\evidencepair{PLAZA}{12_plaza}{7}
+\evidencepair{COLOCACION}{13_colocacion}{7}
+\evidencepair{BITACORA}{14_bitacora}{9}
+\evidencepair{EVALUACION}{15_evaluacion}{4}
+\evidencepair{DETALLE\_EVALUACION}{16_detalle_evaluacion}{17}
+
+% -----------------------------------------------------------------------------
+\section{Consulta 1: directorio de estudiantes activos}
+
+Relaciona estudiantes, colocaciones, plazas, empresas y estados. El filtro conserva
+únicamente las colocaciones cuyo estado es \texttt{Activa}. El resultado contiene el
+carné, nombre completo, empresa y especialidad solicitados.
+
+\lstinputlisting[caption={Consulta 1: directorio de estudiantes activos.}]{../Consulta1.sql}
+\evidenceimage{evidencias/03_consultas/01_directorio_estudiantes_activos.png}{Ejecución y resultado de la Consulta 1.}
+
+\clearpage
+\section{Consulta 2: oferta de plazas por empresa}
+
+Utiliza \texttt{LEFT JOIN} para conservar todas las empresas y \texttt{COUNT} para
+contar sus plazas. La agrupación genera un total por empresa y el orden descendente
+coloca primero las que ofrecen más plazas.
+
+\lstinputlisting[caption={Consulta 2: cantidad de plazas por empresa.}]{../Consulta2.sql}
+\evidenceimage{evidencias/03_consultas/02_oferta_plazas_empresa.png}{Ejecución y resultado de la Consulta 2.}
+
+\clearpage
+\section{Consulta 3: carga de validación por contacto}
+
+Suma las horas de las bitácoras validadas por cada contacto empresarial durante julio
+y agosto de 2026. El límite superior exclusivo del 1 de septiembre cubre ambos meses
+completos incluso si la columna contiene una componente de hora.
+
+\lstinputlisting[caption={Consulta 3: horas validadas por contacto empresarial.}]{../Consulta3.sql}
+\evidenceimage{evidencias/03_consultas/03_carga_validacion_contacto.png}{Ejecución y resultado de la Consulta 3.}
+
+\clearpage
+\section{Consulta 4: estudiantes en repitencia}
+
+La condición \texttt{ES\_REPITENCIA = 1} identifica a los estudiantes repitentes. El
+contacto empresarial se obtiene desde la plaza asignada, por lo que el reporte no
+depende de que el estudiante ya tenga bitácoras registradas. El resultado identifica
+a Pedro Samayoa, su instituto, contacto y estado de colocación.
+
+\lstinputlisting[caption={Consulta 4: estudiantes en calidad de repitencia.}]{../Consulta4.sql}
+\evidenceimage{evidencias/03_consultas/04_estudiantes_repitencia.png}{Ejecución y resultado de la Consulta 4.}
+
+\clearpage
+\section{Consulta 5: auditoría de bitácoras}
+
+Se consideran las colocaciones activas y se utiliza \texttt{LEFT JOIN} para buscar
+bitácoras del último mes sin descartar las colocaciones que no tengan registros. La
+cláusula \texttt{HAVING} conserva los grupos cuyo conteo de bitácoras recientes es
+cero.
+
+\lstinputlisting[caption={Consulta 5: colocaciones activas sin bitácoras recientes.}]{../Consulta5.sql}
+\evidenceimage{evidencias/03_consultas/05_consulta_auditoria_ultimo_mes.png}{Ejecución y resultado de la Consulta 5.}
+
+\section{Validación final}
+
+\begin{table}[H]
+  \centering
+  \caption{Lista de comprobación de la práctica.}
+  \begin{tabularx}{\textwidth}{X >{\centering\arraybackslash}p{0.18\textwidth}}
+    \toprule
+    \textbf{Comprobación} & \textbf{Estado} \\
+    \midrule
+    Conexión satisfactoria con Oracle Database & \statusok \\
+    Creación de las 16 tablas del modelo & \statusok \\
+    Importación respetando el orden de dependencias & \statusok \\
+    Dos evidencias por cada tabla (32 capturas) & \statusok \\
+    Cinco scripts SQL independientes & \statusok \\
+    Evidencia de ejecución de las cinco consultas & \statusok \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\section{Conclusiones}
+
+\begin{enumerate}
+  \item El orden de carga permitió mantener la integridad referencial y evitó insertar
+        llaves foráneas antes de sus registros padre.
+  \item El asistente de Oracle SQL Developer facilitó la asociación controlada de las
+        columnas del libro de Excel con la estructura física de cada tabla.
+  \item Las uniones explícitas permitieron reunir información normalizada distribuida
+        entre estudiantes, empresas, plazas, colocaciones, contactos y catálogos.
+  \item Las funciones \texttt{COUNT} y \texttt{SUM}, junto con \texttt{GROUP BY} y
+        \texttt{HAVING}, permitieron construir los reportes estadísticos y de auditoría
+        solicitados.
+  \item Las evidencias obtenidas confirman la carga completa del conjunto de datos y la
+        ejecución satisfactoria de las cinco consultas.
+\end{enumerate}
+
+\vfill
+\begin{center}
+  \color{AccentRed}\rule{0.35\textwidth}{1.2pt}\\[0.5em]
+  {\small\color{Muted}Fin del manual}
+\end{center}
+
+\end{document}
