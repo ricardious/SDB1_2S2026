@@ -173,7 +173,13 @@ def main():
         shutil.copytree(TEMPLATE / directory, OUT / directory)
     for filename in ("dl_settings.xml",):
         shutil.copy2(TEMPLATE / filename, OUT / filename)
-    (OUT / "DDL_ORIGEN.sql").write_text(DDL.read_text(encoding="utf-8"), encoding="utf-8")
+    ddl_text = DDL.read_text(encoding="utf-8")
+    (OUT / "DDL_ORIGEN.sql").write_text(ddl_text, encoding="utf-8")
+    ddl_import = "\n\n".join(
+        match.group(0)
+        for match in re.finditer(r"CREATE TABLE\s+\w+\s*\(.*?\);", ddl_text, re.S | re.I)
+    ) + "\n"
+    (OUT / "DDL_IMPORTAR_DATAMODELER.sql").write_text(ddl_import, encoding="utf-8")
     DMD.write_text(f'''<?xml version="1.0" encoding="UTF-8"?>
 <OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo_Comercial_La_Estrella" id="{DESIGN_ID}" version="3.5">
 <createdBy>ricardious</createdBy><createdTime>2026-09-10 12:00:00 UTC</createdTime>
