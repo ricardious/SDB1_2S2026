@@ -42,10 +42,13 @@
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
-</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="27E30098-3AE9-52D3-B261-CE0F38E5D5C3" name="PK_PERSONA"><createdBy>ricardious</createdBy>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="049C7360-76C4-5209-8832-124C321623EA" referredColumn="4EDABE90-60F9-5D5C-A02B-97DA88C37A48"/></associations>
+</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index"><ind_PK_UK id="27E30098-3AE9-52D3-B261-CE0F38E5D5C3" name="PK_PERSONA"><createdBy>ricardious</createdBy>
 <ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><pk>true</pk>
 <indexState>Primary Constraint</indexState><isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage><colUsage columnID="7A7B0AA8-048F-5BDF-BA66-D1CFDEDA0A4D"/></indexColumnUsage></ind_PK_UK></indexes>
+<indexColumnUsage><colUsage columnID="7A7B0AA8-048F-5BDF-BA66-D1CFDEDA0A4D"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="460794D5-CD9A-5DA4-9432-193F3A5B6971" name="UQ_PERSONA_CORREO"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><unique>true</unique>
+<indexState>Unique Constraint</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="37892A2E-3CD2-5EC2-998F-3A9D7C96A85F"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="F543CD72-2F67-5DE5-AF45-82F5A0DDD3F5" name="FK_PERSONA_MUN"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="6A878DCF-5B20-561C-BFE6-1CCC792EE542"/></indexColumnUsage></ind_PK_UK></indexes>
 </Table>

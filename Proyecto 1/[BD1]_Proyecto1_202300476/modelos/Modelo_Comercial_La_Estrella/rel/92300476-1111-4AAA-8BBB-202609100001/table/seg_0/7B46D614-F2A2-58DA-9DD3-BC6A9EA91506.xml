@@ -17,20 +17,29 @@
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="5DA172F1-BFD6-5AAD-80BF-9C01A0BC0B3D" referredColumn="A2A4DDC5-39A9-5530-8F57-094DF0DE874E"/></associations>
 </Column><Column name="ID_CARGO" id="0CF08871-B8CA-5ECA-9CA6-95CEE0ADE879">
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="AE4AE87F-5FCC-5BFF-AFB5-C229BD916598" referredColumn="1177B742-2E1B-5120-A0D4-A9FE25ADD34E"/></associations>
 </Column><Column name="ID_PERSONA" id="D716DBA6-6486-546D-9BFF-B13EA186B4D5">
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
-</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="959757E8-7862-5273-AB9B-8BCE93B2EEEB" name="PK_EMPLEADO"><createdBy>ricardious</createdBy>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="8D73E605-7998-5979-949E-32AF8C16FEAA" referredColumn="7A7B0AA8-048F-5BDF-BA66-D1CFDEDA0A4D"/></associations>
+</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index"><ind_PK_UK id="959757E8-7862-5273-AB9B-8BCE93B2EEEB" name="PK_EMPLEADO"><createdBy>ricardious</createdBy>
 <ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><pk>true</pk>
 <indexState>Primary Constraint</indexState><isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage><colUsage columnID="8D5250FA-9EEF-5A0B-9E87-E5216B302DB3"/></indexColumnUsage></ind_PK_UK></indexes>
+<indexColumnUsage><colUsage columnID="8D5250FA-9EEF-5A0B-9E87-E5216B302DB3"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="B166B67B-75A1-59F8-AB50-D967000EC07A" name="UQ_EMPLEADO_ID_PERSONA"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><unique>true</unique>
+<indexState>Unique Constraint</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="D716DBA6-6486-546D-9BFF-B13EA186B4D5"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="AA4E65B0-8D14-5EA0-BDFC-98E04733D51C" name="UQ_EMPLEADO_ID_EMPLEADO_ID_TIENDA"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><unique>true</unique>
+<indexState>Unique Constraint</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="8D5250FA-9EEF-5A0B-9E87-E5216B302DB3"/><colUsage columnID="941DA669-DC2B-5DD4-9C7E-686B866506FB"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="2A75B781-C43D-5D73-BDC3-7AB941E3F9FB" name="FK_EMP_TIENDA"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="941DA669-DC2B-5DD4-9C7E-686B866506FB"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="5F0213A0-B649-5512-AD72-CEE47AB195BF" name="FK_EMP_CARGO"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="0CF08871-B8CA-5ECA-9CA6-95CEE0ADE879"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="5E9F8E12-AF52-52E3-B2A6-97DA3DC03664" name="FK_EMP_PERSONA"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="D716DBA6-6486-546D-9BFF-B13EA186B4D5"/></indexColumnUsage></ind_PK_UK></indexes>
 </Table>

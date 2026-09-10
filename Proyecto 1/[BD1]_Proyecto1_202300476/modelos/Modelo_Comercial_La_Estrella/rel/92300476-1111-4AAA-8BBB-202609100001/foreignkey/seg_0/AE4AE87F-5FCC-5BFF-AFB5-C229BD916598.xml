@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AE4AE87F-5FCC-5BFF-AFB5-C229BD916598" containerWithKeyObject="7B46D614-F2A2-58DA-9DD3-BC6A9EA91506" localFKIndex="5F0213A0-B649-5512-AD72-CEE47AB195BF" name="FK_EMP_CARGO">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<referredTableLongName>CARGO</referredTableLongName><deleteRule>NO ACTION</deleteRule><referredTableID>DDCC2E7C-212E-5BB4-B752-103A3EDAFC6F</referredTableID>
+<keyObject>870130CA-1F59-51F0-BB52-B059B8C78545</keyObject><referredKeyID>870130CA-1F59-51F0-BB52-B059B8C78545</referredKeyID><mandatory>true</mandatory>
+<refColNames>ID_CARGO</refColNames><transferable>true</transferable><rely>false</rely><columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

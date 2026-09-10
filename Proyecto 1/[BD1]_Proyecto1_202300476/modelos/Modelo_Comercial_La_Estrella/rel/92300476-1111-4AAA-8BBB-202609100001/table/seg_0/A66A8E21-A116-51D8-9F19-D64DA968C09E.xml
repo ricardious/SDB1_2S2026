@@ -17,25 +17,30 @@
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="C41CA1F5-7C7F-53AE-8F18-B755E22D1C5E" referredColumn="941DA669-DC2B-5DD4-9C7E-686B866506FB"/></associations>
 </Column><Column name="ID_EMPLEADO" id="88198852-60CC-52BF-BD8E-97B4A097189B">
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="C41CA1F5-7C7F-53AE-8F18-B755E22D1C5E" referredColumn="8D5250FA-9EEF-5A0B-9E87-E5216B302DB3"/></associations>
 </Column><Column name="ID_CLIENTE" id="48A26A35-BF81-57CB-BDE3-15C63633282C">
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="B0DA2690-71AC-570D-B9A3-55E548EEED78" referredColumn="E49455AE-57F3-5E0C-BB49-70DEACECE025"/></associations>
 </Column><Column name="ID_ESTADO_VENTA" id="D37742E7-9B12-5FDB-BEDD-328B4349FB77">
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
-</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="30C607D6-B81D-5F14-BEBB-99614CD9169B" name="PK_VENTA"><createdBy>ricardious</createdBy>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="1000B398-8753-5A63-BB7F-39B9EBBCA169" referredColumn="2D9DCF8D-8F63-57FA-8CBC-3B8173871036"/></associations>
+</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index"><ind_PK_UK id="30C607D6-B81D-5F14-BEBB-99614CD9169B" name="PK_VENTA"><createdBy>ricardious</createdBy>
 <ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><pk>true</pk>
 <indexState>Primary Constraint</indexState><isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage><colUsage columnID="9C53D267-42CA-570F-B5EA-B8A17A318C17"/></indexColumnUsage></ind_PK_UK></indexes>
+<indexColumnUsage><colUsage columnID="9C53D267-42CA-570F-B5EA-B8A17A318C17"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="30FC0502-0E83-5C89-B3E1-01F3810BA58F" name="FK_VENTA_EMP_TIENDA"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="88198852-60CC-52BF-BD8E-97B4A097189B"/><colUsage columnID="F0BB447A-6C85-5BD0-B3B8-385E492FD1E5"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="3F134269-F5AC-5133-9955-08678F39CA76" name="FK_VENTA_CLI"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="48A26A35-BF81-57CB-BDE3-15C63633282C"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="CF56E40E-E4ED-5C2D-B333-25DB203ED213" name="FK_VENTA_ESTADO"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="D37742E7-9B12-5FDB-BEDD-328B4349FB77"/></indexColumnUsage></ind_PK_UK></indexes>
 </Table>
