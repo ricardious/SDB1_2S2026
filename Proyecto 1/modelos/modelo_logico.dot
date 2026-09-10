@@ -1,0 +1,30 @@
+digraph logico {
+  graph [rankdir=LR, bgcolor="white", pad=0.25, nodesep=0.35, ranksep=1.0, fontname="DejaVu Sans"];
+  node [shape=record, style="filled", fillcolor="#FAFAFA", color="#A6192E", fontname="DejaVu Sans", fontsize=8];
+  edge [color="#667085", arrowsize=.7];
+  pais [label="{PAIS|# id_pais\lnombre (UQ)\l}"];
+  departamento [label="{DEPARTAMENTO|# id_departamento\lnombre\l* id_pais\l}"];
+  municipio [label="{MUNICIPIO|# id_municipio\lnombre\l* id_departamento\l}"];
+  tipo_tienda [label="{TIPO_TIENDA|# id_tipo_tienda\lnombre (UQ)\l}"];
+  tipo_id [label="{TIPO_IDENTIFICACION|# id_tipo_identificacion\lnombre (UQ)\l}"];
+  cargo [label="{CARGO|# id_cargo\lnombre (UQ)\l}"];
+  categoria [label="{CATEGORIA|# id_categoria\lnombre (UQ)\l}"];
+  marca [label="{MARCA|# id_marca\lnombre (UQ)\l}"];
+  estado [label="{ESTADO_VENTA|# id_estado_venta\lnombre (UQ)\l}"];
+  metodo [label="{METODO_PAGO|# id_metodo_pago\lnombre (UQ)\l}"];
+  persona [label="{PERSONA|# id_persona\lnombres\lapellidos\ltelefono\lcorreo (UQ, opcional)\ldireccion\l* id_municipio\l}"];
+  tienda [label="{TIENDA|# id_tienda\lnombre\ldireccion\ltelefono\l* id_municipio\l* id_tipo_tienda\l}"];
+  empleado [label="{EMPLEADO|# id_empleado\lfecha_contratacion\l* id_tienda\l* id_cargo\l* id_persona (UQ)\l}"];
+  cliente [label="{CLIENTE|# id_cliente\l* id_tipo_identificacion\lnumero_identificacion\l* id_persona (UQ)\l}"];
+  producto [label="{PRODUCTO|# id_producto\lnombre\ldescripcion\l* id_categoria\l* id_marca\l}"];
+  catalogo [label="{CATALOGO_PRODUCTO|#* id_tienda\l#* id_producto\lprecio_vigente\lexistencia_actual\l}"];
+  venta [label="{VENTA|# id_venta\lfecha_venta\l* id_tienda\l* id_empleado\l* id_cliente\l* id_estado_venta\l}"];
+  detalle [label="{DETALLE_VENTA|#* id_venta\l#* id_producto\lcantidad\lprecio_unitario\lsubtotal\l}"];
+  pago [label="{PAGO|# id_pago\lmonto\l* id_metodo_pago\l* id_venta\l}"];
+  pais -> departamento; departamento -> municipio; municipio -> persona; municipio -> tienda;
+  tipo_tienda -> tienda; tienda -> empleado; cargo -> empleado; persona -> empleado;
+  tipo_id -> cliente; persona -> cliente; categoria -> producto; marca -> producto;
+  tienda -> catalogo; producto -> catalogo; tienda -> venta; empleado -> venta;
+  cliente -> venta; estado -> venta; venta -> detalle; producto -> detalle;
+  venta -> pago; metodo -> pago;
+}

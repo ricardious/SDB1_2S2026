@@ -1,0 +1,30 @@
+digraph relacional {
+  graph [rankdir=LR, bgcolor="white", pad=0.2, nodesep=0.28, ranksep=0.8, fontname="DejaVu Sans"];
+  node [shape=box, style="filled", fillcolor="#FFFFFF", color="#A6192E", fontname="DejaVu Sans", fontsize=8];
+  edge [color="#667085", arrowsize=.65];
+  pais [label="PAIS\nPK id_pais NUMBER(10)\nUQ nombre VARCHAR2(80)"];
+  departamento [label="DEPARTAMENTO\nPK id_departamento NUMBER(10)\nnombre VARCHAR2(80)\nFK id_pais NUMBER(10)"];
+  municipio [label="MUNICIPIO\nPK id_municipio NUMBER(10)\nnombre VARCHAR2(80)\nFK id_departamento NUMBER(10)"];
+  tipo_tienda [label="TIPO_TIENDA\nPK id_tipo_tienda NUMBER(10)\nUQ nombre VARCHAR2(80)"];
+  tipo_id [label="TIPO_IDENTIFICACION\nPK id_tipo_identificacion NUMBER(10)\nUQ nombre VARCHAR2(50)"];
+  cargo [label="CARGO\nPK id_cargo NUMBER(10)\nUQ nombre VARCHAR2(80)"];
+  categoria [label="CATEGORIA\nPK id_categoria NUMBER(10)\nUQ nombre VARCHAR2(80)"];
+  marca [label="MARCA\nPK id_marca NUMBER(10)\nUQ nombre VARCHAR2(80)"];
+  estado [label="ESTADO_VENTA\nPK id_estado_venta NUMBER(10)\nUQ nombre VARCHAR2(30)"];
+  metodo [label="METODO_PAGO\nPK id_metodo_pago NUMBER(10)\nUQ nombre VARCHAR2(80)"];
+  persona [label="PERSONA\nPK id_persona NUMBER(10)\nnombres/apellidos VARCHAR2(100)\ntelefono VARCHAR2(25)\nUQ correo VARCHAR2(150) NULL\ndireccion VARCHAR2(200)\nFK id_municipio NUMBER(10)"];
+  tienda [label="TIENDA\nPK id_tienda NUMBER(10)\nnombre VARCHAR2(120)\ndireccion VARCHAR2(200)\ntelefono VARCHAR2(25)\nFK id_municipio NUMBER(10)\nFK id_tipo_tienda NUMBER(10)"];
+  empleado [label="EMPLEADO\nPK id_empleado NUMBER(10)\nfecha_contratacion DATE\nFK id_tienda NUMBER(10)\nFK id_cargo NUMBER(10)\nUQ/FK id_persona NUMBER(10)"];
+  cliente [label="CLIENTE\nPK id_cliente NUMBER(10)\nFK id_tipo_identificacion NUMBER(10)\nnumero_identificacion VARCHAR2(30)\nUQ/FK id_persona NUMBER(10)"];
+  producto [label="PRODUCTO\nPK id_producto NUMBER(10)\nnombre VARCHAR2(120)\ndescripcion VARCHAR2(300)\nFK id_categoria NUMBER(10)\nFK id_marca NUMBER(10)"];
+  catalogo [label="CATALOGO_PRODUCTO\nPK/FK id_tienda NUMBER(10)\nPK/FK id_producto NUMBER(10)\nprecio_vigente NUMBER(12,2)\nexistencia_actual NUMBER(10)"];
+  venta [label="VENTA\nPK id_venta NUMBER(10)\nfecha_venta DATE\nFK id_tienda NUMBER(10)\nFK id_empleado NUMBER(10)\nFK id_cliente NUMBER(10)\nFK id_estado_venta NUMBER(10)"];
+  detalle [label="DETALLE_VENTA\nPK/FK id_venta NUMBER(10)\nPK/FK id_producto NUMBER(10)\ncantidad NUMBER(10)\nprecio_unitario NUMBER(12,2)\nsubtotal NUMBER(12,2)"];
+  pago [label="PAGO\nPK id_pago NUMBER(10)\nmonto NUMBER(12,2)\nFK id_metodo_pago NUMBER(10)\nFK id_venta NUMBER(10)"];
+  pais -> departamento; departamento -> municipio; municipio -> persona; municipio -> tienda;
+  tipo_tienda -> tienda; tienda -> empleado; cargo -> empleado; persona -> empleado;
+  tipo_id -> cliente; persona -> cliente; categoria -> producto; marca -> producto;
+  tienda -> catalogo; producto -> catalogo; tienda -> venta; empleado -> venta;
+  cliente -> venta; estado -> venta; venta -> detalle; producto -> detalle;
+  venta -> pago; metodo -> pago;
+}

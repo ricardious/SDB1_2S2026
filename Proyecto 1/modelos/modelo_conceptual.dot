@@ -1,0 +1,30 @@
+digraph conceptual {
+  graph [rankdir=LR, bgcolor="white", pad=0.3, nodesep=0.45, ranksep=0.9, fontname="DejaVu Sans"];
+  node [shape=box, style="rounded,filled", fillcolor="#F7EDEF", color="#A6192E", fontname="DejaVu Sans", margin="0.14,0.08"];
+  edge [color="#667085", fontname="DejaVu Sans", fontsize=9];
+  pais; departamento; municipio; tipo_tienda; tienda; persona; empleado; cliente;
+  cargo; tipo_identificacion; categoria; marca; producto; catalogo_producto;
+  venta; estado_venta; detalle_venta; pago; metodo_pago;
+  pais -> departamento [label="1:N"];
+  departamento -> municipio [label="1:N"];
+  municipio -> tienda [label="1:N"];
+  municipio -> persona [label="1:N"];
+  tipo_tienda -> tienda [label="1:N"];
+  persona -> empleado [label="1:0..1"];
+  persona -> cliente [label="1:0..1"];
+  tienda -> empleado [label="1:N"];
+  cargo -> empleado [label="1:N"];
+  tipo_identificacion -> cliente [label="1:N"];
+  categoria -> producto [label="1:N"];
+  marca -> producto [label="1:N"];
+  tienda -> catalogo_producto [label="1:N"];
+  producto -> catalogo_producto [label="1:N"];
+  tienda -> venta [label="1:N"];
+  empleado -> venta [label="1:N"];
+  cliente -> venta [label="1:N"];
+  estado_venta -> venta [label="1:N"];
+  venta -> detalle_venta [label="1:N"];
+  producto -> detalle_venta [label="1:N"];
+  venta -> pago [label="1:N"];
+  metodo_pago -> pago [label="1:N"];
+}
