@@ -18,10 +18,13 @@
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
-</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="91ACE645-771B-5619-9620-2F4C7EB73378" name="PK_DEPARTAMENTO"><createdBy>ricardious</createdBy>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="F4AB5E00-52BD-5F41-A5C9-FAA1A565686E" referredColumn="0C3A82E9-7958-561C-A1C0-9D69A7219766"/></associations>
+</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index"><ind_PK_UK id="91ACE645-771B-5619-9620-2F4C7EB73378" name="PK_DEPARTAMENTO"><createdBy>ricardious</createdBy>
 <ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><pk>true</pk>
 <indexState>Primary Constraint</indexState><isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage><colUsage columnID="39406ECB-029D-53BA-8BA0-AD7EA3F9CE43"/></indexColumnUsage></ind_PK_UK></indexes>
+<indexColumnUsage><colUsage columnID="39406ECB-029D-53BA-8BA0-AD7EA3F9CE43"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="4546B875-8901-5963-8D30-CB00E58EB117" name="UQ_DEPARTAMENTO_ID_PAIS_NOMBRE"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><unique>true</unique>
+<indexState>Unique Constraint</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="8C9CAEFA-C24A-5020-B6CD-12DB48B06592"/><colUsage columnID="734C1995-9112-5E03-AD96-A0D313F2EE65"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="DA1F83FF-222D-55D3-802E-92F1DEAC1DE5" name="FK_DEP_PAIS"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="8C9CAEFA-C24A-5020-B6CD-12DB48B06592"/></indexColumnUsage></ind_PK_UK></indexes>
 </Table>

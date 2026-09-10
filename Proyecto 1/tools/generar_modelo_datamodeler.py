@@ -38,12 +38,18 @@ def parse():
     tables = []
     for match in re.finditer(r"CREATE TABLE\s+(\w+)\s*\((.*?)\);", text, re.S | re.I):
         name, body = match.group(1).upper(), match.group(2)
-        columns, primary = [], []
+        columns, primary, uniques, foreign = [], [], [], []
         for item in split_items(body):
             if item.upper().startswith("CONSTRAINT"):
                 pk = re.search(r"PRIMARY KEY\s*\(([^)]+)\)", item, re.I)
                 if pk:
                     primary = [x.strip().upper() for x in pk.group(1).split(",")]
+                uq = re.search(r"UNIQUE\s*\(([^)]+)\)", item, re.I)
+                if uq:
+                    uniques.append([x.strip().upper() for x in uq.group(1).split(",")])
+                fk = re.search(r"CONSTRAINT\s+(\w+)\s+FOREIGN KEY\s*\(([^)]+)\)\s+REFERENCES\s+(\w+)\s*\(([^)]+)\)", item, re.I | re.S)
+                if fk:
+                    foreign.append((fk.group(1).upper(), [x.strip().upper() for x in fk.group(2).split(",")], fk.group(3).upper(), [x.strip().upper() for x in fk.group(4).split(",")]))
                 continue
             cm = re.match(r"(\w+)\s+((?:NUMBER|VARCHAR2)(?:\([^)]*\))?|DATE)\b(.*)", item, re.I | re.S)
             if not cm:
@@ -52,7 +58,7 @@ def parse():
             columns.append((col, datatype, "NOT NULL" in tail))
             if "PRIMARY KEY" in tail:
                 primary.append(col)
-        tables.append((name, columns, primary))
+        tables.append((name, columns, primary, uniques, foreign))
     return tables
 
 
@@ -80,33 +86,75 @@ def main():
     subview_dir.mkdir(parents=True)
     objects = []
     view_objects = []
-    for pos, (name, columns, primary) in enumerate(tables):
-        tid = uid("table:" + name)
-        colids = {col: uid(f"column:{name}:{col}") for col, _, _ in columns}
+    table_ids = {table[0]: uid("table:" + table[0]) for table in tables}
+    column_ids = {table[0]: {col: uid(f"column:{table[0]}:{col}") for col, _, _ in table[1]} for table in tables}
+    key_ids = {}
+    for name, _, primary, uniques, _ in tables:
+        key_ids[(name, tuple(primary))] = uid("pk:" + name)
+        for cols in uniques:
+            key_ids[(name, tuple(cols))] = uid("uq:" + name + ":" + ":".join(cols))
+    foreign_by_column = {}
+    for child, _, _, _, fks in tables:
+        for fk_name, local_cols, parent, ref_cols in fks:
+            for local, referred in zip(local_cols, ref_cols):
+                foreign_by_column[(child, local)] = (uid("fk:" + fk_name), column_ids[parent][referred])
+
+    fk_dir = OUT / "rel" / REL_ID / "foreignkey" / "seg_0"
+    fk_dir.mkdir(parents=True)
+    for pos, (name, columns, primary, uniques, foreign) in enumerate(tables):
+        tid = table_ids[name]
+        colids = column_ids[name]
         objects.append(f'   <object objectType="Table" objectID="{tid}" name="{name}" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="{REL_ID}" propertySourceId="" propertyTargetId=""/>')
         view_objects.append(f'  <OView class="oracle.dbtools.crest.model.design.relational.TableView" oid="{tid}" otype="Table" vid="{uid("view:"+name)}"><bounds x="{80+(pos%5)*320}" y="{70+(pos//5)*250}" width="250" height="190"/></OView>')
         cols = []
         for col, datatype, required in columns:
             use = "1" if required or col in primary else "0"
+            association = ""
+            if (name, col) in foreign_by_column:
+                fk_id, referred_id = foreign_by_column[(name, col)]
+                association = f'<associations><colAssociation fkAssociation="{fk_id}" referredColumn="{referred_id}"/></associations>'
             cols.append(f'''<Column name="{col}" id="{colids[col]}">
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>{use}</use>
-{datatype_xml(datatype)}<autoIncrementCycle>false</autoIncrementCycle>
+{datatype_xml(datatype)}<autoIncrementCycle>false</autoIncrementCycle>{association}
 </Column>''')
-        pk_xml = ""
+        index_items = []
         if primary:
             usages = "".join(f'<colUsage columnID="{colids[c]}"/>' for c in primary)
-            pk_xml = f'''<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="{uid('pk:'+name)}" name="PK_{name}"><createdBy>ricardious</createdBy>
+            index_items.append(f'''<ind_PK_UK id="{uid('pk:'+name)}" name="PK_{name}"><createdBy>ricardious</createdBy>
 <ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><pk>true</pk>
 <indexState>Primary Constraint</indexState><isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>{usages}</indexColumnUsage></ind_PK_UK></indexes>'''
+<indexColumnUsage>{usages}</indexColumnUsage></ind_PK_UK>''')
+        for uq_cols in uniques:
+            usages = "".join(f'<colUsage columnID="{colids[c]}"/>' for c in uq_cols)
+            uq_id = key_ids[(name, tuple(uq_cols))]
+            index_items.append(f'''<ind_PK_UK id="{uq_id}" name="UQ_{name}_{'_'.join(uq_cols)}"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><unique>true</unique>
+<indexState>Unique Constraint</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage>{usages}</indexColumnUsage></ind_PK_UK>''')
+        for fk_name, local_cols, parent, ref_cols in foreign:
+            fk_id, index_id = uid("fk:" + fk_name), uid("fkindex:" + fk_name)
+            usages = "".join(f'<colUsage columnID="{colids[c]}"/>' for c in local_cols)
+            index_items.append(f'''<ind_PK_UK id="{index_id}" name="{fk_name}"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage>{usages}</indexColumnUsage></ind_PK_UK>''')
+            parent_id = table_ids[parent]
+            referred_key = key_ids[(parent, tuple(ref_cols))]
+            fk_xml = f'''<?xml version="1.0" encoding="UTF-8"?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="{fk_id}" containerWithKeyObject="{tid}" localFKIndex="{index_id}" name="{fk_name}">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<referredTableLongName>{parent}</referredTableLongName><deleteRule>NO ACTION</deleteRule><referredTableID>{parent_id}</referredTableID>
+<keyObject>{referred_key}</keyObject><referredKeyID>{referred_key}</referredKeyID><mandatory>true</mandatory>
+<refColNames>{','.join(ref_cols)}</refColNames><transferable>true</transferable><rely>false</rely><columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>'''
+            (fk_dir / f"{fk_id}.xml").write_text(fk_xml, encoding="utf-8")
+            objects.append(f'   <object objectType="FKIndexAssociation" objectID="{fk_id}" name="{fk_name}" containerID="{tid}" refContainerID="{parent_id}" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="{REL_ID}" propertySourceId="{parent_id}" propertyTargetId="{tid}"/>')
+        indexes_xml = f'<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">{"".join(index_items)}</indexes>' if index_items else ""
         xml = f'''<?xml version="1.0" encoding="UTF-8"?>
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="{tid}" name="{name}">
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <adequatelyNormalized>YES</adequatelyNormalized><allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl><parsed>true</parsed>
-<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">{''.join(cols)}</columns>{pk_xml}
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">{''.join(cols)}</columns>{indexes_xml}
 </Table>'''
         (table_dir / f"{tid}.xml").write_text(xml, encoding="utf-8")
 
@@ -131,7 +179,7 @@ def main():
 <createdBy>ricardious</createdBy><createdTime>2026-09-10 12:00:00 UTC</createdTime>
 <ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><capitalNames>true</capitalNames><designId>{DESIGN_ID}</designId>
 </OSDM_Design>''', encoding="utf-8")
-    print(f"Modelo generado: {len(tables)} tablas, {sum(len(t[1]) for t in tables)} columnas")
+    print(f"Modelo generado: {len(tables)} tablas, {sum(len(t[1]) for t in tables)} columnas, {sum(len(t[4]) for t in tables)} FK")
 
 
 if __name__ == "__main__":

@@ -14,9 +14,10 @@
 <dataTypeSize>2</dataTypeSize>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>2,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
-</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="FDFFFEB7-E8CA-51CB-9140-7A0B3BB084BD" name="PK_PAIS"><createdBy>ricardious</createdBy>
+</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index"><ind_PK_UK id="FDFFFEB7-E8CA-51CB-9140-7A0B3BB084BD" name="PK_PAIS"><createdBy>ricardious</createdBy>
 <ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><pk>true</pk>
 <indexState>Primary Constraint</indexState><isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage><colUsage columnID="0C3A82E9-7958-561C-A1C0-9D69A7219766"/></indexColumnUsage></ind_PK_UK></indexes>
+<indexColumnUsage><colUsage columnID="0C3A82E9-7958-561C-A1C0-9D69A7219766"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="AC6419E5-D19A-5665-9F68-FE7C5290C7D1" name="UQ_PAIS_NOMBRE"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><unique>true</unique>
+<indexState>Unique Constraint</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="6F753B15-1191-5DD7-83B6-AC3E08CC17AB"/></indexColumnUsage></ind_PK_UK></indexes>
 </Table>

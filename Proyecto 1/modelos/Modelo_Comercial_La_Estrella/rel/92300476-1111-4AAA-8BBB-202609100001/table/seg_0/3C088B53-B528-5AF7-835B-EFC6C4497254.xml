@@ -12,7 +12,7 @@
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="E1A60E11-4703-5B83-8870-3213DE71DE7B" referredColumn="57B0B520-EB32-5618-A8B5-5DAA8B099D97"/></associations>
 </Column><Column name="NUMERO_IDENTIFICACION" id="528B3B6A-D97B-52E5-B0D4-97F389DBA8A3">
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
@@ -23,10 +23,17 @@
 <createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints><use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
-</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E5F91CB7-936F-56C4-8C4C-40E997340EC9" name="PK_CLIENTE"><createdBy>ricardious</createdBy>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle><associations><colAssociation fkAssociation="E62C5C93-A2F4-5277-BE9F-047F8CE860A9" referredColumn="7A7B0AA8-048F-5BDF-BA66-D1CFDEDA0A4D"/></associations>
+</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index"><ind_PK_UK id="E5F91CB7-936F-56C4-8C4C-40E997340EC9" name="PK_CLIENTE"><createdBy>ricardious</createdBy>
 <ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><pk>true</pk>
 <indexState>Primary Constraint</indexState><isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage><colUsage columnID="E49455AE-57F3-5E0C-BB49-70DEACECE025"/></indexColumnUsage></ind_PK_UK></indexes>
+<indexColumnUsage><colUsage columnID="E49455AE-57F3-5E0C-BB49-70DEACECE025"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="2FA9847E-55BB-586F-9782-C4EE509F3C68" name="UQ_CLIENTE_ID_TIPO_IDENTIFICACION_NUMERO_IDENTIFICACION"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><unique>true</unique>
+<indexState>Unique Constraint</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="E7071C24-3536-5BA2-B2A7-858485ECF9DF"/><colUsage columnID="528B3B6A-D97B-52E5-B0D4-97F389DBA8A3"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="2BB17ADF-E5F2-5294-9282-B73AE89D71C6" name="UQ_CLIENTE_ID_PERSONA"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><unique>true</unique>
+<indexState>Unique Constraint</indexState><isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="A2FDAE46-F6CE-567E-AF34-4DB8F171A723"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="F65D88E8-3C69-5D19-8F7C-95B3B3518930" name="FK_CLI_TIPO_ID"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="E7071C24-3536-5BA2-B2A7-858485ECF9DF"/></indexColumnUsage></ind_PK_UK><ind_PK_UK id="9ECF751E-2822-502E-815D-9E69A16B12B0" name="FK_CLI_PERSONA"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey><indexColumnUsage><colUsage columnID="A2FDAE46-F6CE-567E-AF34-4DB8F171A723"/></indexColumnUsage></ind_PK_UK></indexes>
 </Table>
