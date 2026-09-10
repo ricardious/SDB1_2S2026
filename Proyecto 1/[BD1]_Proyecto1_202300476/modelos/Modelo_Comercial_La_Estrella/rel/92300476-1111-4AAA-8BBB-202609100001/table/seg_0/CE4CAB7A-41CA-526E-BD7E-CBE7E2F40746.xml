@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE4CAB7A-41CA-526E-BD7E-CBE7E2F40746" name="PAGO">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<adequatelyNormalized>YES</adequatelyNormalized><allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl><parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column"><Column name="ID_PAGO" id="E8BE9E7B-E74E-5CEE-B9F7-4E5BE2815CAD">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column><Column name="MONTO" id="8CEDFE79-8E92-587F-A47C-B960F60D4837">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column><Column name="ID_METODO_PAGO" id="010D658B-E42D-5BBA-8215-8FD17E1C9822">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column><Column name="ID_VENTA" id="58DF379F-5E24-5CFB-979A-DC35C8EDABB4">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B7490DA-5A0C-5AC4-BDD1-8E75C6257083" name="PK_PAGO"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><pk>true</pk>
+<indexState>Primary Constraint</indexState><isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage><colUsage columnID="E8BE9E7B-E74E-5CEE-B9F7-4E5BE2815CAD"/></indexColumnUsage></ind_PK_UK></indexes>
+</Table>

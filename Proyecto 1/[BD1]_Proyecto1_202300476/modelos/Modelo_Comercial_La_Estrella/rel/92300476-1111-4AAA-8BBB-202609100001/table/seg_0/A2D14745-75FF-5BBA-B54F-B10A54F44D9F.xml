@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A2D14745-75FF-5BBA-B54F-B10A54F44D9F" name="PERSONA">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<adequatelyNormalized>YES</adequatelyNormalized><allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl><parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column"><Column name="ID_PERSONA" id="7A7B0AA8-048F-5BDF-BA66-D1CFDEDA0A4D">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column><Column name="NOMBRES" id="AF29907E-1E94-5FCC-8074-8EBF631378A4">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<dataTypeSize>2</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>2,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column><Column name="APELLIDOS" id="7199255F-8DE8-5CF9-B669-2EB698682BE1">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<dataTypeSize>2</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>2,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column><Column name="TELEFONO" id="D6FB7D45-8314-50BA-95F3-FF45B0539950">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<dataTypeSize>2</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>2,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column><Column name="CORREO" id="37892A2E-3CD2-5EC2-998F-3A9D7C96A85F">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>0</use>
+<dataTypeSize>2</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>2,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column><Column name="DIRECCION" id="9B71854C-F339-544C-9A9D-6A97C6E82C38">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<dataTypeSize>2</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>2,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column><Column name="ID_MUNICIPIO" id="6A878DCF-5B20-561C-BFE6-1CCC792EE542">
+<createdBy>ricardious</createdBy><ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints><use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters><autoIncrementCycle>false</autoIncrementCycle>
+</Column></columns><indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27E30098-3AE9-52D3-B261-CE0F38E5D5C3" name="PK_PERSONA"><createdBy>ricardious</createdBy>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName><pk>true</pk>
+<indexState>Primary Constraint</indexState><isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage><colUsage columnID="7A7B0AA8-048F-5BDF-BA66-D1CFDEDA0A4D"/></indexColumnUsage></ind_PK_UK></indexes>
+</Table>

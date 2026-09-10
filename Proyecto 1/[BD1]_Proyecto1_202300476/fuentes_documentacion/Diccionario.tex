@@ -1,0 +1,58 @@
+\documentclass[9pt,letterpaper]{article}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{fontspec}
+\usepackage[letterpaper,margin=1.5cm]{geometry}
+\usepackage{xcolor,longtable,array,booktabs,fancyhdr,hyperref}
+\definecolor{accent}{HTML}{A6192E}\definecolor{muted}{HTML}{667085}
+\hypersetup{colorlinks=true,linkcolor=accent,pdftitle={Diccionario de datos - Comercial La Estrella},pdfauthor={Alex Ricardo Castaneda Rodriguez}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\color{accent}Proyecto 1 · Comercial La Estrella}\fancyhead[R]{Diccionario de datos}\fancyfoot[C]{\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\renewcommand{\arraystretch}{1.15}
+\newcommand{\tabla}[2]{\section{#1}\textcolor{muted}{#2}\par\smallskip}
+\newenvironment{dic}{\begin{longtable}{>{\ttfamily}p{2.8cm}p{2.3cm}p{1.1cm}p{1.5cm}p{7.3cm}}\toprule Columna & Tipo & Nulo & Clave & Restricción y descripción\\\midrule\endhead}{\end{longtable}}
+\begin{document}
+\begin{center}{\Huge\bfseries\color{accent}Diccionario de datos}\par\medskip{\Large Comercial La Estrella}\par\bigskip
+Alex Ricardo Castañeda Rodríguez · 202300476 · Bases de Datos 1 · 2026\end{center}
+\tableofcontents\clearpage
+
+\tabla{PAIS}{Catálogo de países donde opera la empresa.}
+\begin{dic}id\_pais&NUMBER(10)&No&PK&Identificador del país.\\nombre&VARCHAR2(80)&No&UQ&Nombre único del país.\end{dic}
+\tabla{DEPARTAMENTO}{División territorial perteneciente a un país.}
+\begin{dic}id\_departamento&NUMBER(10)&No&PK&Identificador del departamento.\\nombre&VARCHAR2(80)&No&UQ*&Nombre; único junto con id\_pais.\\id\_pais&NUMBER(10)&No&FK&Referencia a PAIS.\end{dic}
+\tabla{MUNICIPIO}{Municipio perteneciente a un departamento.}
+\begin{dic}id\_municipio&NUMBER(10)&No&PK&Identificador del municipio.\\nombre&VARCHAR2(80)&No&UQ*&Nombre; único junto con id\_departamento.\\id\_departamento&NUMBER(10)&No&FK&Referencia a DEPARTAMENTO.\end{dic}
+\tabla{TIPO\_TIENDA}{Clasificación de establecimientos comerciales.}
+\begin{dic}id\_tipo\_tienda&NUMBER(10)&No&PK&Identificador del tipo.\\nombre&VARCHAR2(80)&No&UQ&Nombre único.\end{dic}
+\tabla{TIPO\_IDENTIFICACION}{Catálogo de documentos de identificación.}
+\begin{dic}id\_tipo\_identificacion&NUMBER(10)&No&PK&Identificador del tipo.\\nombre&VARCHAR2(50)&No&UQ&Nombre único.\end{dic}
+\tabla{CARGO}{Catálogo de cargos laborales.}
+\begin{dic}id\_cargo&NUMBER(10)&No&PK&Identificador del cargo.\\nombre&VARCHAR2(80)&No&UQ&Nombre único.\end{dic}
+\tabla{CATEGORIA}{Clasificación funcional de productos.}
+\begin{dic}id\_categoria&NUMBER(10)&No&PK&Identificador de categoría.\\nombre&VARCHAR2(80)&No&UQ&Nombre único.\end{dic}
+\tabla{MARCA}{Fabricante o marca comercial del producto.}
+\begin{dic}id\_marca&NUMBER(10)&No&PK&Identificador de marca.\\nombre&VARCHAR2(80)&No&UQ&Nombre único.\end{dic}
+\tabla{ESTADO\_VENTA}{Estado vigente de una venta.}
+\begin{dic}id\_estado\_venta&NUMBER(10)&No&PK&Identificador del estado.\\nombre&VARCHAR2(30)&No&UQ&REGISTRADA, PAGADA o ANULADA.\end{dic}
+\tabla{METODO\_PAGO}{Medios aceptados para recibir pagos.}
+\begin{dic}id\_metodo\_pago&NUMBER(10)&No&PK&Identificador del método.\\nombre&VARCHAR2(80)&No&UQ&Nombre único.\end{dic}
+\tabla{PERSONA}{Datos comunes sin duplicación para empleados y clientes.}
+\begin{dic}id\_persona&NUMBER(10)&No&PK&Identificador de persona.\\nombres&VARCHAR2(100)&No&&Nombres.\\apellidos&VARCHAR2(100)&No&&Apellidos.\\telefono&VARCHAR2(25)&No&&Teléfono conservado como texto.\\correo&VARCHAR2(150)&Sí&UQ&Correo único cuando existe; Oracle permite varios NULL.\\direccion&VARCHAR2(200)&No&&Dirección postal.\\id\_municipio&NUMBER(10)&No&FK&Municipio de residencia.\end{dic}
+\tabla{TIENDA}{Establecimiento donde se realizan ventas.}
+\begin{dic}id\_tienda&NUMBER(10)&No&PK&Código de tienda.\\nombre&VARCHAR2(120)&No&UQ&Nombre único.\\direccion&VARCHAR2(200)&No&&Dirección física.\\telefono&VARCHAR2(25)&No&&Teléfono.\\id\_municipio&NUMBER(10)&No&FK&Ubicación municipal.\\id\_tipo\_tienda&NUMBER(10)&No&FK&Clasificación de tienda.\end{dic}
+\tabla{EMPLEADO}{Rol laboral de una persona dentro de una tienda.}
+\begin{dic}id\_empleado&NUMBER(10)&No&PK&Código de empleado.\\fecha\_contratacion&DATE&No&&Fecha de ingreso; se valida contra SYSDATE por consulta.\\id\_tienda&NUMBER(10)&No&FK/UQ*&Tienda; integra UQ (empleado, tienda).\\id\_cargo&NUMBER(10)&No&FK&Cargo desempeñado.\\id\_persona&NUMBER(10)&No&FK/UQ&Una persona puede ser un solo empleado.\end{dic}
+\tabla{CLIENTE}{Rol comercial de una persona compradora.}
+\begin{dic}id\_cliente&NUMBER(10)&No&PK&Código de cliente.\\id\_tipo\_identificacion&NUMBER(10)&No&FK/UQ*&Tipo; integra identificación única.\\numero\_identificacion&VARCHAR2(30)&No&UQ*&Número; único dentro de su tipo.\\id\_persona&NUMBER(10)&No&FK/UQ&Una persona puede ser un solo cliente.\end{dic}
+\tabla{PRODUCTO}{Definición maestra independiente de precio y existencia por tienda.}
+\begin{dic}id\_producto&NUMBER(10)&No&PK&Código de producto.\\nombre&VARCHAR2(120)&No&&Nombre comercial.\\descripcion&VARCHAR2(300)&No&&Descripción.\\id\_categoria&NUMBER(10)&No&FK&Categoría.\\id\_marca&NUMBER(10)&No&FK&Marca.\end{dic}
+\tabla{CATALOGO\_PRODUCTO}{Oferta e inventario vigente de cada producto en cada tienda.}
+\begin{dic}precio\_vigente&NUMBER(12,2)&No&&Mayor que cero.\\existencia\_actual&NUMBER(10)&No&&Mayor o igual a cero.\\id\_tienda&NUMBER(10)&No&PK/FK&Primera parte de PK; referencia TIENDA.\\id\_producto&NUMBER(10)&No&PK/FK&Segunda parte de PK; referencia PRODUCTO.\end{dic}
+\tabla{VENTA}{Cabecera de la transacción comercial.}
+\begin{dic}id\_venta&NUMBER(10)&No&PK&Número único de venta.\\fecha\_venta&DATE&No&&Fecha de operación.\\id\_tienda&NUMBER(10)&No&FK*&Con id\_empleado referencia la asignación del empleado.\\id\_empleado&NUMBER(10)&No&FK*&Empleado de la misma tienda.\\id\_cliente&NUMBER(10)&No&FK&Cliente comprador.\\id\_estado\_venta&NUMBER(10)&No&FK&Estado actual.\end{dic}
+\tabla{DETALLE\_VENTA}{Renglón de producto vendido; conserva el precio histórico.}
+\begin{dic}cantidad&NUMBER(10)&No&&Mayor que cero.\\precio\_unitario&NUMBER(12,2)&No&&Precio aplicado, mayor que cero.\\subtotal&NUMBER(12,2)&No&&Igual a cantidad por precio unitario.\\id\_venta&NUMBER(10)&No&PK/FK&Primera parte de PK.\\id\_producto&NUMBER(10)&No&PK/FK&Segunda parte de PK; impide repetir producto.\end{dic}
+\tabla{PAGO}{Abono individual aplicado a una venta.}
+\begin{dic}id\_pago&NUMBER(10)&No&PK&Identificador del pago.\\monto&NUMBER(12,2)&No&&Mayor que cero.\\id\_metodo\_pago&NUMBER(10)&No&FK&Método utilizado.\\id\_venta&NUMBER(10)&No&FK&Venta receptora.\end{dic}
+
+\section*{Leyenda y alcance}
+PK: llave primaria; FK: llave foránea; UQ: unicidad; el asterisco indica una restricción compuesta. Todas las columnas marcadas ``No'' son \texttt{NOT NULL}. Las reglas que dependen de agregados o de la fecha actual se comprueban en \texttt{05\_validaciones.sql}, porque Oracle no permite expresarlas como \texttt{CHECK} declarativo entre filas/tablas.
+\end{document}

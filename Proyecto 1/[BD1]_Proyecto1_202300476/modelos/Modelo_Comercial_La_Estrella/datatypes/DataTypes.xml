@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataTypesDesign class="oracle.dbtools.crest.model.design.datatypes.DataTypesDesign" name="DataTypes" id="BCF4078E-D65C-4D01-91A0-C7841B61A739" mainViewID="82BE21FE-F12F-423C-BED3-AD37F9847554">
+  <createdBy>ricardious</createdBy>
+  <createdTime>2026-08-13 19:30:00 UTC</createdTime>
+  <ownerDesignName>Practica1_EPS</ownerDesignName>
+  <shouldBeOpen>false</shouldBeOpen>
+</DataTypesDesign>
