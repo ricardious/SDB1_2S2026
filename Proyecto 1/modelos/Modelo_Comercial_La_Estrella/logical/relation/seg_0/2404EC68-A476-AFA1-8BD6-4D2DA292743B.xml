@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_prod_cat" directorySegmentName="seg_0" id="2404EC68-A476-AFA1-8BD6-4D2DA292743B">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<sourcePk>0162017A-DABA-2AC6-E727-6DD5518AFA18</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>433818DA-90F3-A4B9-CC17-67D61D599754</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3B90DC97-A363-14A8-0FB8-556BA5F6CA85</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FFE72CD2-93D9-E66F-0137-08D0ED91848C" name="departamento">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>1723F163-C584-B29D-A7C3-4BA5C0560BBE</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_departamento" id="B7CE8DA0-3003-BC0F-F5A9-83C829D76737">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>D7A86E60-594C-1D21-2979-133B25EAED1A</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="F4712330-7E0A-23EA-FA3A-4CBFF4892645">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>398B26B0-C332-340D-BEB4-95A1D3065125</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E7C3316A-2BC8-1125-B171-D8BBBF5D2394</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_dep_nombre</notNullConstraintName>
+</Column>
+<Column name="id_pais" id="F4F0961D-CBB3-520B-D6C6-9B334637F36C">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_dep_pais</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="6EFD227B-5A86-0894-9E43-63772BA39A90" referredColumn="7E1404A4-5828-AD28-BF92-476DFBC68F62" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B679A75F-2330-6F25-0DC2-198FE2AB0709" name="pk_departamento">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>9B01ADC9-E240-422F-C939-E151F6A6B5E2</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7CE8DA0-3003-BC0F-F5A9-83C829D76737" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5220E9F0-667F-026C-16B8-C3056CB02BE7" name="uq_dep_pais_nombre">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>66FE1963-9E9A-A4F9-D771-279829D6947C</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4F0961D-CBB3-520B-D6C6-9B334637F36C" />
+<colUsage columnID="F4712330-7E0A-23EA-FA3A-4CBFF4892645" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3FAA99F-92D5-2FC5-385B-4C78BF43C9D7" name="fk_dep_pais">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4F0961D-CBB3-520B-D6C6-9B334637F36C" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

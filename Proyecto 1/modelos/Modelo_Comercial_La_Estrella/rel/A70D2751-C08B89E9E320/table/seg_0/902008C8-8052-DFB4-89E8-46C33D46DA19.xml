@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="902008C8-8052-DFB4-89E8-46C33D46DA19" name="detalle_venta">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>470A0E24-6067-0787-64FA-CBFD175AE0F9</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cantidad" id="C0711398-A61D-3724-3823-6B947070470B">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>11E32BF0-C42F-4BE7-6591-10F226317F72</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_det_cantidad</notNullConstraintName>
+</Column>
+<Column name="precio_unitario" id="7BF7801A-D3BE-D3D6-58B8-385AE3669353">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>13495224-8534-F600-2549-458FA10D45F1</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>542E543D-2488-33D0-4E95-E6A5BE5C7790</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_det_precio</notNullConstraintName>
+</Column>
+<Column name="subtotal" id="04CF4562-8AE3-90AA-CA23-D78F3A29825E">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>DAE3C0FE-7E03-F039-E4F6-A2E74CFE5CB6</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>542E543D-2488-33D0-4E95-E6A5BE5C7790</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_det_subtotal</notNullConstraintName>
+</Column>
+<Column name="id_venta" id="CFF6243B-7A4D-FFF7-67BA-2CF423A6E3AB">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_det_venta</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="E46AAD39-C97C-5C31-C7DE-F92F6CFE8593" referredColumn="E0601C93-6E34-EA39-AF52-6E179DAB7A48" />
+</associations>
+</Column>
+<Column name="id_producto" id="215D2423-27C7-32EB-F690-0C86FF17313C">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_det_producto</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="9DD34513-5470-E169-50E2-E0DDC225134C" referredColumn="BFF0F6A9-61E6-D771-50B6-0AA696B28B68" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2CA05958-99D3-2444-B55A-9F47CB99C373" name="pk_detalle_venta">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>9426089B-1649-A437-6C21-3DE27D032605</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFF6243B-7A4D-FFF7-67BA-2CF423A6E3AB" />
+<colUsage columnID="215D2423-27C7-32EB-F690-0C86FF17313C" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17D60290-8651-9360-F25E-84B76B54DDEE" name="fk_det_producto">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="215D2423-27C7-32EB-F690-0C86FF17313C" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83C66792-FE04-14D0-4060-45AFE599F5B4" name="fk_det_venta">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFF6243B-7A4D-FFF7-67BA-2CF423A6E3AB" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_det_cantidad" directorySegmentName="seg_0" id="89EB8141-CE68-497C-9529-08538F17F929">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<rule>cantidad &gt; 0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_det_precio" directorySegmentName="seg_0" id="A92B98F8-A43A-4891-E59C-33051A5FA73D">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<rule>precio_unitario &gt; 0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_det_subtotal" directorySegmentName="seg_0" id="2EC71BC0-D916-D419-3206-064EE014021F">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<rule>subtotal = cantidad * precio_unitario</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

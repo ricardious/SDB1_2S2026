@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_pago_venta" directorySegmentName="seg_0" id="14E0BEF5-E625-FE8E-5772-7B937D1B70F8">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<sourcePk>B9740997-74AD-9B7D-F130-50AA2C29BB30</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C68D7A6C-C764-CA0C-C92B-8F104E34E891</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>335A9162-965B-9426-2875-CD268E4B2EE3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

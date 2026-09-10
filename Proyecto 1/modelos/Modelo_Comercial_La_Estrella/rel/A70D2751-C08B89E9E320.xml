@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="A70D2751-5D94-FBDD-A69B-C08B89E9E320" mainViewID="2603205A-5B2A-F474-ED03-0AAB90BE7AE2">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:22:13 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+</relationalModel>

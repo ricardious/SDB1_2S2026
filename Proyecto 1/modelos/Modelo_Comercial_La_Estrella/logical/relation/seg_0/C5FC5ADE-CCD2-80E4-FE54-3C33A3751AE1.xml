@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_pago_metodo" directorySegmentName="seg_0" id="C5FC5ADE-CCD2-80E4-FE54-3C33A3751AE1">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<sourcePk>C9508D60-D732-340D-7CE5-F06B98FB2C5E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7A64F65C-4495-E8A2-A596-0420536B72A8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>335A9162-965B-9426-2875-CD268E4B2EE3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

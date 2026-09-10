@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="07A28A1D-CA03-1DCC-BBD8-41071FDC71FE" mainViewID="D6A6333F-C86E-863E-A89D-8A8F77441FFA">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:22:13 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

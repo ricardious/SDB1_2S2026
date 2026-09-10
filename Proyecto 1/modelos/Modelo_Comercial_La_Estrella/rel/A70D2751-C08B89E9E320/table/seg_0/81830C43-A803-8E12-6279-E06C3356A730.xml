@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81830C43-A803-8E12-6279-E06C3356A730" name="pago">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>335A9162-965B-9426-2875-CD268E4B2EE3</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pago" id="DBE98DD8-5263-B0F5-08D1-971D6CE85DB0">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>8C46E9AC-57DE-3084-6F86-70F719CB9D2D</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto" id="A28CF869-5F30-550F-8EA4-FF9C40714881">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>4BD66A00-FA6E-A304-A4BD-1BCDAAD3712A</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>542E543D-2488-33D0-4E95-E6A5BE5C7790</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_pago_monto</notNullConstraintName>
+</Column>
+<Column name="id_metodo_pago" id="231CFEA0-DA4E-7BF2-786E-2EB71870C018">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_pago_metodo</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="14490A33-1DC0-16FA-9116-C86A538A96D4" referredColumn="F4968A7B-FEDA-3658-0D8C-45D047F4F6B4" />
+</associations>
+</Column>
+<Column name="id_venta" id="82FB5D0E-DDC1-7073-C5F9-B35860B80DBB">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_pago_venta</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="A11665E4-72FF-C065-DF3D-7A8DE18CD677" referredColumn="E0601C93-6E34-EA39-AF52-6E179DAB7A48" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="791D47A0-F612-B90A-A6D8-515222683D96" name="pk_pago">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>FAA1D20A-5A3D-2DB2-3FD1-9BB841E21E10</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBE98DD8-5263-B0F5-08D1-971D6CE85DB0" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AC99D9E-167A-5811-794C-669874E3EF03" name="fk_pago_metodo">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="231CFEA0-DA4E-7BF2-786E-2EB71870C018" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7061E16-2569-B3AB-A0F7-3F33B67F5458" name="fk_pago_venta">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82FB5D0E-DDC1-7073-C5F9-B35860B80DBB" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_pago_monto" directorySegmentName="seg_0" id="C724F1C8-105F-F3E0-F795-02F3952EBCC2">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<rule>monto &gt; 0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
