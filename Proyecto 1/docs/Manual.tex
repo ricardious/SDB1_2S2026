@@ -16,6 +16,7 @@
 \newcommand{\modelo}[2]{\begin{figure}[H]\centering\includegraphics[width=\textwidth,height=.62\textheight,keepaspectratio]{#1}\caption{#2}\end{figure}}
 \newcommand{\evidencia}[2]{\begin{figure}[H]\centering\includegraphics[width=\textwidth,height=.68\textheight,keepaspectratio]{#1}\caption{#2}\end{figure}}
 \newcommand{\importacion}[4]{\begin{figure}[H]\centering\textbf{Selección de la hoja #3 en el asistente de importación}\par\smallskip\includegraphics[width=.94\textwidth,height=.30\textheight,keepaspectratio]{#1}\par\medskip\textbf{Datos cargados en la tabla #3 de Oracle}\par\smallskip\includegraphics[width=.94\textwidth,height=.30\textheight,keepaspectratio]{#2}\caption{Importación de #3: origen Excel y comprobación visual en Oracle; #4 registros esperados.}\end{figure}\clearpage}
+\newcommand{\bloqueddl}[2]{\par\noindent\begin{minipage}{\textwidth}\lstinputlisting[firstline=#1,lastline=#2]{../entrega/03_creacion_DB.sql}\end{minipage}\par\smallskip}
 \newcommand{\gradientrule}[1]{\begin{tikzpicture}\shade[left color=accent,right color=accentblue] (0,0) rectangle (\textwidth,#1);\end{tikzpicture}}
 \begin{document}
 \begin{titlepage}\thispagestyle{empty}
@@ -79,7 +80,7 @@ Para la comprobación práctica mostrada en este manual, las 19 hojas también s
 Tabla&Filas&Tabla&Filas\\\midrule\endhead
 PAIS&3&DEPARTAMENTO&32\\MUNICIPIO&80&TIPO\_TIENDA&4\\TIPO\_IDENTIFICACION&3&CARGO&4\\CATEGORIA&10&MARCA&15\\ESTADO\_VENTA&3&METODO\_PAGO&4\\PERSONA&388&TIENDA&20\\EMPLEADO&88&CLIENTE&300\\PRODUCTO&114&CATALOGO\_PRODUCTO&1,424\\VENTA&1,500&DETALLE\_VENTA&3,687\\PAGO&1,389&\textbf{TOTAL}&\textbf{9,068}\\\bottomrule\end{longtable}
 
-La auditoría reproducible del libro obtuvo cero claves compuestas duplicadas, cero detalles sin catálogo, cero subtotales incorrectos, cero ventas sin detalle, cero cruces empleado--tienda inválidos y cero ventas pagadas desbalanceadas. El archivo \texttt{validacion\_dataset.txt} conserva la evidencia y \texttt{tools/validar\_dataset.py} permite repetirla.
+La auditoría del libro obtuvo cero claves compuestas duplicadas, cero detalles sin catálogo, cero subtotales incorrectos, cero ventas sin detalle, cero cruces empleado--tienda inválidos y cero ventas pagadas desbalanceadas. El archivo \texttt{validacion\_dataset.txt} conserva esta evidencia.
 
 \section{Procedimiento aplicado en Oracle SQL Developer}
 \begin{enumerate}
@@ -116,7 +117,33 @@ La conexión guardada en SQL Developer utiliza el usuario \texttt{ricardious}, h
 \evidencia{capturas/00_conexion_oracle.png}{Configuración de la conexión \texttt{Proyecto1\_SBD1} utilizada para crear, cargar y consultar la base de datos.}
 
 \subsection{Creación y carga}
+\subsubsection*{DDL ejecutado para crear la estructura}
+El contenido siguiente corresponde al archivo \texttt{03\_creacion\_DB.sql} entregado y ejecutado en Oracle.
+\bloqueddl{1}{10}
+\bloqueddl{11}{18}
+\bloqueddl{19}{27}
+\bloqueddl{28}{33}
+\bloqueddl{34}{39}
+\bloqueddl{40}{45}
+\bloqueddl{46}{51}
+\bloqueddl{52}{57}
+\bloqueddl{58}{64}
+\bloqueddl{65}{70}
+\bloqueddl{71}{83}
+\bloqueddl{84}{97}
+\bloqueddl{98}{110}
+\bloqueddl{111}{122}
+\bloqueddl{123}{132}
+\bloqueddl{133}{144}
+\bloqueddl{145}{158}
+\bloqueddl{159}{172}
+\bloqueddl{173}{184}
 \evidencia{capturas/01_creacion_tablas.png}{Ejecución del DDL: creación satisfactoria de las 19 tablas y finalización de la estructura.}
+
+\clearpage
+\subsubsection*{SQL ejecutado para conciliar la carga}
+Los 9,068 registros fueron importados desde las 19 hojas mediante el asistente de SQL Developer. La carga equivalente completa mediante \texttt{INSERT} se conserva en el archivo entregado \texttt{03\_carga\_datos.sql}, compuesto por 9,174 líneas. Después de la importación se ejecutó la consulta de conciliación \texttt{06\_conteos\_carga.sql}, cuyo contenido completo se muestra a continuación:
+\lstinputlisting{../entrega/06_conteos_carga.sql}
 \evidencia{capturas/02_conteos_carga.png}{Conciliación posterior a la carga: conteos de las 19 tablas, con un total de 9,068 registros.}
 
 \subsection{Importación de las 19 hojas del Excel}
@@ -143,23 +170,55 @@ La carga manual se realizó con el asistente de importación de SQL Developer si
 \importacion{capturas/importacion/19_pago_excel.png}{capturas/importacion/19_pago_oracle.png}{PAGO}{1,389}
 
 \subsection{Reportes solicitados}
+\subsubsection*{Consulta 1: ventas por tienda y ubicación}
+\lstinputlisting{../entrega/04_Consulta1.sql}
 \evidencia{capturas/03_consulta_1.png}{Consulta 1: ventas por tienda y ubicación, excluyendo ventas anuladas.}
+
+\clearpage
+\subsubsection*{Consulta 2: ventas por tipo de tienda}
+\lstinputlisting{../entrega/04_Consulta2.sql}
 \evidencia{capturas/04_consulta_2.png}{Consulta 2: cantidad de tiendas, ventas y facturación por tipo de tienda.}
+
+\clearpage
+\subsubsection*{Consulta 3: productos más vendidos}
+\lstinputlisting{../entrega/04_Consulta3.sql}
 \evidencia{capturas/05_consulta_3.png}{Consulta 3: productos más vendidos por unidades y monto generado.}
+
+\clearpage
+\subsubsection*{Consulta 4: desempeño de empleados}
+\lstinputlisting{../entrega/04_Consulta4.sql}
 \evidencia{capturas/06_consulta_4.png}{Consulta 4: desempeño de empleados por ventas atendidas y facturación.}
+
+\clearpage
+\subsubsection*{Consulta 5: clientes con mayor compra}
+\lstinputlisting{../entrega/04_Consulta5.sql}
 \evidencia{capturas/07_consulta_5.png}{Consulta 5: clientes con mayor compra considerando únicamente ventas pagadas.}
+
+\clearpage
+\subsubsection*{Consulta 6: facturación por categoría y marca}
+\lstinputlisting{../entrega/04_Consulta6.sql}
 \evidencia{capturas/08_consulta_6.png}{Consulta 6: unidades vendidas y facturación agrupadas por categoría y marca.}
+
+\clearpage
+\subsubsection*{Consulta 7: uso de métodos de pago}
+\lstinputlisting{../entrega/04_Consulta7.sql}
 \evidencia{capturas/09_consulta_7.png}{Consulta 7: utilización de métodos de pago y montos recibidos.}
+
+\clearpage
+\subsubsection*{Consulta 8: ventas pendientes de pago}
+\lstinputlisting{../entrega/04_Consulta8.sql}
 \evidencia{capturas/10_consulta_8.png}{Consulta 8: ventas registradas, total pagado y diferencia pendiente.}
 
+\clearpage
 \subsection{Validaciones de consistencia}
+\subsubsection*{SQL ejecutado para las cuatro validaciones}
+\lstinputlisting{../entrega/05_validaciones.sql}
 \evidencia{capturas/11_validaciones.png}{Ejecución de las cuatro validaciones; todos los conteos devuelven cero inconsistencias.}
 
 \section{Herramientas y archivos fuente}
 \begin{itemize}
 \item Oracle Database y Oracle SQL Developer para DDL, DML, DQL y evidencia final.
 \item Oracle SQL Developer Data Modeler para el modelo fuente; el archivo \texttt{.dmd} se entrega junto a su carpeta asociada.
-\item Python 3 y openpyxl para generar y auditar la carga sin transcripción manual.
 \item Graphviz para exportaciones SVG/PNG incorporadas en este manual.
 \item XeLaTeX para producir los documentos PDF.
 \end{itemize}
