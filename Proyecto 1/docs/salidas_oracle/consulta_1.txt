@@ -1,0 +1,26 @@
+
+TIENDA                                      MUNICIPIO                     DEPARTAMENTO              PAIS          CANTIDAD_VENTAS  TOTAL_FACTURADO
+------------------------------------------  ----------------------------  ------------------------  ------------  ---------------  ---------------
+Comercial La Estrella Chimaltenango         Panajachel                    Solola                    Guatemala                  91        111797.36
+Comercial La Estrella Monterrey             Iztapalapa                    Ciudad de Mexico          Mexico                     81         94703.64
+Comercial La Estrella Jutiapa               Champerico                    Retalhuleu                Guatemala                  74         87126.46
+Comercial La Estrella Zacapa                Rabinal                       Baja Verapaz              Guatemala                  74         85689.82
+Comercial La Estrella Ciudad de Mexico      Coyoacan                      Ciudad de Mexico          Mexico                     66         81647.85
+Comercial La Estrella Coatepeque            Tecpan Guatemala              Chimaltenango             Guatemala                  62         79302.53
+Comercial La Estrella Puerto Barrios        Ciudad Vieja                  Sacatepequez              Guatemala                  77         79183.41
+Comercial La Estrella Zona 1                Fray Bartolome de las Casas   Alta Verapaz              Guatemala                  71         76647.89
+Comercial La Estrella Antigua               Zacapa                        Zacapa                    Guatemala                  79         76497.83
+Comercial La Estrella San Salvador          Santa Tecla                   La Libertad               El Salvador                68         75411.06
+Comercial La Estrella Escuintla             Chiquimulilla                 Santa Rosa                Guatemala                  72         74297.89
+Comercial La Estrella Villa Nueva           Mixco                         Guatemala                 Guatemala                  66         72728.23
+Comercial La Estrella Xela                  Barberena                     Santa Rosa                Guatemala                  69         65684.31
+Comercial La Estrella Mixco                 Chimaltenango                 Chimaltenango             Guatemala                  63         64755.50
+Comercial La Estrella Mazatenango           Jutiapa                       Jutiapa                   Guatemala                  55         64207.49
+Comercial La Estrella Santa Ana             Izalco                        Sonsonate                 El Salvador                54         63486.93
+Comercial La Estrella Huehuetenango         Jocotenango                   Sacatepequez              Guatemala                  53         60976.58
+Comercial La Estrella Guadalajara           Cholula                       Puebla                    Mexico                     70         60949.98
+Comercial La Estrella Coban                 Santa Elena                   Peten                     Guatemala                  57         60564.28
+Comercial La Estrella Peten                 Santa Cruz del Quiche         Quiche                    Guatemala                  61         54813.68
+
+20 rows selected.
+

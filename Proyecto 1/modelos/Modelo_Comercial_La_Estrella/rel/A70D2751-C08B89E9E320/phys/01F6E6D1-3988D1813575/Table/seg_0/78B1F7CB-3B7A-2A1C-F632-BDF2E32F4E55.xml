@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="catalogo_producto" directorySegmentName="seg_0" id="78B1F7CB-3B7A-2A1C-F632-BDF2E32F4E55">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit />
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="precio_vigente" id="5066FF08-6CBF-E396-6EC8-14014C5C77B6">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_producto" id="BD138DF0-156A-5554-6936-EF8B638CDB30">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="existencia_actual" id="CA020D1E-626E-C59D-3990-72C8F1534FCB">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tienda" id="FC0CBE06-D009-D94D-837F-CD416EEAC8B8">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_cat_prod_tienda" id="54C16627-41CB-1C35-FB65-FE71509B1468">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_cat_prod_producto" id="6E457E64-ED41-FC3A-501C-7C07BAE1663F">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_catalogo_producto" id="2A3FC28B-4A36-8325-7E01-16447A8E3E4E">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="ck_cat_prod_precio" id="0535B3C9-64CF-7BD2-5319-7D0F07F4DAEF">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="ck_cat_prod_exist" id="700825BA-3F25-6EA6-4448-00B6BB8A230E">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev20c>

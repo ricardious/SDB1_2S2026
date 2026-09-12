@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="45638A1B-34D4-C586-F927-41622D34558C" name="tipo identificacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id tipo identificacion" id="E0A5A3AE-8214-2CAC-D905-DBEF606F2A73">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="6D729655-A01C-E642-33EF-F369A40A7DB9">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B04E6965-D0FE-0163-D35D-7DE320137124</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F6208306-AFC4-2AC7-BFDA-7DE389D72DED" name="pk tipo id">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E0A5A3AE-8214-2CAC-D905-DBEF606F2A73</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="07A4D930-DD2E-F824-51E0-18FD5B254D16" name="uq tipo id nombre">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<usedAttributes>
+<attributeRef>6D729655-A01C-E642-33EF-F369A40A7DB9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

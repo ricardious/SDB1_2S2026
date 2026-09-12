@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="categoria" directorySegmentName="seg_0" id="9B6D33A9-400F-6CD8-A35C-42890A16C540">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit />
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nombre" id="A4024797-5DE0-7D89-45D8-4F550213E783">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_categoria" id="AAD89AC4-36C0-6946-8DC4-F43852FD916D">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_categoria" id="CDEE7B4B-9C92-9A40-010F-AAA6605375F6">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="uq_cat_nombre" id="3084C861-9AD7-F1DE-4080-319BAA900A0D">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

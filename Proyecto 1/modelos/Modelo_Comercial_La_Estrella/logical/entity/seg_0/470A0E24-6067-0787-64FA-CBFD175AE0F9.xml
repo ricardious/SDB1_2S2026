@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="470A0E24-6067-0787-64FA-CBFD175AE0F9" name="detalle venta">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cantidad" id="11E32BF0-C42F-4BE7-6591-10F226317F72">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio unitario" id="13495224-8534-F600-2549-458FA10D45F1">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>542E543D-2488-33D0-4E95-E6A5BE5C7790</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="subtotal" id="DAE3C0FE-7E03-F039-E4F6-A2E74CFE5CB6">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>542E543D-2488-33D0-4E95-E6A5BE5C7790</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id venta" id="187EE2BB-1CDA-9F29-4CC9-872C2C425822">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<generatorID>E9A9E4EC-C754-EAAC-6765-70A1C4EE0874</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<referedAttribute>6B054095-B3CB-B6B4-4462-FA12661B54C3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id producto" id="B7EF51FD-1CA9-209A-2D1F-BF3906212701">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<generatorID>608F804A-0B30-EE75-8D17-1D03C6BA1254</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<referedAttribute>C0EB1EBC-1EC8-28F1-F53C-55315419324D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9426089B-1649-A437-6C21-3DE27D032605" name="pk detalle venta">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>187EE2BB-1CDA-9F29-4CC9-872C2C425822</attributeRef>
+<attributeRef>B7EF51FD-1CA9-209A-2D1F-BF3906212701</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

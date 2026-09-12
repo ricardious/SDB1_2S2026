@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B6D33A9-400F-6CD8-A35C-42890A16C540" name="categoria">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>433818DA-90F3-A4B9-CC17-67D61D599754</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categoria" id="AAD89AC4-36C0-6946-8DC4-F43852FD916D">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>7EE9C4FF-0B44-DE93-6272-F9FBF5D2D6F8</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="A4024797-5DE0-7D89-45D8-4F550213E783">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>12AD733B-BF1E-2952-CFA0-1D6173A2952E</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E7C3316A-2BC8-1125-B171-D8BBBF5D2394</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_cat_nombre</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDEE7B4B-9C92-9A40-010F-AAA6605375F6" name="pk_categoria">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>0162017A-DABA-2AC6-E727-6DD5518AFA18</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAD89AC4-36C0-6946-8DC4-F43852FD916D" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3084C861-9AD7-F1DE-4080-319BAA900A0D" name="uq_cat_nombre">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>F5E5AE48-34AD-AE5E-F538-A68E8CDF35DE</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4024797-5DE0-7D89-45D8-4F550213E783" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

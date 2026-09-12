@@ -1,0 +1,348 @@
+
+  NUMERO_VENTA  FECHA_VENT  TIENDA                                      CLIENTE                          TOTAL_VENTA  TOTAL_PAGADO  DIFERENCIA_PENDIENTE
+--------------  ----------  ------------------------------------------  ------------------------------  ------------  ------------  --------------------
+           658  2025-01-06  Comercial La Estrella Coatepeque            Sergio Perez                         4172.60          0.00               4172.60
+          1243  2026-05-13  Comercial La Estrella Coatepeque            Alejandro Perez                      3457.41          0.00               3457.41
+           202  2025-07-09  Comercial La Estrella San Salvador          Monica Martinez                      3377.16          0.00               3377.16
+           683  2025-09-14  Comercial La Estrella Coatepeque            Silvia Perez                         3323.40          0.00               3323.40
+          1015  2025-10-13  Comercial La Estrella Ciudad de Mexico      Julio Morales                        3303.49          0.00               3303.49
+          1310  2026-03-24  Comercial La Estrella Coatepeque            Fernando Hernandez                   3200.40          0.00               3200.40
+           143  2026-01-20  Comercial La Estrella Xela                  Jose Perez                           2795.81          0.00               2795.81
+          1432  2026-08-05  Comercial La Estrella Chimaltenango         Maria Lopez                          2677.36          0.00               2677.36
+           765  2026-01-14  Comercial La Estrella Antigua               Jorge Rodriguez                      2658.20          0.00               2658.20
+           327  2025-02-03  Comercial La Estrella Jutiapa               Mario Jimenez                        2632.13          0.00               2632.13
+          1497  2025-02-16  Comercial La Estrella Santa Ana             Luis Rodriguez                       2615.01          0.00               2615.01
+           295  2026-03-22  Comercial La Estrella Santa Ana             Ana Flores                           2603.22          0.00               2603.22
+           220  2025-02-28  Comercial La Estrella Santa Ana             Miguel Martinez                      2599.25          0.00               2599.25
+          1061  2025-06-24  Comercial La Estrella Monterrey             Julio Martinez                       2547.62          0.00               2547.62
+          1435  2026-02-02  Comercial La Estrella Guadalajara           Paola Morales                        2467.82          0.00               2467.82
+           416  2025-04-04  Comercial La Estrella Ciudad de Mexico      Laura Martinez                       2367.62          0.00               2367.62
+          1137  2025-05-09  Comercial La Estrella Huehuetenango         Alejandra Hernandez                  2361.32          0.00               2361.32
+          1450  2025-06-05  Comercial La Estrella Zona 1                Mario Jimenez                        2290.52          0.00               2290.52
+           122  2025-08-06  Comercial La Estrella Coban                 Andrea Gonzalez                      2258.83          0.00               2258.83
+            38  2025-12-23  Comercial La Estrella Zacapa                Pedro Reyes                          2239.96          0.00               2239.96
+           337  2026-01-08  Comercial La Estrella Guadalajara           Ricardo Morales                      2227.45          0.00               2227.45
+           674  2025-07-20  Comercial La Estrella Zacapa                Maria Hernandez                      2205.07          0.00               2205.07
+           196  2026-08-13  Comercial La Estrella Puerto Barrios        Sergio Diaz                          2204.87          0.00               2204.87
+          1130  2025-01-31  Comercial La Estrella San Salvador          Ana Rodriguez                        2203.14          0.00               2203.14
+          1456  2025-05-04  Comercial La Estrella Ciudad de Mexico      Miguel Martinez                      2179.39          0.00               2179.39
+          1040  2025-10-04  Comercial La Estrella Santa Ana             Claudia Castillo                     2156.13          0.00               2156.13
+           242  2026-06-15  Comercial La Estrella Coban                 Luis Chavez                          2155.61          0.00               2155.61
+           100  2026-07-04  Comercial La Estrella Monterrey             Sergio Gonzalez                      2819.16        711.42               2107.74
+          1111  2026-01-09  Comercial La Estrella Villa Nueva           Sergio Morales                       2102.24          0.00               2102.24
+           364  2026-01-02  Comercial La Estrella Xela                  Luis Lopez                           2097.42          0.00               2097.42
+          1099  2026-08-27  Comercial La Estrella Antigua               Lucia Gomez                          2092.96          0.00               2092.96
+          1249  2026-04-24  Comercial La Estrella Jutiapa               Julio Diaz                           2091.24          0.00               2091.24
+          1014  2025-12-02  Comercial La Estrella Zacapa                Julio Cruz                           2089.44          0.00               2089.44
+          1335  2025-07-03  Comercial La Estrella Monterrey             Roberto Castillo                     2088.58          0.00               2088.58
+           136  2025-06-07  Comercial La Estrella Mixco                 Claudia Aguilar                      2082.96          0.00               2082.96
+           747  2026-03-10  Comercial La Estrella Ciudad de Mexico      Lucia Perez                          2074.94          0.00               2074.94
+           623  2026-01-20  Comercial La Estrella Xela                  Estuardo Mendoza                     2044.58          0.00               2044.58
+           981  2025-04-12  Comercial La Estrella Xela                  Ricardo Gonzalez                     2030.04          0.00               2030.04
+          1396  2026-05-20  Comercial La Estrella Monterrey             Carlos Ortiz                         2028.57          0.00               2028.57
+           716  2025-06-03  Comercial La Estrella Jutiapa               Alejandro Lopez                      2012.11          0.00               2012.11
+           436  2026-03-19  Comercial La Estrella Escuintla             Ana Morales                          1988.54          0.00               1988.54
+           468  2025-12-01  Comercial La Estrella Zacapa                Alejandro Martinez                   1987.67          0.00               1987.67
+          1177  2026-04-08  Comercial La Estrella Puerto Barrios        Pedro Gonzalez                       1972.60          0.00               1972.60
+          1208  2025-12-27  Comercial La Estrella Guadalajara           Maria Reyes                          2870.22        914.31               1955.91
+           314  2026-03-01  Comercial La Estrella Zacapa                Roberto Sanchez                      2445.32        515.58               1929.74
+          1487  2025-08-21  Comercial La Estrella Chimaltenango         Andrea Cruz                          1922.59          0.00               1922.59
+          1484  2025-01-05  Comercial La Estrella Mixco                 Oscar Cruz                           1913.10          0.00               1913.10
+           648  2026-05-24  Comercial La Estrella Villa Nueva           Pedro Castillo                       1912.62          0.00               1912.62
+          1026  2026-07-06  Comercial La Estrella Villa Nueva           Pedro Castillo                       1889.06          0.00               1889.06
+           306  2025-12-10  Comercial La Estrella Guadalajara           Pedro Reyes                          2287.97        467.14               1820.83
+           923  2025-01-25  Comercial La Estrella Antigua               Maria Chavez                         2322.01        533.98               1788.03
+          1226  2025-11-02  Comercial La Estrella Jutiapa               Vivian Ramirez                       1772.10          0.00               1772.10
+           801  2025-10-20  Comercial La Estrella Chimaltenango         Miguel Rodriguez                     1769.64          0.00               1769.64
+           524  2025-07-12  Comercial La Estrella Mazatenango           Miguel Jimenez                       1729.50          0.00               1729.50
+           555  2026-03-27  Comercial La Estrella Chimaltenango         Paola Ortiz                          1720.40          0.00               1720.40
+           840  2026-02-20  Comercial La Estrella Zacapa                Alejandra Hernandez                  1719.24          0.00               1719.24
+           634  2025-11-14  Comercial La Estrella Peten                 Karla Reyes                          1717.26          0.00               1717.26
+           662  2026-01-20  Comercial La Estrella San Salvador          Daniela Gomez                        1709.29          0.00               1709.29
+           262  2025-05-15  Comercial La Estrella Puerto Barrios        Vivian Sanchez                       1681.26          0.00               1681.26
+           342  2026-03-30  Comercial La Estrella San Salvador          Lucia Chavez                         1620.77          0.00               1620.77
+          1357  2026-07-19  Comercial La Estrella Chimaltenango         Diego Chavez                         1600.90          0.00               1600.90
+          1032  2025-03-30  Comercial La Estrella Huehuetenango         Daniela Diaz                         1600.88          0.00               1600.88
+          1075  2026-08-19  Comercial La Estrella San Salvador          Pedro Sanchez                        2056.88        483.65               1573.23
+          1185  2025-01-25  Comercial La Estrella Guadalajara           Roberto Jimenez                      1564.75          0.00               1564.75
+          1289  2025-10-12  Comercial La Estrella Mixco                 Ricardo Mendoza                      1546.14          0.00               1546.14
+           573  2025-12-01  Comercial La Estrella Coban                 Roberto Ramirez                      1539.25          0.00               1539.25
+           938  2025-09-23  Comercial La Estrella Monterrey             Julio Ortiz                          2269.72        732.72               1537.00
+           406  2026-08-07  Comercial La Estrella Huehuetenango         Ana Sanchez                          1532.40          0.00               1532.40
+           174  2025-11-05  Comercial La Estrella Jutiapa               Maria Chavez                         1516.24          0.00               1516.24
+           495  2026-01-16  Comercial La Estrella Monterrey             Cristina Morales                     1504.83          0.00               1504.83
+          1490  2026-02-22  Comercial La Estrella Huehuetenango         Lucia Perez                          1497.45          0.00               1497.45
+           234  2026-08-07  Comercial La Estrella Jutiapa               Cristina Chavez                      1483.94          0.00               1483.94
+          1431  2026-07-23  Comercial La Estrella Villa Nueva           Mario Cruz                           1479.76          0.00               1479.76
+          1385  2025-02-11  Comercial La Estrella Zacapa                Alejandra Perez                      1464.52          0.00               1464.52
+            67  2026-03-26  Comercial La Estrella Monterrey             Karla Mendoza                        2100.05        658.87               1441.18
+          1434  2025-01-28  Comercial La Estrella Villa Nueva           Sofia Gonzalez                       1427.70          0.00               1427.70
+          1473  2025-12-24  Comercial La Estrella Zacapa                Paola Chavez                         1422.68          0.00               1422.68
+            16  2026-02-26  Comercial La Estrella Puerto Barrios        Maria Mendoza                        1422.60          0.00               1422.60
+           702  2025-08-17  Comercial La Estrella Guadalajara           Claudia Aguilar                      1419.48          0.00               1419.48
+           635  2025-12-30  Comercial La Estrella Santa Ana             Sofia Chavez                         1398.06          0.00               1398.06
+          1296  2026-06-19  Comercial La Estrella Xela                  Fernando Lopez                       1389.63          0.00               1389.63
+           263  2026-08-26  Comercial La Estrella Zona 1                Rosa Lopez                           1384.10          0.00               1384.10
+           985  2025-12-25  Comercial La Estrella Monterrey             Lucia Diaz                           1369.45          0.00               1369.45
+           169  2025-08-20  Comercial La Estrella Monterrey             Alejandro Gomez                      1971.93        635.25               1336.68
+           624  2026-08-18  Comercial La Estrella Antigua               Cristina Lopez                       1334.37          0.00               1334.37
+           804  2025-12-05  Comercial La Estrella Mazatenango           Cristina Chavez                      1327.68          0.00               1327.68
+           197  2025-01-31  Comercial La Estrella Puerto Barrios        Patricia Cruz                        1304.44          0.00               1304.44
+           680  2025-09-01  Comercial La Estrella Antigua               Miguel Garcia                        1297.34          0.00               1297.34
+            34  2026-07-06  Comercial La Estrella Antigua               Monica Reyes                         2002.26        740.91               1261.35
+          1238  2026-07-08  Comercial La Estrella Santa Ana             Jose Lopez                           1251.32          0.00               1251.32
+            12  2025-09-19  Comercial La Estrella Escuintla             Pedro Martinez                       1246.20          0.00               1246.20
+          1210  2025-05-19  Comercial La Estrella San Salvador          Ana Morales                          1241.62          0.00               1241.62
+          1207  2026-06-30  Comercial La Estrella Mazatenango           Ana Garcia                           1230.55          0.00               1230.55
+           140  2025-09-09  Comercial La Estrella Huehuetenango         Karla Morales                        1224.62          0.00               1224.62
+           608  2025-11-14  Comercial La Estrella Mazatenango           Victor Gonzalez                      1222.65          0.00               1222.65
+           112  2025-11-19  Comercial La Estrella Puerto Barrios        Mario Gomez                          1220.60          0.00               1220.60
+           185  2026-07-11  Comercial La Estrella Coatepeque            Vivian Flores                        1212.04          0.00               1212.04
+           137  2025-02-22  Comercial La Estrella Xela                  Andrea Rodriguez                     1822.59        617.10               1205.49
+          1445  2026-05-11  Comercial La Estrella Monterrey             Silvia Perez                         2617.96       1416.97               1200.99
+           521  2025-11-07  Comercial La Estrella Mazatenango           Monica Martinez                      1199.08          0.00               1199.08
+           441  2025-09-09  Comercial La Estrella Zacapa                Claudia Chavez                       1164.65          0.00               1164.65
+           392  2026-02-27  Comercial La Estrella Coban                 Julio Morales                        1154.09          0.00               1154.09
+           959  2026-01-22  Comercial La Estrella Escuintla             Cristina Morales                     1147.40          0.00               1147.40
+           377  2025-12-17  Comercial La Estrella Monterrey             Karla Martinez                       1724.18        579.80               1144.38
+            61  2025-06-22  Comercial La Estrella Coatepeque            Miguel Rodriguez                     1140.97          0.00               1140.97
+          1414  2025-03-24  Comercial La Estrella Peten                 Vivian Martinez                      1140.02          0.00               1140.02
+          1095  2025-03-26  Comercial La Estrella Huehuetenango         Julio Flores                         1117.42          0.00               1117.42
+          1354  2026-07-31  Comercial La Estrella Puerto Barrios        Luis Aguilar                         1104.45          0.00               1104.45
+           412  2025-04-10  Comercial La Estrella Monterrey             Carlos Ortiz                         1102.84          0.00               1102.84
+           190  2025-07-08  Comercial La Estrella Huehuetenango         Andrea Jimenez                       1047.85          0.00               1047.85
+           914  2026-04-30  Comercial La Estrella Puerto Barrios        Roberto Aguilar                      1381.74        336.64               1045.10
+          1152  2025-09-01  Comercial La Estrella Antigua               Lucia Diaz                           1030.28          0.00               1030.28
+          1424  2026-01-10  Comercial La Estrella Coatepeque            Luis Lopez                           1025.10          0.00               1025.10
+           861  2025-10-16  Comercial La Estrella Chimaltenango         Mario Jimenez                        2220.64       1197.72               1022.92
+          1233  2025-01-25  Comercial La Estrella Escuintla             Carlos Vasquez                       1013.61          0.00               1013.61
+           246  2026-03-13  Comercial La Estrella Xela                  Roberto Aguilar                      1001.84          0.00               1001.84
+           836  2025-08-21  Comercial La Estrella Huehuetenango         Victor Martinez                       997.64          0.00                997.64
+           438  2025-08-11  Comercial La Estrella Guadalajara           Mario Ramirez                         995.73          0.00                995.73
+            96  2025-03-28  Comercial La Estrella Coban                 Andrea Morales                        994.13          0.00                994.13
+          1056  2025-05-29  Comercial La Estrella Coatepeque            Mario Castillo                        991.77          0.00                991.77
+           815  2025-02-18  Comercial La Estrella Coatepeque            Fernando Hernandez                    987.08          0.00                987.08
+           366  2025-10-09  Comercial La Estrella Puerto Barrios        Andrea Ortiz                         1391.42        408.32                983.10
+          1305  2026-02-19  Comercial La Estrella Peten                 Fernando Castillo                     979.85          0.00                979.85
+           947  2025-08-25  Comercial La Estrella Mixco                 Sergio Castillo                       979.32          0.00                979.32
+           857  2025-05-14  Comercial La Estrella Puerto Barrios        Estuardo Jimenez                     2170.06       1191.94                978.12
+           871  2025-08-05  Comercial La Estrella Mazatenango           Julio Flores                          978.12          0.00                978.12
+           882  2025-09-30  Comercial La Estrella Monterrey             Monica Sanchez                        970.10          0.00                970.10
+           681  2025-03-18  Comercial La Estrella Xela                  Miguel Rodriguez                      954.87          0.00                954.87
+           867  2025-03-25  Comercial La Estrella Coban                 Rosa Cruz                             947.82          0.00                947.82
+           166  2026-05-03  Comercial La Estrella Escuintla             Maria Chavez                         1861.33        933.11                928.22
+           722  2025-09-04  Comercial La Estrella Puerto Barrios        Sergio Perez                         1764.62        836.96                927.66
+           317  2025-08-01  Comercial La Estrella Ciudad de Mexico      Roberto Hernandez                    2164.22       1244.25                919.97
+            88  2025-08-26  Comercial La Estrella Puerto Barrios        Carlos Mendoza                        917.94          0.00                917.94
+          1176  2026-05-16  Comercial La Estrella Zacapa                Rosa Perez                           1738.15        824.27                913.88
+           471  2025-07-17  Comercial La Estrella Villa Nueva           Patricia Vasquez                     1137.60        229.60                908.00
+          1404  2025-12-13  Comercial La Estrella Xela                  Patricia Gomez                        905.37          0.00                905.37
+           574  2025-02-13  Comercial La Estrella Ciudad de Mexico      Luis Rodriguez                        902.37          0.00                902.37
+           428  2026-05-31  Comercial La Estrella Chimaltenango         Lucia Chavez                         1267.13        369.53                897.60
+           701  2025-12-12  Comercial La Estrella Coban                 Sergio Gonzalez                      2339.57       1442.95                896.62
+           151  2025-08-09  Comercial La Estrella Peten                 Claudia Ortiz                        1482.18        588.90                893.28
+           779  2025-07-17  Comercial La Estrella Coban                 Andrea Morales                        887.24          0.00                887.24
+            26  2026-02-14  Comercial La Estrella Jutiapa               Andrea Gonzalez                       887.20          0.00                887.20
+          1059  2025-03-22  Comercial La Estrella Chimaltenango         Manuel Rodriguez                      879.83          0.00                879.83
+          1219  2025-12-11  Comercial La Estrella Mixco                 Ana Sanchez                           878.88          0.00                878.88
+           976  2026-06-27  Comercial La Estrella Escuintla             Mario Ramirez                         871.60          0.00                871.60
+            87  2025-07-31  Comercial La Estrella Mazatenango           Ana Aguilar                           867.56          0.00                867.56
+           131  2025-12-27  Comercial La Estrella Zacapa                Maria Chavez                         1952.05       1087.17                864.88
+           374  2026-01-19  Comercial La Estrella Chimaltenango         Miguel Garcia                        1269.42        404.61                864.81
+           667  2026-01-06  Comercial La Estrella Guadalajara           Julio Cruz                            858.20          0.00                858.20
+          1195  2025-10-05  Comercial La Estrella Puerto Barrios        Laura Castillo                        849.00          0.00                849.00
+          1213  2025-11-25  Comercial La Estrella Monterrey             Paola Castillo                       3387.41       2539.94                847.47
+           969  2025-09-08  Comercial La Estrella Jutiapa               Sofia Jimenez                        3016.46       2178.28                838.18
+           526  2025-07-07  Comercial La Estrella Xela                  Daniela Jimenez                       833.94          0.00                833.94
+            82  2026-03-25  Comercial La Estrella Ciudad de Mexico      Silvia Aguilar                       1245.45        411.85                833.60
+          1415  2025-01-28  Comercial La Estrella Zacapa                Paola Morales                        1756.74        928.37                828.37
+           420  2026-06-21  Comercial La Estrella Zacapa                Patricia Diaz                         819.58          0.00                819.58
+           954  2026-03-02  Comercial La Estrella Coatepeque            Sergio Perez                          795.92          0.00                795.92
+           358  2025-07-15  Comercial La Estrella Villa Nueva           Claudia Chavez                       1748.31        953.06                795.25
+           725  2025-09-08  Comercial La Estrella Escuintla             Fernando Jimenez                      790.26          0.00                790.26
+          1402  2026-04-11  Comercial La Estrella Mixco                 Ana Garcia                           1629.03        848.31                780.72
+           873  2025-08-13  Comercial La Estrella Mixco                 Silvia Vasquez                        778.32          0.00                778.32
+           974  2025-08-13  Comercial La Estrella Antigua               Luis Gonzalez                         777.06          0.00                777.06
+           192  2026-01-31  Comercial La Estrella Peten                 Cristina Hernandez                    773.28          0.00                773.28
+          1372  2025-02-03  Comercial La Estrella Antigua               Rosa Diaz                            1236.50        463.92                772.58
+           977  2026-08-02  Comercial La Estrella Zacapa                Paola Hernandez                       764.92          0.00                764.92
+          1178  2026-01-12  Comercial La Estrella Puerto Barrios        Paola Chavez                          760.95          0.00                760.95
+          1230  2025-11-25  Comercial La Estrella Peten                 Rosa Lopez                            757.66          0.00                757.66
+           125  2025-07-08  Comercial La Estrella Guadalajara           Silvia Garcia                         753.63          0.00                753.63
+          1325  2025-10-08  Comercial La Estrella Antigua               Lucia Diaz                           2086.38       1338.55                747.83
+          1121  2026-01-22  Comercial La Estrella Chimaltenango         Carlos Mendoza                        747.60          0.00                747.60
+           593  2025-09-28  Comercial La Estrella Peten                 Rosa Lopez                           1172.98        429.20                743.78
+          1143  2025-08-20  Comercial La Estrella Coban                 Fernando Cruz                         739.20          0.00                739.20
+           887  2026-08-24  Comercial La Estrella Coban                 Vivian Sanchez                        739.00          0.00                739.00
+           972  2025-10-16  Comercial La Estrella Monterrey             Lucia Chavez                          735.40          0.00                735.40
+           258  2025-01-22  Comercial La Estrella Santa Ana             Ana Morales                           725.04          0.00                725.04
+           302  2026-05-29  Comercial La Estrella Peten                 Monica Martinez                       724.94          0.00                724.94
+           325  2025-03-08  Comercial La Estrella Coban                 Victor Martinez                       722.94          0.00                722.94
+           515  2025-09-07  Comercial La Estrella Huehuetenango         Silvia Reyes                          721.28          0.00                721.28
+          1444  2025-06-08  Comercial La Estrella Villa Nueva           Maria Mendoza                         717.80          0.00                717.80
+          1086  2025-04-14  Comercial La Estrella Escuintla             Ana Gomez                             715.10          0.00                715.10
+           700  2025-10-03  Comercial La Estrella Monterrey             Ana Flores                           1017.01        303.73                713.28
+          1043  2025-08-16  Comercial La Estrella Jutiapa               Diego Jimenez                        1096.16        384.36                711.80
+          1493  2026-02-06  Comercial La Estrella Ciudad de Mexico      Miguel Garcia                         688.50          0.00                688.50
+           470  2026-04-27  Comercial La Estrella Coatepeque            Luis Chavez                          1361.40        673.30                688.10
+          1084  2026-01-26  Comercial La Estrella Coatepeque            Manuel Castillo                      2253.28       1566.32                686.96
+          1168  2025-10-17  Comercial La Estrella Antigua               Silvia Garcia                        1943.56       1261.99                681.57
+          1031  2025-03-03  Comercial La Estrella Xela                  Cristina Lopez                        678.87          0.00                678.87
+           787  2026-09-01  Comercial La Estrella Zona 1                Pedro Castillo                        673.79          0.00                673.79
+           138  2026-02-06  Comercial La Estrella Guadalajara           Diego Chavez                          847.49        175.37                672.12
+           855  2026-08-07  Comercial La Estrella Xela                  Mario Gomez                           669.99          0.00                669.99
+           395  2026-01-06  Comercial La Estrella Peten                 Pedro Castillo                        663.85          0.00                663.85
+            18  2025-10-23  Comercial La Estrella Zacapa                Gabriela Diaz                        1285.50        632.32                653.18
+           127  2026-07-29  Comercial La Estrella San Salvador          Julio Flores                          651.29          0.00                651.29
+           945  2025-03-11  Comercial La Estrella Zacapa                Estuardo Chavez                       637.56          0.00                637.56
+           780  2025-05-10  Comercial La Estrella Ciudad de Mexico      Victor Gonzalez                       633.00          0.00                633.00
+           926  2026-08-26  Comercial La Estrella Ciudad de Mexico      Maria Mendoza                        2339.08       1706.68                632.40
+           134  2025-07-20  Comercial La Estrella Monterrey             Ricardo Mendoza                       625.56          0.00                625.56
+           288  2025-07-06  Comercial La Estrella Villa Nueva           Julio Martinez                        621.22          0.00                621.22
+           864  2025-12-19  Comercial La Estrella Jutiapa               Julio Martinez                       1145.77        525.76                620.01
+           760  2026-02-09  Comercial La Estrella San Salvador          Miguel Chavez                         619.80          0.00                619.80
+           333  2025-06-08  Comercial La Estrella Ciudad de Mexico      Victor Martinez                       932.03        313.86                618.17
+          1073  2025-04-05  Comercial La Estrella Guadalajara           Ana Gomez                             773.47        163.13                610.34
+           487  2025-01-01  Comercial La Estrella Coatepeque            Ricardo Sanchez                       607.17          0.00                607.17
+           103  2025-02-25  Comercial La Estrella Zona 1                Monica Martinez                       600.00          0.00                600.00
+           489  2026-03-10  Comercial La Estrella Xela                  Vivian Ramirez                        599.05          0.00                599.05
+          1334  2026-01-20  Comercial La Estrella Escuintla             Pedro Castillo                        591.33          0.00                591.33
+          1302  2025-10-07  Comercial La Estrella Mixco                 Silvia Aguilar                       1379.14        794.76                584.38
+          1384  2025-04-24  Comercial La Estrella Villa Nueva           Andrea Mendoza                        579.15          0.00                579.15
+           925  2025-09-21  Comercial La Estrella Peten                 Fernando Cruz                         941.80        366.21                575.59
+           982  2025-11-30  Comercial La Estrella Villa Nueva           Karla Aguilar                         574.24          0.00                574.24
+           153  2025-11-22  Comercial La Estrella San Salvador          Miguel Garcia                         895.44        326.52                568.92
+          1378  2025-05-06  Comercial La Estrella Santa Ana             Paola Cruz                            731.49        167.31                564.18
+          1362  2026-04-28  Comercial La Estrella Chimaltenango         Alejandra Hernandez                   564.12          0.00                564.12
+          1045  2025-02-05  Comercial La Estrella Escuintla             Patricia Vasquez                      726.22        169.91                556.31
+           609  2025-09-16  Comercial La Estrella Antigua               Diego Cruz                            535.12          0.00                535.12
+          1135  2025-08-13  Comercial La Estrella Peten                 Karla Mendoza                         530.64          0.00                530.64
+           950  2025-11-25  Comercial La Estrella Antigua               Sofia Reyes                           527.05          0.00                527.05
+            23  2025-12-31  Comercial La Estrella Puerto Barrios        Luis Gonzalez                         523.48          0.00                523.48
+           764  2025-06-12  Comercial La Estrella Villa Nueva           Maria Lopez                           517.74          0.00                517.74
+           730  2025-08-04  Comercial La Estrella Guadalajara           Daniela Aguilar                       509.67          0.00                509.67
+           472  2025-05-30  Comercial La Estrella Santa Ana             Luis Ramirez                         2069.05       1560.53                508.52
+          1154  2025-11-26  Comercial La Estrella Monterrey             Estuardo Jimenez                      501.22          0.00                501.22
+           604  2025-03-04  Comercial La Estrella Zacapa                Sergio Lopez                          496.20          0.00                496.20
+           348  2025-12-29  Comercial La Estrella Chimaltenango         Luis Aguilar                         2082.44       1590.97                491.47
+          1307  2025-12-08  Comercial La Estrella Escuintla             Maria Chavez                          480.60          0.00                480.60
+           732  2026-08-08  Comercial La Estrella Peten                 Alejandro Martinez                    470.90          0.00                470.90
+           993  2025-05-02  Comercial La Estrella Zona 1                Paola Hernandez                       881.44        418.87                462.57
+           473  2026-06-21  Comercial La Estrella Huehuetenango         Mario Gomez                           644.21        184.52                459.69
+          1223  2025-05-04  Comercial La Estrella Huehuetenango         Jorge Martinez                        459.26          0.00                459.26
+           547  2025-12-29  Comercial La Estrella Guadalajara           Laura Martinez                       1038.83        581.62                457.21
+           666  2026-04-14  Comercial La Estrella Chimaltenango         Maria Reyes                           663.60        218.69                444.91
+          1437  2026-03-22  Comercial La Estrella Mazatenango           Karla Mendoza                        1157.65        728.30                429.35
+          1471  2026-07-11  Comercial La Estrella Mazatenango           Alejandro Rodriguez                   427.13          0.00                427.13
+           209  2025-11-07  Comercial La Estrella Peten                 Karla Aguilar                         426.21          0.00                426.21
+           423  2026-08-08  Comercial La Estrella Santa Ana             Miguel Garcia                        1392.99        966.92                426.07
+           748  2026-03-12  Comercial La Estrella Peten                 Pedro Sanchez                         422.07          0.00                422.07
+          1288  2025-11-02  Comercial La Estrella Zacapa                Patricia Cruz                        1302.83        883.82                419.01
+           772  2025-10-17  Comercial La Estrella Huehuetenango         Alejandro Perez                       828.38        420.01                408.37
+           353  2025-06-05  Comercial La Estrella Coban                 Alejandro Lopez                       864.84        456.59                408.25
+           320  2025-06-12  Comercial La Estrella San Salvador          Julio Flores                          681.90        284.97                396.93
+          1462  2026-04-12  Comercial La Estrella Mazatenango           Daniela Jimenez                       392.16          0.00                392.16
+           512  2025-09-27  Comercial La Estrella Villa Nueva           Manuel Aguilar                        520.97        131.19                389.78
+            52  2025-07-17  Comercial La Estrella Xela                  Alejandro Garcia                      386.75          0.00                386.75
+            21  2025-01-08  Comercial La Estrella Zona 1                Miguel Vasquez                        383.22          0.00                383.22
+          1446  2026-08-17  Comercial La Estrella Puerto Barrios        Estuardo Chavez                      1369.20        988.39                380.81
+          1400  2026-05-06  Comercial La Estrella Guadalajara           Mario Gomez                           380.01          0.00                380.01
+           529  2025-02-12  Comercial La Estrella Antigua               Mario Castillo                        377.19          0.00                377.19
+           854  2025-02-15  Comercial La Estrella Jutiapa               Monica Diaz                           374.34          0.00                374.34
+           216  2025-05-21  Comercial La Estrella Mazatenango           Silvia Perez                          373.68          0.00                373.68
+           880  2025-07-13  Comercial La Estrella Puerto Barrios        Rosa Perez                           1270.15        899.15                371.00
+          1454  2026-05-08  Comercial La Estrella Chimaltenango         Vivian Flores                        1205.04        839.15                365.89
+           979  2025-08-08  Comercial La Estrella Santa Ana             Silvia Perez                          678.71        320.98                357.73
+          1351  2026-02-26  Comercial La Estrella Coatepeque            Alejandro Rodriguez                  1107.34        755.75                351.59
+           645  2025-05-25  Comercial La Estrella Antigua               Diego Vasquez                         349.44          0.00                349.44
+           800  2025-07-21  Comercial La Estrella Jutiapa               Laura Aguilar                         340.48          0.00                340.48
+          1246  2026-06-28  Comercial La Estrella Peten                 Pedro Garcia                          335.76          0.00                335.76
+           543  2025-10-03  Comercial La Estrella Villa Nueva           Miguel Flores                         318.32          0.00                318.32
+           292  2025-12-17  Comercial La Estrella Peten                 Pedro Perez                          1262.67        950.98                311.69
+           349  2026-04-13  Comercial La Estrella Zacapa                Alejandra Mendoza                     762.18        455.20                306.98
+          1267  2025-10-03  Comercial La Estrella Coban                 Alejandro Morales                     305.62          0.00                305.62
+           588  2026-03-02  Comercial La Estrella Zona 1                Cristina Garcia                      1031.20        727.83                303.37
+           908  2026-07-01  Comercial La Estrella Zacapa                Monica Diaz                           299.23          0.00                299.23
+           971  2025-11-09  Comercial La Estrella Xela                  Andrea Ortiz                          297.20          0.00                297.20
+           783  2025-11-16  Comercial La Estrella Huehuetenango         Luis Rodriguez                        287.34          0.00                287.34
+          1460  2025-02-21  Comercial La Estrella Ciudad de Mexico      Alejandro Perez                       751.81        467.07                284.74
+            46  2026-04-03  Comercial La Estrella Escuintla             Roberto Ramirez                       277.60          0.00                277.60
+          1067  2025-01-02  Comercial La Estrella Zona 1                Alejandro Morales                     275.73          0.00                275.73
+           566  2025-06-19  Comercial La Estrella Peten                 Sofia Gonzalez                       1086.56        818.76                267.80
+           685  2026-03-13  Comercial La Estrella Ciudad de Mexico      Ana Sanchez                           683.75        416.35                267.40
+           525  2025-07-29  Comercial La Estrella Monterrey             Monica Sanchez                        264.81          0.00                264.81
+          1167  2025-05-31  Comercial La Estrella Villa Nueva           Miguel Jimenez                        258.96          0.00                258.96
+          1196  2025-09-16  Comercial La Estrella Mixco                 Paola Cruz                            464.91        218.16                246.75
+          1337  2026-01-18  Comercial La Estrella Puerto Barrios        Roberto Hernandez                     745.44        498.70                246.74
+           435  2026-07-04  Comercial La Estrella Ciudad de Mexico      Claudia Castillo                     1120.02        874.09                245.93
+           402  2026-06-04  Comercial La Estrella San Salvador          Karla Martinez                        620.79        385.69                235.10
+          1069  2026-02-20  Comercial La Estrella Antigua               Maria Reyes                           231.51          0.00                231.51
+           458  2025-05-28  Comercial La Estrella Escuintla             Monica Diaz                           793.23        562.53                230.70
+           481  2025-01-25  Comercial La Estrella Zona 1                Lucia Aguilar                         606.65        376.79                229.86
+           570  2026-08-25  Comercial La Estrella Mixco                 Alejandra Hernandez                   228.74          0.00                228.74
+           983  2026-01-15  Comercial La Estrella Antigua               Miguel Garcia                         223.41          0.00                223.41
+           382  2026-07-24  Comercial La Estrella Zona 1                Jorge Gonzalez                        712.86        494.34                218.52
+           892  2025-11-21  Comercial La Estrella Zacapa                Sofia Gonzalez                        218.09          0.00                218.09
+            39  2025-11-28  Comercial La Estrella Puerto Barrios        Manuel Flores                         217.59          0.00                217.59
+           503  2026-01-02  Comercial La Estrella Jutiapa               Miguel Garcia                         377.00        163.11                213.89
+          1132  2025-02-10  Comercial La Estrella Puerto Barrios        Carlos Mendoza                        213.09          0.00                213.09
+           941  2026-08-06  Comercial La Estrella Mixco                 Alejandra Perez                      1042.37        829.86                212.51
+          1290  2026-08-13  Comercial La Estrella Santa Ana             Andrea Gonzalez                       314.30        102.41                211.89
+           952  2025-10-16  Comercial La Estrella Puerto Barrios        Gabriela Gonzalez                     463.48        252.15                211.33
+            79  2025-11-05  Comercial La Estrella Villa Nueva           Alejandra Aguilar                     383.01        172.71                210.30
+          1076  2025-05-23  Comercial La Estrella Mazatenango           Andrea Ortiz                          207.80          0.00                207.80
+           207  2025-03-16  Comercial La Estrella Mixco                 Lucia Aguilar                         203.96          0.00                203.96
+           900  2025-07-02  Comercial La Estrella Zona 1                Andrea Jimenez                        498.40        297.81                200.59
+           324  2026-06-08  Comercial La Estrella Zona 1                Ana Aguilar                           831.12        633.55                197.57
+           756  2026-03-24  Comercial La Estrella Mazatenango           Andrea Rodriguez                      278.60         95.93                182.67
+           442  2025-04-10  Comercial La Estrella Santa Ana             Andrea Diaz                           180.21          0.00                180.21
+          1082  2025-04-02  Comercial La Estrella Jutiapa               Ricardo Mendoza                       170.88          0.00                170.88
+           868  2025-02-15  Comercial La Estrella Puerto Barrios        Victor Gonzalez                       776.89        611.76                165.13
+          1412  2025-12-19  Comercial La Estrella Coatepeque            Karla Mendoza                         164.48          0.00                164.48
+           677  2026-08-02  Comercial La Estrella Puerto Barrios        Andrea Cruz                           163.25          0.00                163.25
+           691  2025-05-10  Comercial La Estrella Monterrey             Sergio Lopez                          159.31          0.00                159.31
+           849  2025-08-25  Comercial La Estrella San Salvador          Maria Chavez                          147.80          0.00                147.80
+           346  2025-04-16  Comercial La Estrella Coban                 Vivian Sanchez                        422.76        278.95                143.81
+            47  2025-09-20  Comercial La Estrella Escuintla             Luis Ramirez                          131.25          0.00                131.25
+           628  2025-01-12  Comercial La Estrella Coban                 Andrea Morales                        186.32         55.70                130.62
+          1254  2026-04-05  Comercial La Estrella Jutiapa               Estuardo Mendoza                      219.55         90.45                129.10
+          1420  2025-09-07  Comercial La Estrella Monterrey             Silvia Vasquez                        196.20         79.80                116.40
+          1247  2025-01-12  Comercial La Estrella Santa Ana             Jose Morales                          108.29          0.00                108.29
+          1279  2026-06-01  Comercial La Estrella Puerto Barrios        Pedro Martinez                        107.55          0.00                107.55
+           236  2025-07-04  Comercial La Estrella San Salvador          Miguel Mendoza                        105.95          0.00                105.95
+           614  2025-08-15  Comercial La Estrella Antigua               Jose Aguilar                          231.90        128.12                103.78
+          1120  2026-06-13  Comercial La Estrella Jutiapa               Roberto Ramirez                       102.56          0.00                102.56
+           996  2026-04-03  Comercial La Estrella Coatepeque            Silvia Vasquez                        244.34        148.51                 95.83
+          1270  2025-11-02  Comercial La Estrella Mixco                 Vivian Sanchez                        160.46         66.90                 93.56
+          1244  2025-05-22  Comercial La Estrella Peten                 Jorge Reyes                           160.47         68.10                 92.37
+           230  2026-01-23  Comercial La Estrella Guadalajara           Paola Castillo                         91.12          0.00                 91.12
+           494  2025-08-26  Comercial La Estrella Monterrey             Luis Lopez                            136.35         57.32                 79.03
+           829  2025-01-01  Comercial La Estrella Chimaltenango         Miguel Chavez                          73.86          0.00                 73.86
+           625  2026-06-05  Comercial La Estrella Chimaltenango         Paola Mendoza                          71.45          0.00                 71.45
+          1139  2026-01-08  Comercial La Estrella Zacapa                Sofia Reyes                            71.33          0.00                 71.33
+           968  2025-05-17  Comercial La Estrella Puerto Barrios        Rosa Perez                            284.12        215.03                 69.09
+           962  2025-01-29  Comercial La Estrella Chimaltenango         Roberto Ramirez                       264.85        199.81                 65.04
+          1361  2026-02-08  Comercial La Estrella Coatepeque            Miguel Flores                         173.74        118.81                 54.93
+           540  2025-02-19  Comercial La Estrella Mixco                 Fernando Jimenez                       52.77          0.00                 52.77
+           433  2025-08-18  Comercial La Estrella Puerto Barrios        Jose Morales                          120.15         70.81                 49.34
+           965  2025-08-17  Comercial La Estrella Xela                  Ricardo Sanchez                        41.43          0.00                 41.43
+           509  2025-06-30  Comercial La Estrella Coatepeque            Sofia Martinez                        142.92        102.81                 40.11
+           913  2025-01-14  Comercial La Estrella Monterrey             Silvia Vasquez                         92.92         55.44                 37.48
+           132  2025-10-18  Comercial La Estrella Puerto Barrios        Pedro Martinez                         47.14          9.89                 37.25
+           404  2025-03-07  Comercial La Estrella Peten                 Luis Rodriguez                        141.00        104.05                 36.95
+           249  2026-07-26  Comercial La Estrella Guadalajara           Vivian Ramirez                         62.26         26.51                 35.75
+           723  2026-08-02  Comercial La Estrella Xela                  Laura Chavez                          152.84        118.16                 34.68
+           300  2025-09-06  Comercial La Estrella Ciudad de Mexico      Monica Aguilar                        144.64        110.09                 34.55
+           724  2026-03-14  Comercial La Estrella Zacapa                Miguel Flores                          63.42         33.64                 29.78
+          1027  2025-09-04  Comercial La Estrella Antigua               Ana Flores                             26.32          0.00                 26.32
+           872  2025-05-10  Comercial La Estrella Peten                 Julio Flores                           24.00          0.00                 24.00
+          1188  2025-07-01  Comercial La Estrella Xela                  Alejandra Cruz                         21.75          0.00                 21.75
+           669  2026-03-21  Comercial La Estrella Monterrey             Luis Rodriguez                         17.08          0.00                 17.08
+          1191  2025-11-06  Comercial La Estrella Villa Nueva           Alejandra Perez                        16.92          0.00                 16.92
+          1039  2025-09-24  Comercial La Estrella Zacapa                Vivian Sanchez                         26.02         13.58                 12.44
+           178  2025-03-08  Comercial La Estrella Huehuetenango         Mario Ortiz                            32.51         22.60                  9.91
+          1430  2025-10-26  Comercial La Estrella Peten                 Laura Martinez                         13.53          7.98                  5.55
+          1036  2026-02-24  Comercial La Estrella Coban                 Lucia Diaz                              5.19          3.12                  2.07
+
+342 rows selected.
+

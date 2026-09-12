@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D922D35F-1725-2505-47F1-739140AE533A" name="cliente">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id cliente" id="2EAAD395-24BB-3360-FEE5-C85751D750DC">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id tipo identificacion" id="6484124E-D674-666C-0A60-1167F8E3ECCC">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<generatorID>659EA360-BDE1-3C8B-2C54-2F6F553D06B6</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<referedAttribute>E0A5A3AE-8214-2CAC-D905-DBEF606F2A73</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero identificacion" id="3B6EE3EE-4E21-CC8D-8555-9C82BA7A154C">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>43FADB07-8E4D-1B89-332E-DA76126B5E67</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id persona" id="3B45BD99-CF0A-0E5E-1079-A2D9B8F169F5">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<generatorID>9047DD2E-1229-07AD-572C-918A84BFDA41</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<referedAttribute>105297E5-383D-76C6-1F9E-24AF64F3B62B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="774F2AED-42E9-4ED2-1CA9-42B8FAFE2160" name="pk cliente">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2EAAD395-24BB-3360-FEE5-C85751D750DC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7F2C1117-2B61-F7CF-FDDD-692208BBFFB9" name="uq cli identificacion">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<usedAttributes>
+<attributeRef>6484124E-D674-666C-0A60-1167F8E3ECCC</attributeRef>
+<attributeRef>3B6EE3EE-4E21-CC8D-8555-9C82BA7A154C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B34781C6-1BA4-76C6-2B2A-D7CF0742DC48" name="uq cli persona">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<usedAttributes>
+<attributeRef>3B45BD99-CF0A-0E5E-1079-A2D9B8F169F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo_Comercial_La_Estrella" id="0239D713-7497-4AA4-617D-1F00962E79B0" version="3.5">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:22:13 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>0239D713-7497-4AA4-617D-1F00962E79B0</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="95F3ABD0-F036-C4E3-A4FD-F0AC392E3252">
+<designStoragePath>/Modelo_Comercial_La_Estrella</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

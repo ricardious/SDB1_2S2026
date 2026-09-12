@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_emp_cargo" directorySegmentName="seg_0" id="E2580008-4B75-E367-C82B-B4A3DFD1DD6E">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<sourcePk>A419590B-0791-F732-D85F-D3BBAC36BDBB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F9003F93-21BB-1910-9D8E-E14C4437EFA8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>570266A1-31D0-18E8-2CF6-991FC1C603D2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

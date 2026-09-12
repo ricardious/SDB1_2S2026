@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81ACBD2A-7F1D-71BD-363E-892F94399311" name="empleado">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>570266A1-31D0-18E8-2CF6-991FC1C603D2</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_empleado" id="77367AF7-7249-CADD-BADF-77DF5B924AD2">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>88EE1C6D-2FC6-1821-87A1-9D4D44866780</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_contratacion" id="7BF041DF-C21A-64B9-2C0A-30C45A8065C9">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>5E00AAE1-5057-B512-68B8-4EE4FACAE59F</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>8099AF23-4BD4-A992-F5D8-606934B3A7D0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_emp_fecha</notNullConstraintName>
+</Column>
+<Column name="id_tienda" id="6BA4EE99-BD1C-F932-5FF3-007447C77978">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_emp_tienda</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="1817B1CA-D260-6F18-50B9-E76F1B99584E" referredColumn="684EF0E2-3C5B-04E7-4620-BD5928FDBBBB" />
+</associations>
+</Column>
+<Column name="id_cargo" id="4C6092D6-02B0-ABE7-5335-EA38850A07EC">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_emp_cargo</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="56F531AC-B422-E502-74AC-32C501D37B54" referredColumn="282B3476-5CB2-9763-4B25-B5456DD6BA8C" />
+</associations>
+</Column>
+<Column name="id_persona" id="3566EB66-C5A2-E268-305D-F4FD8BEC0475">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_emp_persona</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="EF6AC3E7-9678-C01A-1065-CB7DBC96D818" referredColumn="14872212-6312-CB24-926D-DE09A6E96204" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC0CCF0A-FA14-3FFB-4106-C321BF411D6B" name="pk_empleado">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>512244C7-EC66-3B20-9D2E-DD8226AAFF7D</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77367AF7-7249-CADD-BADF-77DF5B924AD2" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8607F5CE-7EA9-286E-E7E5-0544A277D767" name="uq_emp_persona">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>EE1130D8-C3BF-8330-FC3E-E92E97D04CCF</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3566EB66-C5A2-E268-305D-F4FD8BEC0475" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D1295F9-B4DD-FA40-29CE-94F9E2372C28" name="uq_emp_tienda">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>04E61B84-4140-24FA-9411-2C63F00A8CCB</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77367AF7-7249-CADD-BADF-77DF5B924AD2" />
+<colUsage columnID="6BA4EE99-BD1C-F932-5FF3-007447C77978" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="792A5201-2182-9904-B7CD-D191FA99764F" name="fk_emp_cargo">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C6092D6-02B0-ABE7-5335-EA38850A07EC" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2F3C7E4-37C6-0F6F-D911-5FC08726E3D5" name="fk_emp_persona">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3566EB66-C5A2-E268-305D-F4FD8BEC0475" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED26EF52-75EC-C996-2DBD-B0A66FB9B214" name="fk_emp_tienda">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BA4EE99-BD1C-F932-5FF3-007447C77978" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
