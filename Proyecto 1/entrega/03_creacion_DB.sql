@@ -1,7 +1,5 @@
 -- Proyecto 1 - Comercial La Estrella
 -- Creacion completa para Oracle Database desde un esquema vacio.
--- Ejecutar con Run Script (F5) antes de 03_carga_datos.sql.
-
 WHENEVER SQLERROR EXIT SQL.SQLCODE ROLLBACK;
 
 CREATE TABLE pais (

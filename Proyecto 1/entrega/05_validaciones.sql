@@ -1,6 +1,4 @@
 -- Validaciones de reglas que abarcan mas de una tabla.
--- Cada consulta debe devolver 0.
-
 -- 1. Empleado asignado a una tienda distinta de la venta.
 SELECT COUNT(*) AS empleados_tienda_incorrecta
 FROM venta v

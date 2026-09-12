@@ -1,6 +1,5 @@
 -- Proyecto 1 - Comercial La Estrella
 -- Carga generada desde dataset_comercial_la_estrella.xlsx.
--- Ejecutar despues de 03_creacion_DB.sql con Run Script (F5).
 SET DEFINE OFF;
 WHENEVER SQLERROR EXIT SQL.SQLCODE ROLLBACK;
 
