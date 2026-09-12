@@ -1,6 +1,12 @@
 # Bases de Datos 1
 
-Repositorio de prácticas del curso **Bases de Datos 1**, correspondiente al segundo semestre de 2026.
+Repositorio de prácticas y proyectos del curso **Bases de Datos 1**, correspondiente al segundo semestre de 2026.
+
+## Proyectos
+
+| Proyecto | Descripción | Entregables principales |
+| --- | --- | --- |
+| [Proyecto 1 — Comercial La Estrella](./Proyecto%201/) | Diseño e implementación de una base de datos Oracle normalizada a tercera forma normal para la gestión de tiendas, productos, ventas y pagos. | Modelo de datos, scripts de creación y carga, ocho consultas, validaciones, diccionario de datos y manual técnico |
 
 ## Prácticas
 
@@ -11,4 +17,4 @@ Repositorio de prácticas del curso **Bases de Datos 1**, correspondiente al seg
 
 ## Contenido
 
-Cada práctica contiene sus modelos de datos, scripts SQL, diagramas y documentación correspondiente.
+Cada práctica y proyecto contiene sus modelos de datos, scripts SQL, diagramas y documentación correspondiente.
