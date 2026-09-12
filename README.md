@@ -11,9 +11,9 @@ Repositorio de prácticas y proyectos del curso **Bases de Datos 1**, correspond
 
 ## Proyectos
 
-| Proyecto | Descripción | Entregables principales |
+| Proyecto | Descripción | Tecnologías |
 | --- | --- | --- |
-| [Proyecto 1 — Comercial La Estrella](./Proyecto%201/) | Diseño e implementación de una base de datos Oracle normalizada a tercera forma normal para la gestión de tiendas, productos, ventas y pagos. | Modelo de datos, scripts de creación y carga, ocho consultas, validaciones, diccionario de datos y manual técnico |
+| [Proyecto 1 — Comercial La Estrella](./Proyecto%201/) | Diseño e implementación de una base de datos Oracle normalizada a tercera forma normal para la gestión de tiendas, productos, ventas y pagos. | Oracle Database, Oracle SQL Developer y Oracle SQL Developer Data Modeler |
 
 ## Contenido
 
