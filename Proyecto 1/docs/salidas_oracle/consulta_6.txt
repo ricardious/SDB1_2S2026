@@ -1,0 +1,87 @@
+
+CATEGORIA             MARCA                 UNIDADES_VENDIDAS  TOTAL_FACTURADO
+--------------------  --------------------  -----------------  ---------------
+Abarrotes             VitalCare                           452         85685.27
+Congelados            CasaLimpia                          279         55481.40
+Electronica           HogarPlus                           316         54552.15
+Lacteos               TecnoMax                            311         53262.80
+Abarrotes             Delisabor                           200         44751.42
+Articulos de hogar    GranjaFeliz                         193         44678.08
+Electronica           La Espiga                           262         41061.66
+Cuidado personal      HogarPlus                           372         40291.61
+Panaderia             HogarPlus                           248         39566.25
+Congelados            La Espiga                           143         35598.62
+Panaderia             FrescoYa                            256         33866.58
+Bebidas               Bienestar Total                     133         32919.43
+Bebidas               PuroSabor                           311         31415.27
+Bebidas               Lacteos del Valle                   208         30859.87
+Snacks                Delisabor                           121         30124.90
+Articulos de hogar    Lacteos del Valle                   131         29912.01
+Limpieza del hogar    HogarPlus                           119         27518.61
+Panaderia             Norte?a                             213         27080.27
+Cuidado personal      La Espiga                           122         25076.88
+Limpieza del hogar    Lacteos del Valle                   132         24867.37
+Abarrotes             BrilloHogar                         120         24579.41
+Snacks                Bienestar Total                     161         24077.18
+Lacteos               La Espiga                           113         23698.93
+Limpieza del hogar    Delisabor                            95         23322.28
+Snacks                La Espiga                           237         23250.60
+Limpieza del hogar    TecnoMax                            107         23058.63
+Snacks                TecnoMax                            213         22256.42
+Cuidado personal      PuroSabor                            91         22235.85
+Snacks                BrilloHogar                         139         22059.43
+Abarrotes             PuroSabor                            96         21732.77
+Cuidado personal      BrilloHogar                          88         21072.61
+Congelados            Bienestar Total                     120         19680.44
+Lacteos               Bienestar Total                     218         17705.12
+Electronica           SnackTime                           100         17151.27
+Abarrotes             HogarPlus                           112         16571.27
+Abarrotes             Bienestar Total                     104         15679.56
+Bebidas               FrescoYa                             89         15526.11
+Articulos de hogar    La Espiga                            89         15431.18
+Bebidas               TecnoMax                            140         15014.53
+Bebidas               GranjaFeliz                          96         13401.93
+Abarrotes             TecnoMax                            114         13294.30
+Congelados            VitalCare                           157         13141.57
+Articulos de hogar    HogarPlus                            71         12985.72
+Abarrotes             AguaViva                             66         12930.13
+Congelados            GranjaFeliz                         273         12482.70
+Articulos de hogar    TecnoMax                             97         12444.56
+Snacks                AguaViva                            110         12418.80
+Lacteos               PuroSabor                           203         12286.25
+Limpieza del hogar    VitalCare                           205         11484.83
+Abarrotes             Lacteos del Valle                    62         11023.88
+Snacks                HogarPlus                            78         10719.08
+Bebidas               BrilloHogar                         118         10431.40
+Lacteos               FrescoYa                            166         10385.48
+Bebidas               AguaViva                             92          9618.07
+Panaderia             AguaViva                            242          9542.97
+Lacteos               VitalCare                            53          8814.03
+Cuidado personal      Lacteos del Valle                   177          8354.18
+Electronica           CasaLimpia                           67          8340.68
+Limpieza del hogar    BrilloHogar                          54          8147.75
+Snacks                Norte?a                              80          8098.50
+Articulos de hogar    AguaViva                            106          7423.84
+Cuidado personal      GranjaFeliz                         100          6902.88
+Limpieza del hogar    CasaLimpia                           91          6882.47
+Limpieza del hogar    FrescoYa                             81          5969.28
+Bebidas               SnackTime                           128          5704.10
+Articulos de hogar    BrilloHogar                         104          5640.67
+Snacks                VitalCare                           281          5530.15
+Electronica           TecnoMax                             81          5315.94
+Articulos de hogar    CasaLimpia                           95          5022.42
+Bebidas               CasaLimpia                          114          4633.25
+Lacteos               Lacteos del Valle                    72          4391.52
+Bebidas               La Espiga                            95          4276.54
+Panaderia             La Espiga                            66          4253.34
+Congelados            PuroSabor                           118          3901.49
+Articulos de hogar    SnackTime                            60          3325.76
+Limpieza del hogar    Norte?a                             105          2754.83
+Electronica           Delisabor                           102          2347.69
+Cuidado personal      VitalCare                            68          1506.23
+Abarrotes             SnackTime                            71           753.31
+Congelados            Norte?a                             107           697.12
+Panaderia             SnackTime                            52           219.04
+
+81 rows selected.
+

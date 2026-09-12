@@ -1,0 +1,94 @@
+
+CODIGO_EMPLEADO  EMPLEADO                        CARGO               TIENDA                                      CANTIDAD_VENTAS_ATENDIDAS  TOTAL_FACTURADO
+---------------  ------------------------------  ------------------  ------------------------------------------  -------------------------  ---------------
+             19  Vivian Ortiz                    Cajero              Comercial La Estrella Chimaltenango                                36         45787.12
+             58  Fernando Morales                Gerente de tienda   Comercial La Estrella Zacapa                                       29         37370.63
+             20  Claudia Castillo                Supervisor          Comercial La Estrella Chimaltenango                                27         33411.29
+             18  Laura Rodriguez                 Gerente de tienda   Comercial La Estrella Chimaltenango                                28         32598.95
+             55  Mario Garcia                    Gerente de tienda   Comercial La Estrella Puerto Barrios                               29         32545.45
+             67  Silvia Castillo                 Vendedor            Comercial La Estrella Ciudad de Mexico                             22         29954.70
+             34  Manuel Ortiz                    Vendedor            Comercial La Estrella Coatepeque                                   20         27554.63
+              2  Claudia Aguilar                 Cajero              Comercial La Estrella Zona 1                                       23         26455.67
+             59  Victor Diaz                     Vendedor            Comercial La Estrella Zacapa                                       25         25822.75
+             83  Estuardo Jimenez                Vendedor            Comercial La Estrella San Salvador                                 20         25725.72
+             57  Mario Chavez                    Cajero              Comercial La Estrella Puerto Barrios                               26         25489.94
+             39  Alejandro Castillo              Vendedor            Comercial La Estrella Mazatenango                                  16         24296.38
+             17  Ana Vasquez                     Vendedor            Comercial La Estrella Antigua                                      27         23878.95
+             66  Andrea Sanchez                  Gerente de tienda   Comercial La Estrella Ciudad de Mexico                             18         23604.45
+             79  Roberto Lopez                   Supervisor          Comercial La Estrella Monterrey                                    23         23286.36
+             43  Miguel Reyes                    Cajero              Comercial La Estrella Huehuetenango                                16         22976.02
+             61  Carlos Reyes                    Gerente de tienda   Comercial La Estrella Jutiapa                                      17         22947.12
+             14  Patricia Lopez                  Gerente de tienda   Comercial La Estrella Antigua                                      19         22884.34
+             60  Sofia Rodriguez                 Supervisor          Comercial La Estrella Zacapa                                       20         22496.44
+             11  Ana Chavez                      Vendedor            Comercial La Estrella Villa Nueva                                  17         22298.76
+             75  Paola Gonzalez                  Cajero              Comercial La Estrella Monterrey                                    17         22105.92
+             33  Maria Hernandez                 Cajero              Comercial La Estrella Coatepeque                                   14         22046.25
+              5  Diego Chavez                    Gerente de tienda   Comercial La Estrella Mixco                                        17         21440.01
+             56  Jose Garcia                     Vendedor            Comercial La Estrella Puerto Barrios                               22         21148.02
+             22  Fernando Castillo               Cajero              Comercial La Estrella Escuintla                                    21         20683.18
+             81  Paola Cruz                      Cajero              Comercial La Estrella San Salvador                                 21         20517.84
+             64  Cristina Rodriguez              Vendedor            Comercial La Estrella Jutiapa                                      14         20013.48
+             15  Alejandra Flores                Cajero              Comercial La Estrella Antigua                                      21         20003.83
+              9  Silvia Ramirez                  Gerente de tienda   Comercial La Estrella Villa Nueva                                  16         19961.03
+              3  Carlos Mendoza                  Vendedor            Comercial La Estrella Zona 1                                       17         19849.33
+             62  Paola Reyes                     Cajero              Comercial La Estrella Jutiapa                                      21         19314.42
+             88  Alejandro Cruz                  Cajero              Comercial La Estrella Santa Ana                                    19         19150.76
+             23  Miguel Gonzalez                 Vendedor            Comercial La Estrella Escuintla                                    18         18891.94
+              7  Laura Sanchez                   Cajero              Comercial La Estrella Mixco                                        16         18599.58
+             77  Ana Mendoza                     Supervisor          Comercial La Estrella Monterrey                                    12         18232.52
+             21  Sergio Cruz                     Gerente de tienda   Comercial La Estrella Escuintla                                    19         17699.24
+             63  Alejandra Rodriguez             Cajero              Comercial La Estrella Jutiapa                                      13         17577.14
+             50  Mario Garcia                    Cajero              Comercial La Estrella Coban                                        13         17520.17
+             24  Daniela Ortiz                   Supervisor          Comercial La Estrella Escuintla                                    14         17023.53
+             72  Monica Lopez                    Cajero              Comercial La Estrella Guadalajara                                  19         16843.69
+             71  Miguel Ramirez                  Cajero              Comercial La Estrella Guadalajara                                  17         16434.11
+             68  Lucia Jimenez                   Vendedor            Comercial La Estrella Ciudad de Mexico                             14         16312.96
+             52  Patricia Perez                  Cajero              Comercial La Estrella Peten                                        18         16208.90
+             28  Jose Gomez                      Cajero              Comercial La Estrella Xela                                         13         15862.34
+             80  Pedro Aguilar                   Gerente de tienda   Comercial La Estrella San Salvador                                 11         15714.79
+             73  Carlos Rodriguez                Supervisor          Comercial La Estrella Guadalajara                                  18         15509.92
+              1  Cristina Garcia                 Gerente de tienda   Comercial La Estrella Zona 1                                       16         15416.46
+             31  Cristina Gomez                  Gerente de tienda   Comercial La Estrella Coatepeque                                   17         15225.03
+             44  Sofia Castillo                  Vendedor            Comercial La Estrella Huehuetenango                                13         15166.13
+             12  Estuardo Castillo               Supervisor          Comercial La Estrella Villa Nueva                                  16         15115.43
+             87  Fernando Ortiz                  Cajero              Comercial La Estrella Santa Ana                                    13         15001.45
+              4  Laura Rodriguez                 Cajero              Comercial La Estrella Zona 1                                       15         14926.43
+             53  Maria Martinez                  Vendedor            Comercial La Estrella Peten                                        17         14892.87
+             42  Ricardo Diaz                    Supervisor          Comercial La Estrella Huehuetenango                                16         14753.00
+             32  Karla Cruz                      Cajero              Comercial La Estrella Coatepeque                                   11         14476.62
+             76  Jorge Vasquez                   Cajero              Comercial La Estrella Monterrey                                    12         14196.07
+             82  Roberto Castillo                Vendedor            Comercial La Estrella San Salvador                                 16         13452.71
+              8  Carlos Martinez                 Cajero              Comercial La Estrella Mixco                                        16         13179.53
+             30  Karla Reyes                     Cajero              Comercial La Estrella Xela                                         11         13012.99
+             54  Alejandro Ramirez               Cajero              Comercial La Estrella Peten                                        14         12330.43
+             70  Ricardo Ramirez                 Gerente de tienda   Comercial La Estrella Guadalajara                                  16         12162.26
+             29  Oscar Mendoza                   Supervisor          Comercial La Estrella Xela                                         16         12117.67
+             69  Cristina Cruz                   Supervisor          Comercial La Estrella Ciudad de Mexico                             12         11775.74
+              6  Estuardo Ramirez                Cajero              Comercial La Estrella Mixco                                        14         11536.38
+             51  Silvia Sanchez                  Gerente de tienda   Comercial La Estrella Peten                                        12         11381.48
+             36  Karla Mendoza                   Cajero              Comercial La Estrella Mazatenango                                   9         11209.64
+             25  Monica Lopez                    Gerente de tienda   Comercial La Estrella Xela                                         10         10653.42
+             74  Sofia Martinez                  Gerente de tienda   Comercial La Estrella Monterrey                                     9         10554.39
+             46  Laura Aguilar                   Supervisor          Comercial La Estrella Coban                                         7         10122.94
+             84  Maria Martinez                  Gerente de tienda   Comercial La Estrella Santa Ana                                     8         10001.49
+             16  Estuardo Lopez                  Cajero              Comercial La Estrella Antigua                                      12          9730.71
+             86  Silvia Martinez                 Supervisor          Comercial La Estrella Santa Ana                                     9          9725.16
+             38  Claudia Diaz                    Cajero              Comercial La Estrella Mazatenango                                  11          9711.64
+             85  Gabriela Jimenez                Cajero              Comercial La Estrella Santa Ana                                     5          9608.07
+             47  Roberto Sanchez                 Vendedor            Comercial La Estrella Coban                                         7          9264.50
+             45  Sergio Reyes                    Gerente de tienda   Comercial La Estrella Coban                                         9          9069.52
+             26  Julio Flores                    Cajero              Comercial La Estrella Xela                                         11          8628.45
+             10  Mario Reyes                     Cajero              Comercial La Estrella Villa Nueva                                   8          8423.22
+             41  Paola Garcia                    Gerente de tienda   Comercial La Estrella Huehuetenango                                 8          8081.43
+             49  Ana Ramirez                     Cajero              Comercial La Estrella Coban                                        11          8013.34
+             65  Daniela Gomez                   Cajero              Comercial La Estrella Jutiapa                                       9          7274.30
+             37  Patricia Morales                Vendedor            Comercial La Estrella Mazatenango                                   5          7257.07
+             13  Rosa Hernandez                  Cajero              Comercial La Estrella Villa Nueva                                   9          6929.79
+             48  Victor Gonzalez                 Cajero              Comercial La Estrella Coban                                        10          6573.81
+             78  Laura Perez                     Cajero              Comercial La Estrella Monterrey                                     8          6328.38
+             40  Andrea Morales                  Vendedor            Comercial La Estrella Mazatenango                                   7          6207.92
+             35  Carlos Vasquez                  Gerente de tienda   Comercial La Estrella Mazatenango                                   7          5524.84
+             27  Lucia Rodriguez                 Vendedor            Comercial La Estrella Xela                                          8          5409.44
+
+88 rows selected.
+

@@ -1,0 +1,10 @@
+
+METODO_PAGO           CANTIDAD_PAGOS  MONTO_TOTAL_RECIBIDO
+--------------------  --------------  --------------------
+Transferencia                    354             312537.52
+Efectivo                         352             296221.46
+Tarjeta de credito               334             286126.82
+Tarjeta de debito                349             280882.98
+
+4 rows selected.
+

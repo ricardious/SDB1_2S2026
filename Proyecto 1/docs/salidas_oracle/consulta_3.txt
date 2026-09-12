@@ -1,0 +1,120 @@
+
+        CODIGO  PRODUCTO                                CATEGORIA             MARCA                 UNIDADES_VENDIDAS  MONTO_GENERADO
+--------------  --------------------------------------  --------------------  --------------------  -----------------  --------------
+            90  Helado de vainilla Light                Congelados            GranjaFeliz                         174        10461.93
+            19  Tortillas de maiz frito Especial        Snacks                La Espiga                           162         9623.54
+            41  Pan de molde Light                      Panaderia             AguaViva                            162         2123.15
+            27  Frituras de platano Premium             Snacks                Bienestar Total                     161        24077.18
+            20  Tortillas de maiz frito Especial 20     Snacks                VitalCare                           161         3893.51
+            91  Nuggets de pollo Premium                Congelados            VitalCare                           157        13141.57
+            44  Pan dulce Especial                      Panaderia             FrescoYa                            145         6215.57
+            88  Vegetales mixtos congelados Familiar    Congelados            La Espiga                           143        35598.62
+            24  Galletas saladas Original 24            Snacks                BrilloHogar                         139        22059.43
+            50  Pan integral Familiar 50                Panaderia             HogarPlus                           139        18335.20
+            92  Nuggets de pollo Tradicional            Congelados            CasaLimpia                          137        33598.96
+            61  Jabon de ba?o Light                     Cuidado personal      Lacteos del Valle                   134         7066.79
+            12  Bebida energetica Clasico               Bebidas               Bienestar Total                     133        32919.43
+            51  Detergente en polvo Clasico             Limpieza del hogar    Lacteos del Valle                   132        24867.37
+            18  Papas fritas Extra                      Snacks                TecnoMax                            132         2676.89
+            76  Azucar Clasico                          Abarrotes             VitalCare                           131        32171.21
+           108  Toalla de cocina Extra                  Articulos de hogar    Lacteos del Valle                   131        29912.01
+            65  Pasta dental Original                   Cuidado personal      HogarPlus                           131        13541.39
+            81  Harina de trigo Tradicional             Abarrotes             VitalCare                           130        15315.58
+            95  Audifonos Premium                       Electronica           HogarPlus                           128        27056.63
+            11  Bebida energetica Especial              Bebidas               SnackTime                           128         5704.10
+            68  Desodorante Premium                     Cuidado personal      HogarPlus                           126         9858.59
+            70  Papel higienico Familiar                Cuidado personal      La Espiga                           122        25076.88
+            36  Crema Premium                           Lacteos               PuroSabor                           122         1542.88
+            23  Galletas saladas Original               Snacks                Delisabor                           121        30124.90
+            71  Arroz Clasico                           Abarrotes             Delisabor                           121        29935.81
+            73  Frijol negro Familiar                   Abarrotes             BrilloHogar                         120        24579.41
+            87  Vegetales mixtos congelados Premium     Congelados            Bienestar Total                     120        19680.44
+            21  Mani salado Clasico                     Snacks                VitalCare                           120         1636.64
+            56  Cloro Clasico                           Limpieza del hogar    HogarPlus                           119        27518.61
+            30  Leche entera Tradicional                Lacteos               TecnoMax                            118        19343.34
+             7  Cafe molido Familiar                    Bebidas               BrilloHogar                         118        10431.40
+            85  Pizza congelada Especial                Congelados            PuroSabor                           118         3901.49
+           103  Cable HDMI Extra                        Electronica           HogarPlus                           117        11100.29
+            63  Shampoo Familiar                        Cuidado personal      HogarPlus                           115        16891.63
+            82  Harina de trigo Tradicional 82          Abarrotes             TecnoMax                            114        13294.30
+            15  Nectar de durazno Extra                 Bebidas               CasaLimpia                          114         4633.25
+           101  Bocina portatil Original                Electronica           La Espiga                           113        27036.34
+            29  Leche entera Light                      Lacteos               La Espiga                           113        23698.93
+            37  Mantequilla Original                    Lacteos               TecnoMax                            112        17272.54
+            74  Frijol negro Premium                    Abarrotes             HogarPlus                           112        16571.27
+            45  Tortillas de harina Light               Panaderia             FrescoYa                            111        27651.01
+            31  Yogurt natural Extra                    Lacteos               Bienestar Total                     111        12782.62
+            17  Papas fritas Light                      Snacks                AguaViva                            110        12418.80
+           112  Bolsas de basura Tradicional            Articulos de hogar    GranjaFeliz                         109        24406.58
+            46  Tortillas de harina Familiar            Panaderia             HogarPlus                           109        21231.05
+            49  Pan integral Familiar                   Panaderia             Norte?a                             109        16241.49
+            80  Aceite vegetal Clasico                  Abarrotes             VitalCare                           108        26324.79
+            32  Yogurt natural Especial                 Lacteos               FrescoYa                            108         5903.65
+            55  Cloro Tradicional                       Limpieza del hogar    TecnoMax                            107        23058.63
+             2  Agua pura Especial                      Bebidas               Lacteos del Valle                   107        12522.47
+            40  Leche deslactosada Premium              Lacteos               Bienestar Total                     107         4922.50
+            94  Papas congeladas Clasico                Congelados            Norte?a                             107          697.12
+           105  Escoba Tradicional                      Articulos de hogar    AguaViva                            106         7423.84
+            53  Jabon liquido para trastos Familiar     Limpieza del hogar    Norte?a                             105         2754.83
+            83  Pasta para sopa Clasico                 Abarrotes             Bienestar Total                     104        15679.56
+            48  Croissant Light                         Panaderia             Norte?a                             104        10838.78
+           114  Foco LED Premium                        Articulos de hogar    BrilloHogar                         104         5640.67
+            52  Detergente en polvo Familiar            Limpieza del hogar    VitalCare                           104         2212.08
+           100  Power bank Familiar                     Electronica           Delisabor                           102         2347.69
+            10  Te helado Familiar 10                   Bebidas               Lacteos del Valle                   101        18337.40
+            57  Desinfectante multiusos Original        Limpieza del hogar    VitalCare                           101         9272.75
+            98  Cargador USB Extra                      Electronica           SnackTime                           100        17151.27
+            64  Shampoo Familiar 64                     Cuidado personal      GranjaFeliz                         100         6902.88
+            86  Pizza congelada Tradicional             Congelados            GranjaFeliz                          99         2020.77
+           109  Vela aromatica Especial                 Articulos de hogar    TecnoMax                             97        12444.56
+            72  Arroz Tradicional                       Abarrotes             PuroSabor                            96        21732.77
+             8  Cafe molido Familiar 8                  Bebidas               GranjaFeliz                          96        13401.93
+            58  Desinfectante multiusos Light           Limpieza del hogar    Delisabor                            95        23322.28
+           110  Vela aromatica Original                 Articulos de hogar    CasaLimpia                           95         5022.42
+             4  Gaseosa Extra                           Bebidas               La Espiga                            95         4276.54
+            97  Cargador USB Light                      Electronica           La Espiga                            94         2498.12
+             6  Jugo de naranja Light                   Bebidas               AguaViva                             92         9618.07
+            69  Papel higienico Tradicional             Cuidado personal      PuroSabor                            91        22235.85
+            54  Jabon liquido para trastos Familiar 54  Limpieza del hogar    CasaLimpia                           91         6882.47
+             9  Te helado Familiar                      Bebidas               FrescoYa                             89        15526.11
+           107  Toalla de cocina Especial               Articulos de hogar    La Espiga                            89        15431.18
+            62  Jabon de ba?o Tradicional               Cuidado personal      BrilloHogar                          88        21072.61
+            13  Agua mineral Especial                   Bebidas               PuroSabor                            88          472.91
+            14  Agua mineral Premium                    Bebidas               PuroSabor                            87         2300.29
+           106  Escoba Light                            Articulos de hogar    GranjaFeliz                          84        20271.50
+             1  Agua pura Original                      Bebidas               PuroSabor                            83        15966.74
+            77  Sal Premium                             Abarrotes             VitalCare                            83        11873.69
+            28  Frituras de platano Original            Snacks                TecnoMax                             81        19579.53
+            34  Queso fresco Familiar                   Lacteos               TecnoMax                             81        16646.92
+            38  Mantequilla Familiar                    Lacteos               PuroSabor                            81        10743.37
+            59  Suavizante de telas Especial            Limpieza del hogar    FrescoYa                             81         5969.28
+            96  Audifonos Clasico                       Electronica           TecnoMax                             81         5315.94
+            22  Mani salado Extra                       Snacks                Norte?a                              80         8098.50
+            47  Croissant Tradicional                   Panaderia             AguaViva                             80         7419.82
+             5  Jugo de naranja Clasico                 Bebidas               TecnoMax                             80         4601.38
+            78  Sal Especial                            Abarrotes             Delisabor                            79        14815.61
+            25  Palomitas Familiar                      Snacks                HogarPlus                            78        10719.08
+            26  Palomitas Tradicional                   Snacks                La Espiga                            75        13627.06
+            89  Helado de vainilla Especial             Congelados            CasaLimpia                           74        12909.52
+            39  Leche deslactosada Familiar             Lacteos               Lacteos del Valle                    72         4391.52
+           104  Cable HDMI Original                     Electronica           HogarPlus                            71        16395.23
+           111  Bolsas de basura Extra                  Articulos de hogar    HogarPlus                            71        12985.72
+            84  Pasta para sopa Tradicional             Abarrotes             SnackTime                            71          753.31
+            93  Papas congeladas Light                  Congelados            CasaLimpia                           68         8972.92
+            67  Desodorante Especial                    Cuidado personal      VitalCare                            68         1506.23
+           102  Bocina portatil Tradicional             Electronica           CasaLimpia                           67         8340.68
+            79  Aceite vegetal Familiar                 Abarrotes             AguaViva                             66        12930.13
+            42  Pan de molde Extra                      Panaderia             La Espiga                            66         4253.34
+            75  Azucar Especial                         Abarrotes             Lacteos del Valle                    62        11023.88
+             3  Gaseosa Premium                         Bebidas               TecnoMax                             60        10413.15
+           113  Foco LED Familiar                       Articulos de hogar    SnackTime                            60         3325.76
+            35  Crema Familiar                          Lacteos               FrescoYa                             58         4481.83
+            99  Power bank Extra                        Electronica           La Espiga                            55        11527.20
+            60  Suavizante de telas Especial 60         Limpieza del hogar    BrilloHogar                          54         8147.75
+            16  Nectar de durazno Clasico               Bebidas               PuroSabor                            53        12675.33
+            33  Queso fresco Clasico                    Lacteos               VitalCare                            53         8814.03
+            43  Pan dulce Premium                       Panaderia             SnackTime                            52          219.04
+            66  Pasta dental Extra                      Cuidado personal      Lacteos del Valle                    43         1287.39
+
+114 rows selected.
+

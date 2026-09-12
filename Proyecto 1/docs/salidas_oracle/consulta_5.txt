@@ -1,0 +1,297 @@
+
+CODIGO_CLIENTE  CLIENTE                         MUNICIPIO_RESIDENCIA          CANTIDAD_VENTAS_PAGADAS  MONTO_TOTAL_COMPRADO
+--------------  ------------------------------  ----------------------------  -----------------------  --------------------
+           183  Estuardo Chavez                 Guadalajara                                         7              12032.41
+           104  Ricardo Morales                 Chimaltenango                                       7              11482.98
+           271  Jose Perez                      San Pedro Pinula                                    7              10659.32
+           284  Sergio Perez                    Cholula                                             7              10566.61
+            23  Oscar Cruz                      Zacapa                                              5              10216.85
+           240  Claudia Chavez                  Izalco                                              6               9784.86
+           165  Monica Sanchez                  Quetzaltenango                                      5               9663.42
+           258  Silvia Gonzalez                 Toluca                                              6               9324.62
+           251  Luis Lopez                      Rabinal                                             5               8822.98
+            51  Lucia Gomez                     Chiquimula                                          6               8786.81
+           212  Alejandro Lopez                 Chalchuapa                                          8               8697.39
+            52  Miguel Flores                   Salama                                              7               8425.55
+           140  Maria Aguilar                   Coyoacan                                            5               8360.99
+           273  Sergio Gonzalez                 Guatemala                                           5               8321.29
+           204  Manuel Ramirez                  Chichicastenango                                    7               8196.96
+            79  Ricardo Gonzalez                Monterrey                                           4               8109.36
+            81  Luis Castillo                   Naucalpan                                           7               7972.04
+           112  Laura Chavez                    Escuintla                                           6               7936.92
+           151  Victor Martinez                 San Miguel                                          9               7852.48
+           114  Diego Vasquez                   Santa Tecla                                         7               7850.59
+            18  Fernando Cruz                   Zapopan                                             5               7765.31
+           126  Mario Ramirez                   San Benito                                          5               7720.34
+           294  Daniela Gomez                   Toluca                                              9               7642.48
+           128  Lucia Vasquez                   Benito Juarez                                       4               7434.31
+           191  Monica Martinez                 Chiquimulilla                                       5               7432.56
+           150  Julio Morales                   Tecpan Guatemala                                    7               7355.59
+           246  Sofia Jimenez                   Santa Ana                                           6               7281.54
+           198  Julio Castillo                  Chiquimulilla                                       6               7248.38
+           218  Miguel Jimenez                  Antiguo Cuscatlan                                   5               7235.87
+           261  Patricia Diaz                   Santa Cruz del Quiche                               5               7228.25
+            72  Alejandra Mendoza               Salcaja                                             6               7203.72
+           268  Maria Hernandez                 Antigua Guatemala                                   4               7157.59
+            67  Pedro Garcia                    Tecpan Guatemala                                    7               7145.99
+            64  Oscar Aguilar                   Iztapalapa                                          5               7057.82
+           280  Pedro Ramirez                   Sanarate                                            4               7057.45
+           275  Karla Morales                   Panajachel                                          6               7050.94
+           197  Patricia Ortiz                  Santa Cruz del Quiche                               4               7037.59
+           257  Fernando Lopez                  Retalhuleu                                          6               7036.73
+           138  Alejandro Garcia                Chalchuapa                                          6               7006.35
+           120  Ana Sanchez                     Jalapa                                              5               6831.48
+           221  Oscar Flores                    San Salvador                                        7               6764.68
+           170  Paola Ortiz                     Esquipulas                                          6               6597.62
+           254  Sofia Reyes                     Chiquimulilla                                       7               6567.28
+            95  Mario Garcia                    Barberena                                           4               6549.01
+           195  Paola Cruz                      Malacatan                                           4               6491.26
+            91  Patricia Gomez                  Jocotenango                                         5               6490.00
+           250  Carlos Aguilar                  San Marcos                                          6               6459.95
+           148  Mario Ortiz                     Esquipulas                                          4               6379.91
+            35  Paola Chavez                    Cuilapa                                             5               6376.01
+            26  Paola Mendoza                   Santiago Atitlan                                    4               6364.97
+           131  Estuardo Jimenez                San Salvador                                        3               6307.32
+            98  Vivian Ramirez                  Zapopan                                             5               6177.20
+           127  Daniela Diaz                    Soyapango                                           5               6094.87
+           228  Paola Mendoza                   Tecpan Guatemala                                    6               5873.48
+           164  Silvia Reyes                    Sanarate                                            3               5818.65
+           108  Alejandro Martinez              Santa Lucia Cotzumalguapa                           4               5787.99
+            16  Ricardo Mendoza                 Panajachel                                          6               5777.77
+           231  Mario Lopez                     Jalapa                                              6               5699.08
+           234  Fernando Martinez               San Nicolas de los Garza                            4               5606.85
+           300  Patricia Rodriguez              Antigua Guatemala                                   3               5604.74
+           139  Diego Martinez                  Puerto Barrios                                      4               5587.34
+           199  Sofia Martinez                  Coban                                               8               5538.35
+           236  Sofia Chavez                    Zacapa                                              5               5501.80
+            96  Ana Rodriguez                   Puebla de Zaragoza                                  4               5474.74
+           158  Maria Mendoza                   Coyoacan                                            5               5436.30
+            94  Sergio Gonzalez                 Sonsonate                                           5               5418.12
+            76  Luis Rodriguez                  Livingston                                          7               5402.96
+             5  Monica Reyes                    San Nicolas de los Garza                            3               5376.65
+           196  Sergio Gonzalez                 Esquipulas                                          4               5326.83
+           243  Pedro Reyes                     Antigua Guatemala                                   5               5314.77
+            89  Sergio Castillo                 San Pedro Carcha                                    4               5301.82
+           146  Pedro Sanchez                   Monterrey                                           3               5298.07
+           277  Carlos Vasquez                  Rio Hondo                                           5               5294.15
+           237  Pedro Martinez                  Chiquimula                                          4               5225.36
+            58  Lucia Chavez                    Sanarate                                            6               5214.09
+           222  Rosa Jimenez                    Livingston                                          6               5165.38
+            40  Alejandra Hernandez             Chalchuapa                                          3               5133.95
+            10  Roberto Sanchez                 Guastatoya                                          5               5096.21
+            61  Maria Reyes                     San Nicolas de los Garza                            4               5090.10
+           102  Miguel Mendoza                  Tacana                                              2               5020.98
+            24  Patricia Cruz                   Chiquimulilla                                       5               4894.43
+           209  Victor Gomez                    Coatepeque                                          8               4880.98
+            73  Alejandra Perez                 Puerto Barrios                                      5               4821.52
+            57  Oscar Gomez                     Tacana                                              3               4762.57
+           223  Miguel Garcia                   Rabinal                                             4               4735.59
+            37  Luis Gonzalez                   San Jose Pinula                                     4               4732.48
+           174  Cristina Garcia                 San Cristobal Totonicapan                           3               4728.86
+            31  Alejandra Hernandez             Barberena                                           5               4715.91
+            13  Pedro Castillo                  Mixco                                               5               4667.69
+           179  Daniela Aguilar                 San Pedro Pinula                                    3               4662.88
+           152  Estuardo Mendoza                Escuintla                                           5               4661.37
+           192  Cristina Morales                San Pedro Carcha                                    2               4660.30
+           187  Fernando Jimenez                Naucalpan                                           3               4654.56
+           186  Laura Martinez                  Barberena                                           4               4633.33
+           107  Pedro Perez                     Santa Elena                                         4               4632.98
+            38  Claudia Ortiz                   Santa Tecla                                         3               4614.17
+            54  Vivian Martinez                 Asuncion Mita                                       3               4602.52
+           109  Julio Cruz                      Coban                                               4               4602.22
+            12  Andrea Mendoza                  Izalco                                              4               4600.95
+           227  Sofia Castillo                  Quetzaltenango                                      6               4577.68
+             7  Jorge Reyes                     Guadalajara                                         5               4484.64
+           278  Pedro Gonzalez                  Rabinal                                             5               4477.48
+            25  Ana Ortiz                       Solola                                              2               4474.37
+           105  Silvia Perez                    Rabinal                                             3               4427.09
+           171  Luis Aguilar                    Puerto San Jose                                     6               4401.77
+            22  Lucia Chavez                    San Salvador                                        7               4386.20
+           166  Estuardo Lopez                  Sanarate                                            4               4357.21
+           233  Claudia Castillo                Flores                                              4               4338.74
+            34  Manuel Chavez                   Asuncion Mita                                       3               4272.49
+           111  Paola Castillo                  Chinameca                                           3               4270.04
+           124  Cristina Lopez                  Jutiapa                                             3               4253.57
+            56  Karla Mendoza                   Rio Hondo                                           3               4174.69
+           115  Daniela Rodriguez               Asuncion Mita                                       3               4160.08
+           193  Laura Castillo                  Monterrey                                           4               4155.54
+           291  Luis Rodriguez                  San Martin Jilotepeque                              2               4049.12
+           172  Alejandro Rodriguez             Puerto San Jose                                     4               4006.67
+           281  Julio Perez                     San Martin Jilotepeque                              5               3966.64
+            15  Maria Chavez                    Mixco                                               4               3893.44
+           269  Cristina Ortiz                  Jocotenango                                         2               3872.90
+           155  Sofia Gonzalez                  Santa Elena                                         4               3813.99
+           219  Miguel Martinez                 Rio Hondo                                           4               3805.82
+           202  Andrea Rodriguez                San Martin Jilotepeque                              4               3799.09
+            50  Karla Martinez                  Coatepeque                                          3               3756.88
+           134  Alejandra Perez                 Santa Lucia Cotzumalguapa                           3               3710.68
+           241  Claudia Chavez                  Tecpan Guatemala                                    4               3681.39
+            85  Silvia Aguilar                  Coban                                               3               3666.00
+            65  Paola Morales                   Sonsonate                                           4               3652.70
+           214  Gabriela Diaz                   Rabinal                                             4               3621.17
+           267  Laura Martinez                  Antiguo Cuscatlan                                   3               3595.37
+           129  Jorge Gonzalez                  Soyapango                                           3               3592.33
+           173  Daniela Jimenez                 Salama                                              3               3581.06
+             8  Miguel Castillo                 Iztapalapa                                          3               3549.26
+           226  Estuardo Chavez                 Guadalajara                                         2               3547.12
+           188  Karla Reyes                     Tecpan Guatemala                                    4               3543.57
+            27  Manuel Sanchez                  Villa Nueva                                         2               3524.37
+            48  Jose Lopez                      Salama                                              3               3515.81
+           288  Luis Ramirez                    Champerico                                          3               3515.79
+           106  Estuardo Vasquez                Panajachel                                          3               3514.28
+           235  Ana Sanchez                     Jocotenango                                         3               3489.05
+            42  Gabriela Gonzalez               Malacatan                                           3               3445.30
+           263  Diego Jimenez                   Barberena                                           4               3390.68
+           210  Manuel Rodriguez                Santa Tecla                                         3               3386.95
+           249  Andrea Gonzalez                 Asuncion Mita                                       2               3358.27
+           296  Diego Chavez                    Santa Lucia Cotzumalguapa                           2               3329.89
+            53  Claudia Aguilar                 Esquipulas                                          3               3329.38
+           274  Gabriela Gonzalez               San Miguel                                          3               3319.63
+           149  Patricia Gomez                  Santa Tecla                                         2               3319.00
+           205  Roberto Jimenez                 Soyapango                                           3               3312.12
+           285  Roberto Ramirez                 Izalco                                              4               3296.19
+           130  Silvia Flores                   Santa Elena                                         3               3286.48
+           216  Alejandro Perez                 Puerto San Jose                                     4               3277.15
+           238  Monica Aguilar                  Villa Nueva                                         3               3232.94
+           103  Oscar Ortiz                     Santa Lucia Cotzumalguapa                           4               3190.18
+            83  Andrea Cruz                     Soyapango                                           3               3184.19
+            46  Gabriela Aguilar                Santa Tecla                                         6               3180.31
+             3  Oscar Martinez                  Barberena                                           6               3161.59
+            55  Ricardo Sanchez                 Totonicapan                                         4               3154.97
+            70  Jose Aguilar                    Morales                                             1               3128.11
+           181  Maria Chavez                    Retalhuleu                                          3               3092.36
+           279  Rosa Diaz                       Salama                                              5               3092.20
+            88  Paola Hernandez                 Chiquimula                                          3               3077.08
+            68  Manuel Flores                   Coatepeque                                          4               3059.16
+            78  Sofia Gonzalez                  Coyoacan                                            3               3026.80
+            21  Sofia Gonzalez                  Antigua Guatemala                                   4               3020.80
+           121  Jorge Rodriguez                 San Miguel                                          2               3017.99
+           142  Alejandro Gomez                 Guatemala                                           4               2976.56
+            74  Patricia Gomez                  San Cristobal Totonicapan                           3               2976.00
+           207  Sergio Ortiz                    Salcaja                                             3               2957.81
+           295  Ana Flores                      Soyapango                                           4               2953.46
+            45  Manuel Aguilar                  Tacana                                              5               2917.24
+            33  Andrea Martinez                 Santa Lucia Cotzumalguapa                           3               2898.91
+            99  Pedro Mendoza                   Huehuetenango                                       3               2891.51
+           117  Sofia Perez                     Esquipulas                                          2               2865.06
+           272  Cristina Ramirez                Cuilapa                                             5               2862.63
+           252  Manuel Ramirez                  Jalapa                                              4               2823.65
+           201  Cristina Hernandez              Panajachel                                          3               2809.42
+           266  Luis Jimenez                    San Benito                                          2               2800.36
+           133  Silvia Garcia                   Soyapango                                           2               2800.02
+           245  Karla Aguilar                   Morales                                             3               2746.85
+           259  Pedro Castillo                  Coatepeque                                          4               2693.50
+           194  Carlos Ortiz                    Rio Hondo                                           2               2658.51
+            69  Roberto Ramirez                 San Antonio Suchitepequez                           1               2643.04
+            11  Ana Morales                     Guastatoya                                          4               2632.72
+           135  Monica Diaz                     Jalapa                                              3               2631.57
+           147  Karla Mendoza                   San Benito                                          3               2621.35
+           161  Gabriela Gomez                  Toluca                                              4               2600.79
+           297  Claudia Rodriguez               Santa Tecla                                         3               2597.22
+           208  Vivian Gomez                    Malacatan                                           3               2594.34
+           163  Ana Gomez                       Tlaquepaque                                         3               2580.83
+            20  Maria Mendoza                   Mejicanos                                           3               2557.97
+           180  Victor Gomez                    Fray Bartolome de las Casas                         3               2526.51
+           141  Andrea Mendoza                  Huehuetenango                                       3               2526.01
+             9  Andrea Ortiz                    Cholula                                             4               2512.17
+            59  Ricardo Mendoza                 Chiantla                                            2               2497.97
+           224  Pedro Martinez                  Chiquimula                                          3               2492.13
+           282  Rosa Cruz                       Santa Ana                                           3               2477.86
+           185  Andrea Morales                  Retalhuleu                                          2               2474.45
+           167  Julio Cruz                      Puerto San Jose                                     1               2458.86
+           213  Miguel Ortiz                    Panajachel                                          3               2441.41
+           287  Sergio Vasquez                  Ciudad Vieja                                        4               2426.33
+           229  Carlos Mendoza                  Jutiapa                                             3               2400.36
+           119  Ricardo Hernandez               Jutiapa                                             3               2391.87
+           293  Roberto Aguilar                 Zacapa                                              2               2374.43
+           256  Sofia Hernandez                 Chinameca                                           2               2336.81
+            62  Jose Morales                    Guadalajara                                         2               2329.96
+            84  Karla Rodriguez                 San Jose Pinula                                     3               2304.60
+           289  Luis Chavez                     Iztapalapa                                          1               2287.66
+             2  Roberto Castillo                Tlaquepaque                                         3               2266.40
+           299  Andrea Cruz                     Panajachel                                          4               2245.70
+           176  Alejandra Aguilar               Santa Lucia Cotzumalguapa                           4               2234.50
+           113  Estuardo Gonzalez               Naucalpan                                           4               2174.51
+            39  Andrea Cruz                     Asuncion Mita                                       2               2167.79
+           125  Estuardo Ramirez                Rio Hondo                                           5               2141.15
+           159  Miguel Flores                   Flores                                              3               2136.33
+            87  Patricia Gonzalez               Toluca                                              3               2060.86
+            36  Rosa Garcia                     Santa Cruz del Quiche                               3               2017.25
+             6  Julio Flores                    San Benito                                          4               2001.76
+           217  Miguel Garcia                   Sanarate                                            3               1977.81
+           182  Victor Hernandez                San Miguel                                          1               1975.13
+           239  Jorge Cruz                      San Pedro Carcha                                    3               1971.78
+           137  Miguel Vasquez                  Malacatan                                           2               1967.67
+           276  Rosa Aguilar                    Retalhuleu                                          2               1951.87
+           116  Gabriela Gonzalez               Jutiapa                                             2               1941.36
+           253  Lucia Aguilar                   Rio Hondo                                           1               1915.99
+           211  Jorge Mendoza                   Puebla de Zaragoza                                  1               1897.72
+           203  Cristina Lopez                  Antiguo Cuscatlan                                   2               1891.62
+           143  Julio Flores                    San Pedro Pinula                                    2               1890.87
+            19  Andrea Diaz                     Cholula                                             1               1883.79
+            86  Fernando Castillo               Benito Juarez                                       4               1851.73
+           225  Pedro Castillo                  San Marcos                                          2               1821.49
+           110  Cristina Morales                San Nicolas de los Garza                            2               1806.59
+           153  Patricia Ortiz                  Guastatoya                                          1               1794.85
+           230  Miguel Rodriguez                Salama                                              2               1768.25
+           260  Diego Chavez                    San Benito                                          3               1761.79
+            90  Ana Morales                     Guadalajara                                         2               1747.68
+           220  Maria Reyes                     Quetzaltenango                                      2               1729.61
+            93  Sergio Diaz                     Ciudad Vieja                                        2               1704.13
+           160  Manuel Castillo                 Coban                                               5               1701.26
+           200  Patricia Vasquez                Coban                                               2               1698.59
+           184  Sergio Morales                  San Nicolas de los Garza                            2               1695.16
+           247  Claudia Reyes                   Totonicapan                                         1               1663.31
+            97  Julio Ortiz                     San Pedro Pinula                                    2               1577.96
+           262  Fernando Hernandez              Chalchuapa                                          2               1545.09
+            14  Claudia Aguilar                 Chiantla                                            2               1524.32
+           283  Ana Aguilar                     Coban                                               2               1496.99
+            41  Ana Garcia                      Champerico                                          1               1493.70
+            30  Luis Gonzalez                   Santa Ana                                           2               1489.49
+           145  Diego Cruz                      Monterrey                                           2               1463.74
+           175  Monica Martinez                 Chiantla                                            1               1433.07
+            63  Paola Flores                    Chinameca                                           1               1362.97
+           122  Monica Lopez                    Chalchuapa                                          1               1339.28
+            92  Julio Flores                    Izalco                                              1               1310.44
+            77  Silvia Vasquez                  Mejicanos                                           2               1304.84
+            47  Julio Martinez                  Coban                                               2               1286.38
+            28  Mario Castillo                  Toluca                                              2               1266.76
+           144  Roberto Reyes                   Escuintla                                           1               1228.87
+           162  Silvia Aguilar                  Coatepeque                                          1               1221.62
+             4  Mario Jimenez                   Soyapango                                           1               1172.84
+            17  Andrea Morales                  Jutiapa                                             2               1157.84
+            82  Sergio Lopez                    Naucalpan                                           2               1127.53
+           290  Jorge Cruz                      Coyoacan                                            2               1096.07
+           136  Andrea Diaz                     Soyapango                                           2               1070.56
+           154  Lucia Diaz                      Chalchuapa                                          1               1004.76
+           156  Alejandro Martinez              Barberena                                           3                984.34
+           292  Julio Diaz                      San Jose Pinula                                     1                966.90
+            60  Roberto Martinez                Santa Cruz del Quiche                               3                938.53
+           123  Alejandro Reyes                 Coban                                               1                929.08
+           132  Jorge Martinez                  Mixco                                               1                918.35
+           100  Mario Gomez                     Chichicastenango                                    2                885.26
+            32  Patricia Reyes                  Fray Bartolome de las Casas                         1                869.80
+           286  Laura Lopez                     Flores                                              1                865.60
+            80  Luis Morales                    Zapopan                                             2                855.65
+           215  Jose Perez                      Sonsonate                                           3                849.26
+            49  Rosa Lopez                      Antiguo Cuscatlan                                   2                848.20
+           265  Victor Gonzalez                 Mejicanos                                           1                829.50
+           169  Alejandro Morales               Santa Cruz del Quiche                               1                799.61
+           232  Mario Cruz                      Villa Nueva                                         1                756.24
+            43  Roberto Hernandez               Flores                                              2                655.60
+           255  Miguel Chavez                   Izalco                                              2                604.43
+           190  Mario Gomez                     Totonicapan                                         1                602.08
+           168  Alejandra Perez                 Retalhuleu                                          1                575.90
+            71  Victor Ortiz                    Monterrey                                           2                557.76
+           118  Cristina Chavez                 Asuncion Mita                                       2                554.67
+            75  Laura Aguilar                   Chiquimula                                          2                498.52
+           270  Lucia Castillo                  San Marcos                                          1                463.60
+           206  Vivian Sanchez                  San Salvador                                        2                387.64
+           157  Rosa Perez                      Asuncion Mita                                       2                268.52
+           248  Andrea Jimenez                  Coatepeque                                          1                214.80
+            66  Vivian Flores                   San Nicolas de los Garza                            3                177.56
+           189  Lucia Perez                     Cuilapa                                             1                115.53
+           244  Sergio Morales                  Mejicanos                                           1                 52.21
+
+291 rows selected.
+
