@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF817729-DFB7-A7FC-8C91-EB12BE83DD5E" name="persona">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>D85AA2B1-6043-555F-F905-AD794B3EB5BA</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_persona" id="14872212-6312-CB24-926D-DE09A6E96204">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>105297E5-383D-76C6-1F9E-24AF64F3B62B</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombres" id="FD9814B5-4A0B-4965-D54E-443FE261F53F">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>17DF5399-D053-F8EB-38E4-59B02FD72F91</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>688A8739-0CA5-0CD3-9565-51BBC219D9CB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_per_nombres</notNullConstraintName>
+</Column>
+<Column name="apellidos" id="CAECB602-8A95-0342-81AA-A2F247BB41C4">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>87FEA206-47B8-08AE-86BD-F03B25A93C1F</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>688A8739-0CA5-0CD3-9565-51BBC219D9CB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_per_apellidos</notNullConstraintName>
+</Column>
+<Column name="telefono" id="F0A70B1A-F44A-1572-C2C3-721175A78806">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>204A5F65-D40A-F6ED-9CEA-3B7362834E6D</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C7994139-DBA9-C8F9-9630-72A57BAC0567</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_per_telefono</notNullConstraintName>
+</Column>
+<Column name="correo" id="C2C1F077-5C9C-521A-6322-9111CF105AB8">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>638F19B3-2A93-6D6C-6283-21EEBB1BBE69</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9A761D0E-002D-DD37-F7DF-C79A16160463</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="EB30EA08-F66D-DC8B-16F1-6115B77514AD">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>92B8BA51-DA9A-8D01-2BF7-E1F11C48BAD1</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F320882-1EA8-83B6-D49B-0A6A39C8DB65</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_per_direccion</notNullConstraintName>
+</Column>
+<Column name="id_municipio" id="D0C7F5AF-3664-78F7-CF1A-BD20E026930B">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B057FE22-75EE-08A1-6ACD-6CF266894840</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_per_municipio</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="D0969F1A-3300-789A-EC7F-5BB5C3620B28" referredColumn="5CF72225-7FC7-A415-3978-D659932B8C9A" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2AE23BB-5EE6-A48E-5E90-0AB5AB2FB036" name="pk_persona">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>9C88C6BB-2817-B369-2B01-1DA2D1238408</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14872212-6312-CB24-926D-DE09A6E96204" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F09EB4A-6B8D-26E9-2009-81BAFE872E34" name="uq_persona_correo">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<generatorID>427E4F1D-3953-5BF7-4DEF-D79631642A48</generatorID>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2C1F077-5C9C-521A-6322-9111CF105AB8" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="452A46AE-4D12-F9F3-DA7D-6B2239AE384C" name="fk_persona_mun">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:26:31 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0C7F5AF-3664-78F7-CF1A-BD20E026930B" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

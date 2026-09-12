@@ -1,0 +1,14 @@
+
+TIPO_TIENDA         CANTIDAD_TIENDAS  CANTIDAD_VENTAS  MONTO_FACTURADO
+------------------  ----------------  ---------------  ---------------
+Supermercado                       6              429        448967.89
+Tienda de convenie                 6              391        431209.65
+ncia
+
+Tienda mayorista                   5              341        395136.43
+Tienda especializa                 3              202        215158.75
+da
+
+
+4 rows selected.
+

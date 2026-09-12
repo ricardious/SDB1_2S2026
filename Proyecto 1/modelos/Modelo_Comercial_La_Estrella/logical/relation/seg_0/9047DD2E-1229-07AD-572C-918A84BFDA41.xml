@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_cli_persona" directorySegmentName="seg_0" id="9047DD2E-1229-07AD-572C-918A84BFDA41">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<sourcePk>9C88C6BB-2817-B369-2B01-1DA2D1238408</sourcePk>
+<dominantRole>D85AA2B1-6043-555F-F905-AD794B3EB5BA</dominantRole>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D85AA2B1-6043-555F-F905-AD794B3EB5BA</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D922D35F-1725-2505-47F1-739140AE533A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_dep_pais" directorySegmentName="seg_0" id="1E3C5697-ABBA-66B3-7A27-179469DB5665">
+<createdBy>ricardious</createdBy>
+<createdTime>2026-09-10 21:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_Comercial_La_Estrella</ownerDesignName>
+<engineerTo>
+<item key="A70D2751-5D94-FBDD-A69B-C08B89E9E320" value="true" />
+</engineerTo>
+<sourcePk>11D7C8E9-72BD-457E-75B9-F0F8EA4E27A8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1A1B1159-D785-A392-0F93-E4D8B875B325</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1723F163-C584-B29D-A7C3-4BA5C0560BBE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,28 @@
+
+EMPLEADOS_TIENDA_INCORRECTA
+---------------------------
+                          0
+
+1 row selected.
+
+
+VENTAS_PAGADAS_MONTO_INCORRECTO
+-------------------------------
+                              0
+
+1 row selected.
+
+
+VENTAS_SIN_DETALLE
+------------------
+                 0
+
+1 row selected.
+
+
+CONTRATACIONES_FUTURAS
+----------------------
+                     0
+
+1 row selected.
+

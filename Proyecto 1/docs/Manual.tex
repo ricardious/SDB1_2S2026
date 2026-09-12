@@ -1,0 +1,211 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{fontspec}
+\usepackage[letterpaper,top=1.8cm,bottom=1.8cm,left=1.8cm,right=1.8cm]{geometry}
+\setlength{\headheight}{21pt}
+\usepackage{xcolor,graphicx,float,booktabs,longtable,array,fancyhdr,hyperref,listings,lastpage,tikz,titlesec}
+\definecolor{accent}{HTML}{7C3AED}\definecolor{accentblue}{HTML}{2563EB}\definecolor{accentcyan}{HTML}{06B6D4}\definecolor{muted}{HTML}{667085}\definecolor{codebg}{HTML}{F5F6FA}
+\hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accentblue,pdftitle={Manual tecnico - Comercial La Estrella},pdfauthor={Alex Ricardo Castaneda Rodriguez}}
+\titleformat{\section}{\Large\bfseries\color{accent}}{\thesection.}{.55em}{}
+\titleformat{\subsection}{\large\bfseries\color{accentblue}}{\thesubsection.}{.55em}{}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\color{accent}Base de Datos 1 · Proyecto 1}\fancyhead[R]{\color{accentblue}Manual técnico}\fancyfoot[L]{\color{muted}Alex Ricardo Castañeda Rodríguez}\fancyfoot[R]{\color{accent}\thepage/\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{.7pt}\renewcommand{\headrule}{\hbox to\headwidth{\color{accentblue}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}\renewcommand{\arraystretch}{1.14}
+\lstset{language=SQL,basicstyle=\ttfamily\footnotesize,backgroundcolor=\color{codebg},frame=single,breaklines=true,showstringspaces=false,keywordstyle=\bfseries\color{accent},commentstyle=\itshape\color{muted}}
+\lstdefinestyle{salidaoracle}{language={},basicstyle=\ttfamily\fontsize{4.6}{5.1}\selectfont,backgroundcolor=\color{codebg},frame=single,breaklines=false,columns=fullflexible,keepspaces=true,showstringspaces=false}
+\newcommand{\modelo}[2]{\begin{figure}[H]\centering\includegraphics[width=\textwidth,height=.62\textheight,keepaspectratio]{#1}\caption{#2}\end{figure}}
+\newcommand{\evidencia}[2]{\begin{figure}[H]\centering\includegraphics[width=\textwidth,height=.68\textheight,keepaspectratio]{#1}\caption{#2}\end{figure}}
+\newcommand{\importacion}[4]{\begin{figure}[H]\centering\textbf{Selección de la hoja #3 en el asistente de importación}\par\smallskip\includegraphics[width=.94\textwidth,height=.30\textheight,keepaspectratio]{#1}\par\medskip\textbf{Datos cargados en la tabla #3 de Oracle}\par\smallskip\includegraphics[width=.94\textwidth,height=.30\textheight,keepaspectratio]{#2}\caption{Importación de #3: origen Excel y comprobación visual en Oracle; #4 registros esperados.}\end{figure}\clearpage}
+\newcommand{\gradientrule}[1]{\begin{tikzpicture}\shade[left color=accent,right color=accentblue] (0,0) rectangle (\textwidth,#1);\end{tikzpicture}}
+\begin{document}
+\begin{titlepage}\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\shade[inner color=accent!13,outer color=white] ([xshift=-.5cm,yshift=-1.0cm]current page.north east) circle (5.1cm);
+\shade[inner color=accentblue!10,outer color=white] ([xshift=.3cm,yshift=.5cm]current page.south west) circle (4.4cm);
+\shade[left color=accent,right color=accentblue] (current page.north west) rectangle ([yshift=-.32cm]current page.north east);
+\shade[left color=accentblue,right color=accentcyan] ([yshift=.22cm]current page.south west) rectangle (current page.south east);
+\end{tikzpicture}
+\begin{center}\vspace*{.25cm}
+\begin{tikzpicture}\node[circle,shade,inner color=white,outer color=accent!18,draw=accentblue,line width=1.2pt,inner sep=7pt]{\includegraphics[width=3.2cm]{assets/escudo.png}};\end{tikzpicture}\par\medskip
+{\Large\bfseries\color{accent}UNIVERSIDAD DE SAN CARLOS DE GUATEMALA}\par\smallskip{\large\color{accentblue}Facultad de Ingeniería · Escuela de Ciencias y Sistemas}\par\vfill
+\begin{tikzpicture}\node[rectangle,rounded corners=10pt,shade,left color=accent,right color=accentblue,text=white,align=center,text width=.86\textwidth,inner sep=16pt]{{\Huge\bfseries MANUAL TÉCNICO}\par\medskip{\Large Diseño e implementación de una base de datos\\para el control de ventas}};\end{tikzpicture}\par\medskip
+{\Large\bfseries\color{accentblue}Comercial La Estrella}\par\vfill
+\begin{tabular}{rl}\textbf{Estudiante:}&Alex Ricardo Castañeda Rodríguez\\\textbf{Carné:}&202300476\\\textbf{Curso:}&Bases de Datos 1\\\textbf{Proyecto:}&1\\\textbf{Fecha:}&11 de septiembre de 2026\end{tabular}\par\vfill
+{\small\color{muted}Guatemala, 2026}\end{center}
+\end{titlepage}
+\tableofcontents\clearpage
+
+\section{Propósito y arquitectura}
+La solución administra ubicaciones, tiendas, personas, empleados, clientes, productos, catálogo por tienda, ventas, detalles y pagos. Se implementan 19 tablas Oracle y se cargan exactamente 9,068 registros provenientes de las 19 hojas del libro oficial. Los identificadores del archivo se preservan; no se usan columnas \texttt{IDENTITY}.
+
+La arquitectura se divide en cuatro áreas: catálogos y ubicación; personas y establecimientos; producto e inventario; transacciones y pagos. \texttt{persona} concentra los atributos compartidos por empleados y clientes. \texttt{catalogo\_producto} resuelve la relación muchos a muchos tienda--producto y guarda precio y existencia por tienda. \texttt{detalle\_venta} resuelve venta--producto y conserva el precio histórico.
+
+\section{Modelos de datos}
+\subsection{Conceptual}
+El modelo conceptual muestra entidades y cardinalidades sin decisiones físicas. Una venta pertenece a una tienda, cliente, empleado y estado; contiene uno o más detalles y admite uno o más pagos según el negocio.
+\modelo{../modelos/modelo_conceptual.pdf}{Modelo conceptual entidad--relación.}
+\subsection{Lógico}
+El modelo lógico incorpora atributos, identificadores, obligatoriedad y claves candidatas. El símbolo \# identifica clave primaria, * referencia y UQ unicidad.
+\modelo{../modelos/Logical.pdf}{Modelo lógico nativo exportado desde Oracle SQL Developer Data Modeler.}
+\subsection{Relacional}
+El modelo relacional fija tablas, PK, FK y tipos Oracle. La FK compuesta de \texttt{venta(id\_empleado,id\_tienda)} garantiza declarativamente que el empleado pertenece a la tienda de la venta.
+\modelo{../modelos/Relational_1.pdf}{Modelo relacional nativo exportado desde Oracle SQL Developer Data Modeler.}
+
+\section{Normalización}
+\textbf{Primera forma normal (1FN).} Cada columna contiene un valor atómico. Productos y pagos repetibles no se almacenan en columnas de venta, sino en \texttt{detalle\_venta} y \texttt{pago}. Direcciones, teléfonos e identificaciones se conservan como valores simples según el alcance.
+
+\textbf{Segunda forma normal (2FN).} Las tablas con PK compuesta dependen de la clave completa: en \texttt{catalogo\_producto}, precio y existencia corresponden al par tienda--producto; en \texttt{detalle\_venta}, cantidad, precio aplicado y subtotal corresponden al par venta--producto. No existen dependencias parciales.
+
+\textbf{Tercera forma normal (3FN).} Los atributos descriptivos de país, departamento, municipio, cargo, categoría, marca, estados y métodos están en sus catálogos. Los datos personales no se repiten entre empleado y cliente. La categoría y marca dependen del producto; la ubicación se deriva mediante sus FK; por tanto, ningún atributo no clave depende transitivamente de otra columna no clave dentro de su relación.
+
+\section{Integridad y supuestos}
+Se definieron PK en todas las entidades, FK para cada relación, \texttt{NOT NULL} en atributos obligatorios, unicidad para nombres de catálogos, correo, identificación y claves naturales compuestas, y \texttt{CHECK} para importes/cantidades positivas, existencia no negativa, estados permitidos y subtotal calculado.
+
+Supuestos adoptados:
+\begin{itemize}
+\item Precio y existencia son específicos de tienda, porque el dataset los ubica en \texttt{CATALOGO\_PRODUCTO}; el producto maestro no los duplica.
+\item Los 45 correos ausentes pertenecen a clientes y se cargan como \texttt{NULL}. El correo de cada empleado sí está presente y su unicidad se hereda de \texttt{persona}.
+\item Una venta \texttt{REGISTRADA} puede tener abonos parciales. El archivo contiene 117 casos; la consulta 8 muestra total pagado y saldo.
+\item No se usan triggers ni rutinas. Las reglas agregadas (venta con detalle, conciliación de pago) y la fecha relativa a \texttt{SYSDATE} se verifican con consultas, como permite el enunciado.
+\item El precio histórico del detalle puede diferir del vigente sin constituir inconsistencia.
+\end{itemize}
+
+\section{Carga y conciliación}
+La carga fue generada de manera determinista desde el Excel: textos se escapan, números usan punto decimal, fechas se expresan con \texttt{TO\_DATE(...,'YYYY-MM-DD')} y valores ausentes con \texttt{NULL}. Se ejecuta en orden de dependencias y termina en \texttt{COMMIT}.
+
+Para la comprobación práctica mostrada en este manual, las 19 hojas también se importaron desde el libro Excel mediante el asistente de SQL Developer, asociando cada columna de origen con su columna de destino y respetando el mismo orden de dependencias. Las capturas de la sección de evidencia muestran tanto la hoja seleccionada como los datos resultantes en cada tabla.
+
+\begin{longtable}{lr@{\qquad}lr}\toprule
+Tabla&Filas&Tabla&Filas\\\midrule\endhead
+PAIS&3&DEPARTAMENTO&32\\MUNICIPIO&80&TIPO\_TIENDA&4\\TIPO\_IDENTIFICACION&3&CARGO&4\\CATEGORIA&10&MARCA&15\\ESTADO\_VENTA&3&METODO\_PAGO&4\\PERSONA&388&TIENDA&20\\EMPLEADO&88&CLIENTE&300\\PRODUCTO&114&CATALOGO\_PRODUCTO&1,424\\VENTA&1,500&DETALLE\_VENTA&3,687\\PAGO&1,389&\textbf{TOTAL}&\textbf{9,068}\\\bottomrule\end{longtable}
+
+La auditoría reproducible del libro obtuvo cero claves compuestas duplicadas, cero detalles sin catálogo, cero subtotales incorrectos, cero ventas sin detalle, cero cruces empleado--tienda inválidos y cero ventas pagadas desbalanceadas. El archivo \texttt{validacion\_dataset.txt} conserva la evidencia y \texttt{tools/validar\_dataset.py} permite repetirla.
+
+\section{Procedimiento aplicado en Oracle SQL Developer}
+\begin{enumerate}
+\item Se estableció la conexión con el esquema vacío de Oracle Database.
+\item Se ejecutó \texttt{03\_creacion\_DB.sql} mediante \emph{Run Script} (F5); Oracle confirmó la creación de 19 tablas.
+\item Se realizó la carga y se conciliaron los 19 conteos, cuya suma fue de 9,068 registros.
+\item Se ejecutaron individualmente \texttt{04\_Consulta1.sql} a \texttt{04\_Consulta8.sql}; todos produjeron resultados.
+\item Se ejecutó \texttt{05\_validaciones.sql}; sus cuatro conteos devolvieron 0.
+\end{enumerate}
+
+Los scripts incluyen \texttt{WHENEVER SQLERROR EXIT SQL.SQLCODE ROLLBACK} o comentarios de propósito. La carga incluye \texttt{SET DEFINE OFF} para evitar que un carácter ampersand dentro de datos se interprete como variable de sustitución.
+
+\section{Consultas entregadas}
+\begin{longtable}{p{.6cm}p{4.1cm}p{10.5cm}}\toprule N.&Reporte&Decisión técnica\\\midrule\endhead
+1&Ventas por tienda y ubicación&Preagrupa detalle por venta; excluye anuladas y conserva tiendas sin ventas.\\
+2&Ventas por tipo de tienda&Cuenta tiendas distintas y ventas sin multiplicarlas por detalle.\\
+3&Productos más vendidos&Suma unidades y subtotal de ventas no anuladas.\\
+4&Desempeño de empleados&Incluye empleados sin ventas mediante \texttt{LEFT JOIN}; excluye anuladas.\\
+5&Clientes con mayor compra&Incluye exclusivamente ventas con estado \texttt{PAGADA}.\\
+6&Facturación por categoría y marca&Agrupa los detalles no anulados por ambas dimensiones.\\
+7&Uso de métodos de pago&Cuenta pagos reales y montos recibidos, excluyendo anuladas.\\
+8&Ventas pendientes&Preagrupa detalles y pagos por separado, usa \texttt{LEFT JOIN} y calcula diferencia para \texttt{REGISTRADA}.\\\bottomrule\end{longtable}
+
+El patrón de preagregación evita el producto cartesiano que se produciría al unir simultáneamente varios detalles y varios pagos de una misma venta.
+
+\section{Consultas de validación}
+\texttt{05\_validaciones.sql} comprobó: (1) empleado y tienda de venta coincidentes; (2) pagos iguales al total en toda venta pagada; (3) inexistencia de ventas sin detalle; y (4) contrataciones futuras. Las cuatro devolvieron cero. Las primeras dos satisfacen explícitamente el mínimo de la rúbrica y las otras dos amplían la cobertura.
+
+\section{Evidencia de ejecución en Oracle}
+Las siguientes capturas corresponden a la ejecución autenticada en Oracle SQL Developer. En ellas se comprueba la creación de la estructura, la conciliación de los 9,068 registros, el resultado representativo de los ocho reportes y la ausencia de inconsistencias detectadas por las validaciones.
+
+\subsection{Conexión utilizada}
+La conexión guardada en SQL Developer utiliza el usuario \texttt{ricardious}, host \texttt{localhost}, puerto \texttt{1521} y nombre de servicio \texttt{FREEPDB1}. La contraseña aparece oculta en la evidencia.
+\evidencia{capturas/00_conexion_oracle.png}{Configuración de la conexión \texttt{Proyecto1\_SBD1} utilizada para crear, cargar y consultar la base de datos.}
+
+\subsection{Creación y carga}
+\evidencia{capturas/01_creacion_tablas.png}{Ejecución del DDL: creación satisfactoria de las 19 tablas y finalización de la estructura.}
+\evidencia{capturas/02_conteos_carga.png}{Conciliación posterior a la carga: conteos de las 19 tablas, con un total de 9,068 registros.}
+
+\subsection{Importación de las 19 hojas del Excel}
+La carga manual se realizó con el asistente de importación de SQL Developer siguiendo el orden de dependencias. Para cada tabla se conserva la selección de la hoja de origen y una vista de los datos ya almacenados en Oracle.
+
+\importacion{capturas/importacion/01_pais_excel.png}{capturas/importacion/01_pais_oracle.png}{PAIS}{3}
+\importacion{capturas/importacion/02_departamento_excel.png}{capturas/importacion/02_departamento_oracle.png}{DEPARTAMENTO}{32}
+\importacion{capturas/importacion/03_municipio_excel.png}{capturas/importacion/03_municipio_oracle.png}{MUNICIPIO}{80}
+\importacion{capturas/importacion/04_tipo_tienda_excel.png}{capturas/importacion/04_tipo_tienda_oracle.png}{TIPO\_TIENDA}{4}
+\importacion{capturas/importacion/05_tipo_identificacion_excel.png}{capturas/importacion/05_tipo_identificacion_oracle.png}{TIPO\_IDENTIFICACION}{3}
+\importacion{capturas/importacion/06_cargo_excel.png}{capturas/importacion/06_cargo_oracle.png}{CARGO}{4}
+\importacion{capturas/importacion/07_categoria_excel.png}{capturas/importacion/07_categoria_oracle.png}{CATEGORIA}{10}
+\importacion{capturas/importacion/08_marca_excel.png}{capturas/importacion/08_marca_oracle.png}{MARCA}{15}
+\importacion{capturas/importacion/09_estado_venta_excel.png}{capturas/importacion/09_estado_venta_oracle.png}{ESTADO\_VENTA}{3}
+\importacion{capturas/importacion/10_metodo_pago_excel.png}{capturas/importacion/10_metodo_pago_oracle.png}{METODO\_PAGO}{4}
+\importacion{capturas/importacion/11_persona_excel.png}{capturas/importacion/11_persona_oracle.png}{PERSONA}{388}
+\importacion{capturas/importacion/12_tienda_excel.png}{capturas/importacion/12_tienda_oracle.png}{TIENDA}{20}
+\importacion{capturas/importacion/13_empleado_excel.png}{capturas/importacion/13_empleado_oracle.png}{EMPLEADO}{88}
+\importacion{capturas/importacion/14_cliente_excel.png}{capturas/importacion/14_cliente_oracle.png}{CLIENTE}{300}
+\importacion{capturas/importacion/15_producto_excel.png}{capturas/importacion/15_producto_oracle.png}{PRODUCTO}{114}
+\importacion{capturas/importacion/16_catalogo_producto_excel.png}{capturas/importacion/16_catalogo_producto_oracle.png}{CATALOGO\_PRODUCTO}{1,424}
+\importacion{capturas/importacion/17_venta_excel.png}{capturas/importacion/17_venta_oracle.png}{VENTA}{1,500}
+\importacion{capturas/importacion/18_detalle_venta_excel.png}{capturas/importacion/18_detalle_venta_oracle.png}{DETALLE\_VENTA}{3,687}
+\importacion{capturas/importacion/19_pago_excel.png}{capturas/importacion/19_pago_oracle.png}{PAGO}{1,389}
+
+\subsection{Reportes solicitados}
+\evidencia{capturas/03_consulta_1.png}{Consulta 1: ventas por tienda y ubicación, excluyendo ventas anuladas.}
+\evidencia{capturas/04_consulta_2.png}{Consulta 2: cantidad de tiendas, ventas y facturación por tipo de tienda.}
+\evidencia{capturas/05_consulta_3.png}{Consulta 3: productos más vendidos por unidades y monto generado.}
+\evidencia{capturas/06_consulta_4.png}{Consulta 4: desempeño de empleados por ventas atendidas y facturación.}
+\evidencia{capturas/07_consulta_5.png}{Consulta 5: clientes con mayor compra considerando únicamente ventas pagadas.}
+\evidencia{capturas/08_consulta_6.png}{Consulta 6: unidades vendidas y facturación agrupadas por categoría y marca.}
+\evidencia{capturas/09_consulta_7.png}{Consulta 7: utilización de métodos de pago y montos recibidos.}
+\evidencia{capturas/10_consulta_8.png}{Consulta 8: ventas registradas, total pagado y diferencia pendiente.}
+
+\subsection{Validaciones de consistencia}
+\evidencia{capturas/11_validaciones.png}{Ejecución de las cuatro validaciones; todos los conteos devuelven cero inconsistencias.}
+
+\section{Herramientas y archivos fuente}
+\begin{itemize}
+\item Oracle Database y Oracle SQL Developer para DDL, DML, DQL y evidencia final.
+\item Oracle SQL Developer Data Modeler para el modelo fuente; el archivo \texttt{.dmd} se entrega junto a su carpeta asociada.
+\item Python 3 y openpyxl para generar y auditar la carga sin transcripción manual.
+\item Graphviz para exportaciones SVG/PNG incorporadas en este manual.
+\item XeLaTeX para producir los documentos PDF.
+\end{itemize}
+
+\section{Resultado final}
+La evidencia de SQL Developer confirma que la estructura fue creada correctamente, que la carga quedó conciliada con el archivo fuente, que los ocho reportes generan resultados y que las cuatro verificaciones terminan sin inconsistencias. El diseño, los scripts y los resultados observados mantienen correspondencia entre sí.
+
+\clearpage
+\appendix
+\section{Salidas exactas de las consultas}
+Las salidas siguientes fueron obtenidas directamente el 11 de septiembre de 2026 desde el contenedor Oracle \texttt{oracle-free-lite}, base conectable \texttt{FREEPDB1} y esquema \texttt{RICARDIOUS}. Se conserva la presentación tabular producida por SQL*Plus: encabezados, líneas divisorias, columnas alineadas, fechas ISO, punto decimal y el número de filas seleccionado. No se transformaron a CSV ni se editaron los valores retornados por Oracle.
+
+\begin{center}
+\begin{tabular}{cr@{\qquad}cr}\toprule
+Consulta&Filas&Consulta&Filas\\\midrule
+1&20&5&291\\
+2&4&6&81\\
+3&114&7&4\\
+4&88&8&342\\\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Consulta 1: 20 filas}
+\lstinputlisting[style=salidaoracle]{salidas_oracle/consulta_1.txt}
+
+\subsection{Consulta 2: 4 filas}
+\lstinputlisting[style=salidaoracle]{salidas_oracle/consulta_2.txt}
+
+\subsection{Consulta 3: 114 filas}
+\lstinputlisting[style=salidaoracle]{salidas_oracle/consulta_3.txt}
+
+\subsection{Consulta 4: 88 filas}
+\lstinputlisting[style=salidaoracle]{salidas_oracle/consulta_4.txt}
+
+\subsection{Consulta 5: 291 filas}
+\lstinputlisting[style=salidaoracle]{salidas_oracle/consulta_5.txt}
+
+\subsection{Consulta 6: 81 filas}
+\lstinputlisting[style=salidaoracle]{salidas_oracle/consulta_6.txt}
+
+\subsection{Consulta 7: 4 filas}
+\lstinputlisting[style=salidaoracle]{salidas_oracle/consulta_7.txt}
+
+\subsection{Consulta 8: 342 filas}
+\lstinputlisting[style=salidaoracle]{salidas_oracle/consulta_8.txt}
+
+\subsection{Validaciones: cuatro resultados}
+\lstinputlisting[style=salidaoracle]{salidas_oracle/validaciones.txt}
+\end{document}
